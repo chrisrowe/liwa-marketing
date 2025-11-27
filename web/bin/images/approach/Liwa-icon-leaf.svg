@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px" height="80px" viewBox="0 0 76 80" version="1.1">
+  <title>Group 3 Copy 3</title>
+  <defs>
+    <polygon id="path-1" points="0.000262068966 0 75.7754943 0 75.7754943 79.3042637 0.000262068966 79.3042637"></polygon>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+      <stop stop-color="#95ADC2" offset="0%"></stop>
+      <stop stop-color="#C0DFDF" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Liwa_approach" transform="translate(-226.000000, -1185.000000)">
+      <g id="Group" transform="translate(196.000000, 1155.000000)">
+        <g id="Group-3-Copy-3" transform="translate(30.000000, 30.000000)">
+          <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+          </mask>
+          <g id="Clip-2"></g>
+          <path d="M59.0889517,58.3301978 C72.606469,44.731956 75.7757563,-0.000351648352 75.7757563,-0.000351648352 C75.7757563,-0.000351648352 66.5989747,4.81459341 51.9379632,6.08052747 C38.1146989,7.27525275 25.3108828,9.23745055 17.8095954,16.7873407 C6.23138851,28.4418462 3.33377931,45.0290989 9.92394023,56.7512967 C17.1780092,45.2963516 47.0049517,28.9526154 47.0049517,28.9526154 C25.5965379,44.3592088 14.688354,56.3073407 0.000262068966,77.364044 L7.2027908,79.3042637 C7.2027908,79.3042637 12.5647218,69.5592088 17.2260552,64.8515165 C28.9248138,73.2049231 46.7690897,70.731956 59.0889517,58.3301978" id="Fill-1" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
