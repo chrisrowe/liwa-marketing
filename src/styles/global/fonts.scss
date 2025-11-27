@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Foundry Context';
+    src: url('/bin/fonts/foundry-context/FoundryContext-Bold.woff2') format('woff2'),
+        url('/bin/fonts/foundry-context/FoundryContext-Bold.woff') format('woff'),
+        url('/bin/fonts/foundry-context/FoundryContext-Bold.svg#FoundryContext-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Foundry Context';
+    src: url('/bin/fonts/foundry-context/FoundryContext-Demi.woff2') format('woff2'),
+        url('/bin/fonts/foundry-context/FoundryContext-Demi.woff') format('woff'),
+        url('/bin/fonts/foundry-context/FoundryContext-Demi.svg#FoundryContext-Demi') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Foundry Context';
+    src: url('/bin/fonts/foundry-context/FoundryContext-Regular.woff2') format('woff2'),
+        url('/bin/fonts/foundry-context/FoundryContext-Regular.woff') format('woff'),
+        url('/bin/fonts/foundry-context/FoundryContext-Regular.svg#FoundryContext-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Foundry Context';
+    src: url('/bin/fonts/foundry-context/FoundryContext-Medium.woff2') format('woff2'),
+        url('/bin/fonts/foundry-context/FoundryContext-Medium.woff') format('woff'),
+        url('/bin/fonts/foundry-context/FoundryContext-Medium.svg#FoundryContext-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

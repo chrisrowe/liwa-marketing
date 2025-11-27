@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: b1e119fd-5c96-4a20-8381-4d1944a31b03
+handle: insight_title
+instructions: ''
+name: TItle
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,384 @@
+/*
+ *
+ * HTML Styles
+ *
+ */
+
+body {
+
+    @include font-family;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+
+}
+
+h1,
+h2,
+h3{
+    font-family: $fontFamilyAlt;
+    line-height: 1.4;
+    color: $black;
+    margin: 0; padding: 0 0 1rem;
+}
+
+h1 {
+    font: {
+        size: calculateRem(48);
+        weight: $fontWeightMedium;
+    }
+    line-height: 1.1666666667;
+    padding-bottom: calculateRem(22);
+
+    @include media-breakpoint-down(sm) {
+        font-size: 2.5rem;
+        line-height: 1.2666666667;
+    }
+
+}
+
+h2 {
+    font: {
+        size: calculateRem(28);
+        weight: $fontWeightBold;
+    }
+    line-height: 1.3636363636;
+    padding-bottom: calculateRem(14);
+    margin-top: 1.5rem;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.75rem;
+        line-height: 1.3333333333;
+    }
+}
+
+h3 {
+    font-size: calculateRem(22);
+}
+
+h4 {
+    font-size: calculateRem(18);
+}
+
+h5 {
+    font: {
+        family: $fontFamily;
+        size: calculateRem(16);
+        weight: $fontWeightBold;
+    }
+    color: $gold;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    padding-bottom: calculateRem(12);
+}
+
+p,
+li {
+    font: {
+        size: calculateRem(20);
+        weight: $fontWeightRegular;
+    }
+    line-height: 1.5;
+    color: $black;
+    margin: 0; padding-bottom: calculateRem(12);
+}
+
+p {
+
+    &.small{
+        font-size: calculateRem(16);
+        margin-bottom: 8px;
+    }
+
+    &.xsmall{
+        font-size: calculateRem(14);
+    }
+
+    &.uppercase{
+        text-transform: uppercase;
+    }
+
+    &.bold{
+        font-weight: $fontWeightBold;
+    }
+
+    &.demi{
+        font-weight: $fontWeightDemi;
+    }
+
+    &.medium{
+        font-weight: $fontWeightMedium;
+    }
+
+    &.copyright {
+        font-size: calculateRem(12);
+        margin-bottom: 0;
+        padding: {
+            top: 12px;
+            bottom: 0;
+        }
+
+        @include media-breakpoint-down(md) {
+            position: absolute; bottom: -6px;
+        }
+
+    }
+
+    &.border-link {
+        @include border-link;
+    }
+
+    &.read-more {
+        @include border-link;
+        position: relative;
+        font-size: 1rem;
+        &:after,
+        &::after {
+            position: absolute; top: 50%; right: -24px;
+            transform: translateY(-50%);
+            transition: right 100ms ease-in-out;
+            content: "→"
+        }
+    }
+
+    .disclaimer & {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 1.25rem;
+        line-height: 1.4285714286;
+    }
+
+}
+
+small {
+    &.eyebrow {
+        font: {
+            size: calculateRem(14);
+            weight: $fontWeightBold;
+        }
+        text-transform: uppercase;
+        color: $gold;
+    }
+}
+
+time {
+    font: {
+        family: $fontFamilyAlt;
+        size: calculateRem(20);
+        style: italic;
+        weight: $fontWeightRegular;
+    }
+}
+
+ul {
+
+    list-style: none;
+    margin: 0; padding: 0;
+
+}
+
+a {
+
+    &:hover{
+        color: inherit;
+    }
+
+    &:focus{
+        outline: unset
+    }
+
+    &.flex-link {
+        display: flex; width: 100%; height: 100%;
+        align-items: center;
+    }
+
+    &.border-link {
+        @include border-link;
+    }
+
+    &.back-to-news {
+        color: $gold;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2pt;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    &.underline {
+        text-decoration: underline;
+    }
+
+}
+
+figure {
+    min-width: 100%;
+    margin: 0;
+
+    &.headshot {
+        margin-bottom: 1rem;
+    }
+}
+
+img{
+    display: block;
+    &.responsive {
+        width: 100%;
+    }
+    &.footer-logo {
+        max-width: 120px;
+
+        &.mobile {
+            margin-top: 2rem;
+        }
+    }
+}
+
+section {
+    padding: calculateRem(40) 0;
+    background-color: $white;
+
+    .container{
+        margin-top: calculateRem(27);
+        &:first-of-type {
+            margin-top: 0 !important;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 2rem;
+        }
+    }
+}
+
+div {
+    &.content-padding {
+        padding: 1rem;
+    }
+
+    &.mobile-row-reverse{
+        @include media-breakpoint-down(sm) {
+            flex-wrap: wrap-reverse;
+        }
+        .content-block-image{
+            @include media-breakpoint-down(sm) {
+                margin-bottom: unset;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+header,
+.header{
+    position: relative; z-index: 300;
+    background-color: $white;
+
+    &.news-entry {
+        border-bottom: 3px solid #F3F3F3;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: .5rem 0;
+    }
+
+}
+
+main,
+.main{
+    position: relative;  z-index: 100;
+    background-color: $white;
+    overflow-x: hidden;
+}
+
+footer,
+.footer{
+    padding: {
+        top: calculateRem(69);
+        bottom: calculateRem(80);
+    }
+    background-color: $blue;
+    * {
+        color: $white;
+        font-size: calculateRem(16);
+        line-height: 1.5;
+    }
+}
+
+form {
+    margin-top: 3rem;
+}
+
+label {
+    display: none;
+}
+
+input,
+textarea{
+    width: 100%;
+    font-size: calculateRem(16);
+    color: $blue;
+    margin-bottom: 1.5rem; padding: 1rem;
+    background: $white;
+    border: unset;
+    border-radius: 0;
+}
+
+button {
+    font-size: 1rem;
+    line-height: 1.75;
+    text-decoration: none;
+    margin-top: 1rem; padding: 0 0 5px;
+    background-color: $blue;
+    border: unset;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+::placeholder {
+    color: $blue;
+    opacity: 1;
+}
+
+pre.dump {
+    display: block;
+    width: 100%;
+    clear: both;
+    color: #000 !important;
+    background: #ccc !important;
+    text-transform: none !important;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space:pre-wrap;
+}
+
+
+
+.mobile-carousel {
+    @include media-breakpoint-down(sm) {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+}
+
+.copy-page {
+    ul {
+        list-style: disc;
+        padding: 0 0 0 2rem;
+    }
+
+    b, strong {
+        font-weight: bold;
+    }
+    i, em {
+        font-style: italic;
+    }
+}

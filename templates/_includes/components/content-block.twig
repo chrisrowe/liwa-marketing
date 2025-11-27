@@ -1,0 +1,44 @@
+
+{% set classList = "content-block" %}
+{% set rowClassList = "row" %}
+
+{% if classes is defined %}
+    {% set classList = classList ~ ' ' ~ classes %}
+{% endif %}
+
+{% if reverse is defined %}
+    {% set rowClassList = rowClassList ~ ' ' ~ 'flex-row-reverse' %}
+{% endif %}
+
+<div class="{{ classList }}">
+    <div class="container">
+        <div class="{{ rowClassList }}">
+            <div class="{{ imgColumns }} content-block-image">
+                <figure>
+                    <img src="{{ image }}" alt="" title="" class="responsive" />
+                </figure>
+            </div>
+            <div class="col align-self-center">
+                {% if eyebrow is defined %}
+                    <h5>{{ eyebrow }}</h5>
+                {% endif %}
+                {% if title is defined %}
+                    <h2>{{ title }}</h2>
+                {% endif %}
+                {% if body is defined %}
+                    {{ body|raw }}
+                {% endif %}
+                {% if buttons is defined %}
+                    <div class="bttn-bank">
+                        {% for button in buttons %}
+                            {% include "_includes/components/button" with {
+                                'cta': button.cta,
+                                'url': button.url
+                            } %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

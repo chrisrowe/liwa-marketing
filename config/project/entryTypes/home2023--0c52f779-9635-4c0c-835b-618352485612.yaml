@@ -1,0 +1,202 @@
+fieldLayouts:
+  092ab9af-1954-48ea-9ca8-0aa950f96639:
+    tabs:
+      -
+        elements:
+          -
+            heading: Main
+            type: craft\fieldlayoutelements\Heading
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0ad26c4a-0a51-446f-8a32-8636c09ab27c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e9439491-9dea-4ad1-9a6d-03556df453c1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: Facts
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 79db30b0-00dd-44b4-9574-71c25930c2bf
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 77a3cc7a-b365-4e81-9c2c-4df42b68d05f
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aa3d6ba9-2729-4ad5-9c2e-8cca1a481f04
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: 'Global Investment'
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 412aca6a-33da-4a96-84a9-ef86ce41d1d7
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: Team
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 4fe92e6f-ea33-473d-aeba-b280071320bc
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c1ca6812-6064-47b1-8ef6-505183ba3475
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: Report
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 79f89df8-d164-4a32-8211-4b50a69ce0a6
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f987fb97-204c-48d1-a33b-eac09d26bf78
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: History
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 6fba645e-71a4-449a-899b-d8a85ec79fbe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: Insights
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 15130161-8da9-4e04-a4a2-bea8967117da
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: Office
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 9955d81c-5121-439d-9593-3b717a045f53
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f7fef231-5075-4347-96c4-e34ef1525faf
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: home2023
+hasTitleField: false
+name: 'Home 2023'
+section: 62edc756-6938-49e0-819f-f2ec25e1164d
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,26 @@
+enableVersioning: true
+handle: insights
+name: Insights-new
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a0170692-9bc8-4fc5-8c51-66a642669e82:
+    enabledByDefault: true
+    hasUrls: true
+    template: insights/entry
+    uriFormat: 'insights/{slug}'
+structure:
+  maxLevels: 1
+  uid: 9aae5e62-e09a-4e09-b581-33e23cc71ee6
+type: structure

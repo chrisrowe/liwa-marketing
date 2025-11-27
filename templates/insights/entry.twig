@@ -1,0 +1,87 @@
+{% extends "_includes/layouts/2023/index" %}
+
+{% set sectionName = 'news-entry' %}
+
+{% block masthead %}
+	{% include "_includes/sections/2023/masthead" with {
+        'signpost': 'news',
+        'isNewsEntry': true
+    } %}
+{% endblock %}
+
+{% block main %}
+
+	{# <pre class="dump">{{ dump(entry) }}</pre> #}
+
+	<main class="main" data-template="{{ sectionName }}">
+		<section data-section="news-entry">
+			{% include '_includes/components/section-title' with {
+                'title': entry.title,
+                'date': entry.postDate | date("F Y")
+            } %}
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-9">
+                        {% if entry.youtubeVideoId %}
+                            <div class="video-player">
+                                <iframe src="https://www.youtube.com/embed/{{ entry.youtubeVideoId }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
+                        {% else %}
+                            {% set featureImage = entry.featureImage.one() %}
+                            {% if featureImage %}
+                                <figure>
+                                    <img src="http://www.placehold.it/777x379" alt="" title="" class="responsive"/>
+                                </figure>
+                            {% endif %}
+                        {% endif %}
+                        <div class="row d-lg-none mb-2">
+                            <div class="col-6">
+                                <div class="authors">
+                                    {% for author in entry.authors %}
+                                        <div class="author">
+                                            <p class="bold pb-0">{{ author.authorName }}</p>
+                                            <p class="pb-0">{{ author.authorTitle }}</p>
+                                            <p>{{ author.authorCompany }}</p>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                {% include '_includes/components/social-share' %}
+                            </div>
+                        </div>
+                        {{ entry.bodyCopy|raw }}
+					</div>
+					<div class="d-none d-lg-display col-lg-3">
+						<div class="side-panel authors">
+							{% set authorSectionTitle = entry.authors|length == 1 ? 'Author' : 'Authors' %}
+							<h5>{{ authorSectionTitle }}</h5>
+							{% for author in entry.authors %}
+								<div class="author">
+									<p class="bold">{{ author.authorName }}</p>
+									<p>{{ author.authorTitle }}</p>
+									<p>{{ author.authorCompany }}</p>
+								</div>
+							{% endfor %}
+						</div>
+						<div class="side-panel share">
+							<h5>Share</h5>
+							{% include '_includes/components/social-share' %}
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<a href="/insights" class="back-to-news">&#8592;&nbsp;Back to news</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{# {% include '_includes/sections/contact-us' %} #}
+	</main>
+
+{% endblock %}

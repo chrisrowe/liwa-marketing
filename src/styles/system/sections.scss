@@ -1,0 +1,86 @@
+
+[data-section="approach-advantage"] {
+    padding-top: calculateRem(121);
+    @include media-breakpoint-down(md) {
+        padding-top: 4rem;
+        padding-bottom: 0;
+    }
+}
+
+[data-container="our-advantage"] {
+    position: relative;
+    &:after,
+    &::after {
+        display: none; width: 200vw; height: 100%;
+        position: absolute; top: 0; left: 50%; z-index: -1;
+        transform: translateX(-50%);
+        background: $gray;
+        content: "";
+    }
+    @include media-breakpoint-down(md) {
+        margin-top: 9rem !important;
+        background: $gray;
+        .section-image {
+            img{
+                margin-top: -128px;
+                margin-bottom: 3rem;
+            }
+        }
+        .section{
+            padding-bottom: 2rem;
+        }
+        &:after,
+        &::after {
+            display: block;
+        }
+    }
+}
+
+[data-section="why-baypine"],
+[data-section="approach-top"] {
+    @include media-breakpoint-down(md) {
+        padding-bottom: 5rem;
+    }
+}
+
+[data-section="business-principles"],
+[data-section="approach-bottom"] {
+    @include media-breakpoint-down(md) {
+        padding-top: 4rem;
+    }
+}
+
+
+[data-section="business-principles"],
+[data-section="approach-bottom"] {
+    position: relative;
+    &:after,
+    &::after {
+        display: block; width: 32vw; height: 32vh;
+        position: absolute; top: -48px; right: 0; z-index: 10;
+        background: {
+            image: url('/images/ui/BP-texture_green_02.svg');
+            position: top right;
+            repeat: no-repeat;
+            size: initial;
+        }
+        content: "";
+        @include media-breakpoint-down(md) {
+            width: 60%; height: 60%;
+        }
+    }
+}
+
+[data-section="why-baypine"] {
+    .container {
+        &:last-of-type {
+            @include media-breakpoint-down(md) {
+                margin-top: calculateRem(60);
+            }
+        }
+    }
+}
+
+[data-remove="true"] {
+    display: none;
+}

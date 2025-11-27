@@ -1,0 +1,65 @@
+fieldLayouts:
+  8f716dae-801b-48ea-9bce-bf2bd15f502d:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0ad26c4a-0a51-446f-8a32-8636c09ab27c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e9439491-9dea-4ad1-9a6d-03556df453c1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: df3aea1a-ed46-4bbd-945e-7088526543b3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: leadspace
+hasTitleField: false
+name: Leadspace
+section: 99d1d73e-28b6-4cdc-85c4-947f50445b77
+sortOrder: 2
+titleFormat: '{pageTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

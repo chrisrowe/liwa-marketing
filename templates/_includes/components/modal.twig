@@ -1,0 +1,31 @@
+{% set headshot = entry.teamMemberHeadshot.one() %}
+<div class="modal" id="team-member-{{ index }}">
+    <div class="viewport">
+        <div class="modal-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="close-modal" data-modal="team-member-{{ index }}">&#8592;&nbsp;Back to team</button>
+                        <div class="rule"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <figure class="headshot">
+                            <img src="/bin/images/team/{{ headshot.filename }}" alt="headshot" title="headshot" class="responsive" />
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h3>{{ entry.title }}</h3>
+                        <p>{{ entry.teamMemberTitle }}</p>
+                        {{ entry.bodyCopy|raw }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

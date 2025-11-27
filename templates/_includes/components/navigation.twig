@@ -1,0 +1,30 @@
+{% set classList = "navigation" %}
+
+{% if classes is defined %}
+    {% set classList = classList ~ ' ' ~ classes %}
+{% endif %}
+
+<nav id="navigation" class="{{ classList }}" role="navigation" aria-label="Main">
+    <section>
+        {% for navItem in navigation %}
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }}" href="/{{ navItem.href }}">
+                <span>
+                    {{ navItem.name }}
+                </span>
+            </a>
+        {% endfor %}
+    </section>
+    <section>
+        {% set contactClassList = signpost == 'contact' ? 'secondary active contact-bttn d-none d-lg-inline-block' : 'secondary contact-bttn d-none d-lg-inline-block' %}
+        {% include '_includes/components/button' with {
+            'cta': 'Contact',
+            'url': '/contact',
+            'classes': contactClassList
+        } %}
+        {% include '_includes/components/button' with {
+            'cta': 'INVESTOR LOGIN',
+            'url': 'https://investors.liwacap.com/login',
+            'classes': 'investor-bttn d-none d-lg-inline-block'
+        } %}
+    </section>
+</nav>

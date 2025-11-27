@@ -1,0 +1,38 @@
+fieldLayouts:
+  c8cd71b4-d0dc-4985-a216-da42fc3d1318:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: marketUpdatesSignUp
+hasTitleField: false
+name: 'Market Updates Sign Up'
+section: 12482cdb-ef1f-4c12-b095-4616c71fb144
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

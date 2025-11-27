@@ -1,0 +1,135 @@
+{% extends "_includes/layouts/2023/index" %}
+
+{% set sectionName = 'meet-the-team' %}
+
+{% set entries = craft.entries().section('team').type('team') %}
+{% set entriesSb = craft.entries().section('team').type('shelbylane') %}
+
+
+{% block masthead %}
+    {% include "_includes/sections/2023/masthead" with { 'signpost': sectionName } %}
+{% endblock %}
+
+{% block main %}
+    <main class="main" data-template="{{ sectionName }}">
+        <section data-section="leadspace" class="leadspace">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <hgroup>
+                            <h1>Meet the Team</h1>
+                            {# {% if body is defined %}
+                                <h2>{{ body }}</h2>
+                            {% endif %} #}
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-section="team-members" class="home-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Liwa Team</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    {% for entry in entries %}
+                        {% set headshot = entry.teamMemberHeadshot.one() %}
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="javascript:;" class="team-member" data-modal="team-member-{{ loop.index }}" style="background-color:#FCF8F5" id="team-{{ loop.index }}">
+                                <figure>
+                                    <img src="/bin/images/team/{{ headshot.filename }}" alt="{{ entry.title }} Headshot" title="{{ entry.title }} Headshot" class="responsive" />
+                                </figure>
+                                <div style="">
+                                    <div>
+                                        <h3 class="px-3">{{ entry.title }}</h3>
+                                    </div>
+                                    <div class="pb-3" style="height:60px">
+                                        <p class="px-3">{{ entry.teamMemberTitle }}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <section data-section="team-members" class="home-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Selby Lane Team</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    {% for entry in entriesSb %}
+                        {% set headshot = entry.teamMemberHeadshot.one() %}
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="javascript:;" class="team-member" data-modal="team-member-sb-{{ loop.index }}" style="background-color:#FCF8F5" id="teamSb-{{ loop.index }}">
+                                <figure>
+                                    <img src="/bin/images/team/{{ headshot.filename }}" alt="{{ entry.title }} Headshot" title="{{ entry.title }} Headshot" class="responsive" />
+                                </figure>
+                                <div style="">
+                                    <div>
+                                        <h3 class="px-3">{{ entry.title }}</h3>
+                                    </div>
+                                    <div class="pb-3" style="height:60px">
+                                        <p class="px-3">{{ entry.teamMemberTitle }}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </main>
+    <sections data-section="team-modals">
+        {% for entry in entries %}
+            {% include '_includes/components/modal' with {
+                'entry': entry,
+                'index': loop.index
+            } %}
+        {% endfor %}
+    </section>
+    <sections data-section="team-modals">
+        {% for entry in entriesSb %}
+            {% set headshot = entry.teamMemberHeadshot.one() %}
+            <div class="modal" id="team-member-sb-{{ loop.index }}">
+                <div class="viewport">
+                    <div class="modal-header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" class="close-modal" data-modal="team-member-sb-{{ loop.index }}">&#8592;&nbsp;Back to team</button>
+                                    <div class="rule"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <figure class="headshot">
+                                        <img src="/bin/images/team/{{ headshot.filename }}" alt="headshot" title="headshot" class="responsive" />
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <h3>{{ entry.title }}</h3>
+                                    <p>{{ entry.teamMemberTitle }}</p>
+                                    {{ entry.bodyCopy|raw }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+{% endblock %}

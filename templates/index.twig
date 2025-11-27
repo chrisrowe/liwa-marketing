@@ -1,0 +1,126 @@
+{% extends "_includes/layouts/index" %}
+
+{% set sectionName = 'home-page' %}
+
+{% set posts = craft.entries.section('insights').limit(3) %}
+{% set pageData = craft.entries().section('home').one() %}
+
+{% block masthead %}
+    {% include "_includes/sections/masthead" with {
+        'signpost': '',
+        'logoSize': 'large'
+    } %}
+{% endblock %}
+
+{% block main %}
+
+    <main class="main" data-template="{{ sectionName }}">
+
+        {% include '_includes/sections/leadspace' with {
+            'title': pageData.pageTitle,
+            'body': pageData.subtitle
+        } %}
+
+        {% set blockImage = pageData.blockImage.one() %}
+        {% set buttonMatrix = pageData.blockButtons.type('button').all() %}
+        {% set buttonArray = [] %}
+        {% for button in buttonMatrix %}
+            {% set buttonArray = buttonArray|merge([{
+                cta: button.buttonCTA,
+                url: button.buttonURL,
+            }]) %}
+        {% endfor %}
+
+        <section class="background-gray" data-section="who-we-are">
+            {% include "_includes/components/video-block" with {
+                'eyebrow': pageData.blockEyebrow,
+                'title': pageData.blockTitle,
+                'body': pageData.blockCopy,
+                'image': blockImage.url,
+                'buttons': buttonArray,
+                'reverse': true,
+                'imgColumns': 'col-12 col-md-6'
+            } %}
+        </section>
+
+        <section data-section="recent-news">
+            {% include '_includes/components/section-title' with {
+                'eyebrow': 'Insights',
+                'title': 'The latest from Liwa'
+            } %}
+
+            <div class="container">
+                <div class="row mobile-carousel">
+                    {% for post in posts %}
+                        {% include '_includes/components/news-card' with {
+                            'post':  post,
+                            'columns': 'col-10 col-md-6 col-lg-4' }
+                        %}
+                    {% endfor %}
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="bttn-bank">
+                            {% include '_includes/components/button' with {
+                                'cta': 'Insights',
+                                'url': '/insights'
+                            } %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        {% set blockImage = pageData.cb2_blockImage.one() %}
+        {% set buttonMatrix = pageData.cb2_blockButtons.type('button').all() %}
+        {% set buttonArray = [] %}
+        {% for button in buttonMatrix %}
+            {% set buttonArray = buttonArray|merge([{
+                cta: button.buttonCTA,
+                url: button.buttonURL,
+            }]) %}
+        {% endfor %}
+
+
+        <section class="background-gray">
+            {% include "_includes/components/content-block" with {
+                'eyebrow': pageData.cb2_blockEyebrow,
+                'title': pageData.cb2_blockTitle,
+                'body': pageData.cb2_blockCopy,
+                'image': blockImage.url,
+                'buttons': buttonArray,
+                'reverse': true,
+                'imgColumns': 'col-12 col-md-6'
+            } %}
+
+
+            {% set blockImage = pageData.cb3_blockImage.one() %}
+
+            <div class="content-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="bounding-box">
+                                <div class="row mobile-row-reverse">
+                                    <div class="col-12 col-md-3 content-block-image">
+                                        <figure>
+                                            <img src="{{ blockImage.url }}" alt="{{ pageData.cb3_blockTitle }}" title="{{ pageData.cb3_blockTitle }}" class="responsive">
+                                        </figure>
+                                    </div>
+                                    <div class="col align-self-center">
+                                        <h5>{{ pageData.cb3_blockEyebrow }}</h5>
+                                        <h2>{{ pageData.cb3_blockTitle }}</h2>
+                                        {{ pageData.cb3_blockCopy|raw }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include '_includes/sections/contact-us' %}
+    </main>
+{% endblock %}

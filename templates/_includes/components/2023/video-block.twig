@@ -1,0 +1,21 @@
+
+{% set classList = "content-block" %}
+{% set rowClassList = "row align-items-center" %}
+
+{% if classes is defined %}
+    {% set classList = classList ~ ' ' ~ classes %}
+{% endif %}
+
+{% if reverse is defined %}
+    {% set rowClassList = rowClassList ~ ' ' ~ 'flex-row-reverse' %}
+{% endif %}
+
+<div class="{{ classList }}">
+    <div class="container p-0">
+        <div class="{{ rowClassList }}">
+            <div class="{{ imgColumns }} content-block-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VdzUAwZCIVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+{#
+    NOTE:
+    Remove timestamp before going live
+#}
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="/bin/styles/index.css?r={{ date().timestamp }}" rel="stylesheet">
+<style>
+    body {
+        font-family: "Foundry Context",Arial,Verdana,Helvetica,sans-serif !important;
+        font-size: 1rem !important;
+        font-weight: 300 !important;
+    }
+    
+    .wizard>.content>.title, .tabcontrol>.content>.title {
+        position: absolute;
+        left: -999em;
+    }
+
+    .steps {
+        display: none;
+    }
+
+    input, textarea {
+        width: auto;
+    }
+
+    .error {
+        color: red;
+    }
+
+    span.error-placeholder {
+        display: inline-block;
+    }
+
+    #example-basic .actions a {
+        background: #0C3458;
+        color: #fff;
+        padding: 10px 25px;
+        display: inline-block;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #example-basic .actions ul {
+        padding-left: 0px;
+    }
+
+    #example-basic input[type="text"] {
+        padding: 5px 10px;
+    }
+
+    #example-basic input[type="radio"] {
+        margin-bottom: 0px;
+    }
+
+    .text-liwa-blue {
+        color: #0C3458 !important;
+    }
+
+    .btn-liwa {
+        font-size: 12px !important;
+        /* border-radius: 0px !important; */
+    }
+
+    .btn-liwa-blue {
+        background-color: #0C3458 !important;
+        border-color: #0C3458 !important;
+        color: #fff !important;
+    }
+
+    h2 {
+        font-size: 1.75rem !important;
+        font-weight: 700 !important;
+    }
+
+    .leadspace:after, .leadspace::after {
+        opacity: 0.4;
+    }
+
+    [data-template='home-page-v2'] .leadspace:before, [data-template='home-page-v2'] .leadspace::before {
+        background-image: url('/bin/images/shutterstock_1128415070-min.jpg');
+    }
+</style>

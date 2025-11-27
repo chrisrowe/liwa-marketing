@@ -1,0 +1,22 @@
+
+{% set buttonMatrix = contactUsBlock.blockButtons.type('button').all() %}
+{% set blockImage = contactUsBlock.blockImage.one() %}
+
+{%
+    set mockdata = {
+        'title': contactUsBlock.blockTitle,
+        'body': contactUsBlock.blockCopy,
+        'image': blockImage.url,
+        'buttons': [
+            {
+                'cta': buttonMatrix[0].buttonCTA,
+                'url': "https://calendly.com/liwa-investment-team/book-a-call"
+            }
+        ],
+        'imgColumns': 'col-12 col-md-5'
+    }
+%}
+
+<section class="contact-us hasBackground" data-section="contact-us">
+    {% include "_includes/components/content-block" with mockdata %}
+</section>

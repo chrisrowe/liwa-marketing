@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: b0f738d0-7ebf-4d99-83e6-980279e625f0
+handle: leadertitle
+instructions: ''
+name: LeaderTitle
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

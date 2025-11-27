@@ -1,0 +1,22 @@
+<div class="list-block">
+    <div class="content">
+        {% if h4 is defined %}
+            <h4>{{ h4 }}</h4>
+        {% endif %}
+        {% if body is defined %}
+            <p>{{ body }}</p>
+        {% endif %}
+        {% if entries is defined %}
+            <ul>
+                {% for entry in entries %}
+                    <li>
+                        <figure>
+                            <img src="{{ entry.icon }}" alt="{{ entry.title }} icon" title="{{ entry.title }} icon" />
+                        </figure>
+                        <h2>{{ entry.title }}</h2>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</div>

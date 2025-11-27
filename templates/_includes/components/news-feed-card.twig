@@ -1,0 +1,15 @@
+
+{# <pre class="dump">{{ dump(post) }}</pre> #}
+
+<div class="col-6">
+    <a href="{{ post.url }}" class="news-feed-card">
+        {% set featureImage = post.featureImage.one() %}
+        {% if featureImage %}
+            <img src="{{ image.getUrl({ width: 300, height: 300}) }}" title="{{ image.title }}" />
+        {% endif %}
+        <h3>{{ post.title }}</h3>
+        <time>{{ post.postDate | date("d M Y") }}</time>
+        <p>{{ post.excerpt }}</p>
+        <p class="border-link">Read more &#8594;</p>
+    </a>
+</div>

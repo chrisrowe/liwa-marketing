@@ -1,0 +1,53 @@
+/*
+ *
+ * Mixins
+ *
+ */
+
+@mixin hundo-percent {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin hundo-vdubs {
+    width: 100vw;
+    height: 100vh;
+}
+
+@mixin font-family {
+    font: {
+        family: $fontFamily;
+        size: 1rem;
+        weight: $fontWeightRegular;
+    }
+}
+
+@mixin font-family-alt {
+    font: {
+        family: $fontFamilyAlt;
+        size: 1rem;
+        weight: 500;
+    }
+}
+
+@mixin full-bleed {
+    display: block;
+    @include hundo-percent;
+    position: absolute; top: 0; left: 0;
+}
+
+@mixin background-image {
+    background: {
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin border-link {
+    display: inline-block;
+    color: $blue;
+    font-weight: 700;
+    border-bottom: 3px solid $gold;
+    padding-bottom: 1px;
+}

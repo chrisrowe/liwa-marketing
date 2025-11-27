@@ -1,0 +1,54 @@
+fieldLayouts:
+  4ef7f101-35db-4330-85ce-5779abb327e6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3f49d3bb-32cf-4724-b563-bc299c94cfae
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9590c46d-e48f-40d1-a97f-cab4bb412d89
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7d8438b7-5fe7-49c9-a480-997da75bedd5
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f58587e8-196e-4976-a525-d7586beea5ac
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 80280ad6-a833-4e00-bf9c-daba7ea8c304
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+handle: companyInformation
+name: 'Company information'

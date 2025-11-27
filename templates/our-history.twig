@@ -1,0 +1,43 @@
+{% extends "_includes/layouts/index" %}
+
+{% set sectionName = 'our-history' %}
+
+{% set entries = craft.entries().section('history').type('history') %}
+{% set entry = craft.entries().section('history').type('leadspace').one() %}
+
+{% block masthead %}
+    {% include "_includes/sections/masthead" with { 'signpost': sectionName } %}
+{% endblock %}
+
+{% block main %}
+    {# <pre class="dump">{{ dump(leadspace) }}</pre> #}
+    <main class="main" data-template="{{ sectionName }}">
+        {% include '_includes/sections/leadspace' with {
+            'title': entry.pageTitle,
+            'body': entry.subtitle
+        } %}
+        <section class="background-gray" data-section="liwa-timeline">
+            {% include '_includes/components/section-title' with {
+                'title': 'A solid foundation for growth',
+                'body': 'Liwa follows the same principles today that our founders have employed for more than 30 years to preserve and grow the capital of sovereign wealth funds and endowments.'
+            } %}
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="timeline">
+                            {% for entry in entries %}
+                                <div class="entry  {{ entry.historyEventType }}">
+                                    <time> {{ entry.historyyear }}</time>
+                                    <div class="description {{ entry.historyTimelineDirection }}">
+                                        <p> {{ entry.excerpt }}</p>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include '_includes/sections/contact-us' %}
+    </main>
+{% endblock %}

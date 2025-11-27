@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        {# <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B16N7S9560"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-B16N7S9560');
+        </script> #}
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KT5MX78W');</script>
+        <!-- End Google Tag Manager -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+        <meta name="referrer" content="origin-when-cross-origin" />
+        <meta name="facebook-domain-verification" content="ow8idk2qr062xv3lyb18lahtpgcjuy" />
+        <title>{{ siteName }}</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="home" href="" />
+        <link rel="canonical" href="">
+        {# <script src="https://kit.fontawesome.com/744ed22726.js" crossorigin="anonymous"></script> #}
+        <script src="https://kit.fontawesome.com/f1668bd941.js" crossorigin="anonymous"></script>
+        {% include '_includes/document/2023/styles' %}
+        {% include '_includes/document/analytics' %}
+        {# <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> #}
+        <style>
+            @media only screen and (max-width: 1199px) {
+                .navigation section .nav {
+                    margin: 0 0rem !important;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+                .navigation section .nav {
+                    margin: 0 1rem !important;
+                }
+            }
+        </style>
+
+        {# Google fonts #}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        {% set url = craft.app.request.url %}
+        {% if url == "/" %}
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+            <script>
+                var chart5;
+                var chart10;
+                var chart15;
+                var chart20;
+                var chart25;
+                var chart30;
+
+                $(document).ready(function() {
+                    const ctx5 = document.getElementById('5-years-chart');
+                    const ctx10 = document.getElementById('10-years-chart');
+                    const ctx15 = document.getElementById('15-years-chart');
+                    const ctx20 = document.getElementById('20-years-chart');
+                    const ctx25 = document.getElementById('25-years-chart');
+                    const ctx30 = document.getElementById('30-years-chart');
+
+                    chart5 = new Chart(ctx5, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Venture Capital', 'Public Market Equivalent', 'Private Equity', 'Public Market Equivalent'],
+                            datasets: [
+                                {
+                                    label: '5 Year Return',
+                                    data: [20.4, 7.3, 16.1, 7.5],
+                                    backgroundColor: [
+                                        "#AF814C",
+                                        "#AAAAAA",
+                                        "#233757",
+                                        "#AAAAAA"
+                                    ],
+                                }
+                            ]
+                        },
+                        plugins: [ChartDataLabels],
+                        options: {
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    max: 30,
+                                    beginAtZero: true,
+                                    ticks: {
+                                        // Include a dollar sign in the ticks
+                                        callback: function(value, index, ticks) {
+                                            return value + "%";
+                                        }
+                                    }
+                                }
+                            },
+                            layout: {
+                                padding: {
+                                    top: 60,
+                                    left: 0,
+                                    bottom: 0,
+                                    right: 0
+                                }
+                            },
+                            plugins: {
+                                datalabels: {
+                                    anchor: 'end',
+                                    align: 'top',
+                                    formatter: function(value, context) {
+                                        return value + "%"
+                                    },
+                                    font: {
+                                        weight: 'bold',
+                                        size: 16
+                                    }
+                                },
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    });
+
+                    chart10 = new Chart(ctx10, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Venture Capital', 'Public Market Equivalent', 'Private Equity', 'Public Market Equivalent'],
+                            datasets: [
+                                {
+                                    label: '10 Year Return',
+                                    data: [18.7, 8.7, 15.2, 8.6],
+                                    backgroundColor: [
+                                        "#AF814C",
+                                        "#AAAAAA",
+                                        "#233757",
+                                        "#AAAAAA"
+                                    ],
+                                }
+                            ]
+                        },
+                        plugins: [ChartDataLabels],
+                        options: {
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    max: 30,
+                                    beginAtZero: true,
+                                    ticks: {
+                                        // Include a dollar sign in the ticks
+                                        callback: function(value, index, ticks) {
+                                            return value + "%";
+                                        }
+                                    }
+                                }
+                            },
+                            layout: {
+                                padding: {
+                                    top: 60,
+                                    left: 0,
+                                    bottom: 0,
+                                    right: 0
+                                }
+                            },
+                            plugins: {
+                                datalabels: {
+                                    anchor: 'end',
+                                    align: 'top',
+                                    formatter: function(value, context) {
+                                        return value + "%"
+                                    },
+                                    font: {
+                                        weight: 'bold',
+                                        size: 16
+                                    }
+                                },
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    });
+
+                    chart15 = new Chart(ctx15, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Venture Capital', 'Public Market Equivalent', 'Private Equity', 'Public Market Equivalent'],
+                            datasets: [
+                                {
+                                    label: '15 Year Return',
+                                    data: [13.2, 6.7, 11.2, 7.1],
+                                    backgroundColor: [
+                                        "#AF814C",
+                                        "#AAAAAA",
+                                        "#233757",
+                                        "#AAAAAA"
+                                    ],
+                                }
+                            ]
+                        },
+                        plugins: [ChartDataLabels],
+                        options: {
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    max: 30,
+                                    beginAtZero: true,
+                                    ticks: {
+                                        // Include a dollar sign in the ticks
+                                        callback: function(value, index, ticks) {
+                                            return value + "%";
+                                        }
+                                    }
+                                }
+                            },
+                            layout: {
+                                padding: {
+                                    top: 60,
+                                    left: 0,
+                                    bottom: 0,
+                                    right: 0
+                                }
+                            },
+                            plugins: {
+                                datalabels: {
+                                    anchor: 'end',
+                                    align: 'top',
+                                    formatter: function(value, context) {
+                                        return value + "%"
+                                    },
+                                    font: {
+                                        weight: 'bold',
+                                        size: 16
+                                    }
+                                },
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    });
+
+                    chart20 = new Chart(ctx20, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Venture Capital', 'Public Market Equivalent', 'Private Equity', 'Public Market Equivalent'],
+                            datasets: [
+                                {
+                                    label: '20 Year Return',
+                                    data: [12.6, 9.0, 15.0, 8.4],
+                                    backgroundColor: [
+                                        "#AF814C",
+                                        "#AAAAAA",
+                                        "#233757",
+                                        "#AAAAAA"
+                                    ],
+                                }
+                            ]
+                        },
+                        plugins: [ChartDataLabels],
+                        options: {
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    max: 30,
+                                    beginAtZero: true,
+                                    ticks: {
+                                        // Include a dollar sign in the ticks
+                                        callback: function(value, index, ticks) {
+                                            return value + "%";
+                                        }
+                                    }
+                                }
+                            },
+                            layout: {
+                                padding: {
+                                    top: 60,
+                                    left: 0,
+                                    bottom: 0,
+                                    right: 0
+                                }
+                            },
+                            plugins: {
+                                datalabels: {
+                                    anchor: 'end',
+                                    align: 'top',
+                                    formatter: function(value, context) {
+                                        return value + "%"
+                                    },
+                                    font: {
+                                        weight: 'bold',
+                                        size: 16
+                                    }
+                                },
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    });
+
+                    chart25 = new Chart(ctx25, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Venture Capital', 'Public Market Equivalent', 'Private Equity', 'Public Market Equivalent'],
+                            datasets: [
+                                {
+                                    label: '25 Year Return',
+                                    data: [19.4, 7.0, 13.0, 6.8],
+                                    backgroundColor: [
+                                        "#AF814C",
+                                        "#AAAAAA",
+                                        "#233757",
+                                        "#AAAAAA"
+                                    ],
+                                }
+                            ]
+                        },
+                        plugins: [ChartDataLabels],
+                        options: {
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    max: 30,
+                                    beginAtZero: true,
+                                    ticks: {
+                                        // Include a dollar sign in the ticks
+                                        callback: function(value, index, ticks) {
+                                            return value + "%";
+                                        }
+                                    }
+                                }
+                            },
+                            layout: {
+                                padding: {
+                                    top: 60,
+                                    left: 0,
+                                    bottom: 0,
+                                    right: 0
+                                }
+                            },
+                            plugins: {
+                                datalabels: {
+                                    anchor: 'end',
+                                    align: 'top',
+                                    formatter: function(value, context) {
+                                        return value + "%"
+                                    },
+                                    font: {
+                                        weight: 'bold',
+                                        size: 16
+                                    }
+                                },
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    });
+
+                    chart30 = new Chart(ctx30, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Venture Capital', 'Public Market Equivalent', 'Private Equity', 'Public Market Equivalent'],
+                            datasets: [
+                                {
+                                    label: '30 Year Return',
+                                    data: [25.4, 7.7, 14.1, 7.1],
+                                    backgroundColor: [
+                                        "#AF814C",
+                                        "#AAAAAA",
+                                        "#233757",
+                                        "#AAAAAA"
+                                    ],
+                                }
+                            ]
+                        },
+                        plugins: [ChartDataLabels],
+                        options: {
+                            maintainAspectRatio: false,
+                            scales: {
+                                y: {
+                                    max: 30,
+                                    beginAtZero: true,
+                                    ticks: {
+                                        // Include a dollar sign in the ticks
+                                        callback: function(value, index, ticks) {
+                                            return value + "%";
+                                        }
+                                    }
+                                }
+                            },
+                            layout: {
+                                padding: {
+                                    top: 60,
+                                    left: 0,
+                                    bottom: 0,
+                                    right: 0
+                                }
+                            },
+                            plugins: {
+                                datalabels: {
+                                    anchor: 'end',
+                                    align: 'top',
+                                    formatter: function(value, context) {
+                                        return value + "%"
+                                    },
+                                    font: {
+                                        weight: 'bold',
+                                        size: 16
+                                    }
+                                },
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    });
+                });
+            </script>
+        {% endif %}
+
+        <script>
+            function openCity(evt, cityName, key) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent-test");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+
+                if (key == 5) {
+                    chart5.reset()
+                    chart5.update()
+                }
+
+                if (key == 10) {
+                    chart10.reset()
+                    chart10.update()
+                }
+
+                if (key == 15) {
+                    chart15.reset()
+                    chart15.update()
+                }
+
+                if (key == 20) {
+                    chart20.reset()
+                    chart20.update()
+                }
+
+                if (key == 25) {
+                    chart25.reset()
+                    chart25.update()
+                }
+
+                if (key == 30) {
+                    chart30.reset()
+                    chart30.update()
+                }
+            }
+
+            $(document).ready(function() {
+                // Get all elements with class="tabcontent" and hide them
+                tabcontents = document.getElementsByClassName("tabcontent-test");
+                for (i = 0; i < tabcontents.length; i++) {
+                    tabcontents[i].style.display = "none";
+                }
+
+                document.getElementById("5-years").style.display = "block";
+
+                {% if craft.request.getParam('open') %}
+                    var open = '{{ craft.request.getParam('open') }}'
+                    $('#' + open).addClass("active no-scroll")
+                {% endif %}
+
+                $('#member-right').on( "click", function() {
+                    if ($(':animated').length) { return false; }
+
+                    var left = $('#scroll-member').scrollLeft()
+                    $('#scroll-member').animate({scrollLeft: (left + 385)}, 500)
+                })
+
+                $('#member-left').on( "click", function() {
+                    if ($(':animated').length) { return false; }
+
+                    var left = $('#scroll-member').scrollLeft()
+                    $('#scroll-member').animate({scrollLeft: (left - 385)}, 500)
+                })
+
+                $('#history-right').on( "click", function() {
+                    if ($(':animated').length) { return false; }
+
+                    var left = $('#scroll-history').scrollLeft()
+                    $('#scroll-history').animate({scrollLeft: (left + 258)}, 500)
+                })
+
+                $('#history-left').on( "click", function() {
+                    if ($(':animated').length) { return false; }
+
+                    var left = $('#scroll-history').scrollLeft()
+
+                    $('#scroll-history').animate({scrollLeft: (left - 258)}, 500)
+                })
+
+                $('.why-liwa-link').on('click', function(e){
+                    //e.preventDefault();
+
+                    $('html, body').animate({
+                        scrollTop:$('#why-liwa').offset().top
+                    },'slow');
+                });
+
+                $('.why-liwa-link-m').on('click', function(e){
+                    //e.preventDefault();
+
+                    $('body').removeClass("no-scroll navigation-active")
+                    $('#hamburger').removeClass("active")
+                    $('#navigation.mobile').removeClass("active")
+
+                    $('html, body').animate({
+                        scrollTop:$('#why-liwa').offset().top
+                    },'slow');
+                });
+
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {myFunction()};
+
+                // Get the header
+                var header = document.getElementById("liwaHeader");
+                var stickyHeader = document.getElementById("liwaStickyHeader");
+
+                // Get the offset position of the navbar
+                var sticky = header.offsetTop;
+
+                // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                    if (window.pageYOffset > sticky) {
+                        header.classList.add("d-none");
+                        stickyHeader.classList.remove("d-none");
+                    } else {
+                        header.classList.remove("d-none");
+                        stickyHeader.classList.add("d-none");
+                    }
+                }
+            })
+        </script>
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT5MX78W"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->

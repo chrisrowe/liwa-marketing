@@ -1,0 +1,118 @@
+
+.leadspace {
+    position: relative;
+    padding: {
+        top: calculateRem(94);
+        bottom: calculateRem(70);
+    }
+    @include media-breakpoint-down(sm) {
+        // padding-bottom: 2rem;
+    }
+
+    &:before,
+    &::before,
+    &:after,
+    &::after {
+        @include full-bleed;
+        content: "";
+    }
+
+    &:before,
+    &::before {
+        z-index: 5;
+        background: {
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+    }
+
+    &:after,
+    &::after {
+        z-index: 10;
+        background: rgb(12,52,88);
+        background: linear-gradient(45deg, rgba(12,52,88,1) 0%, rgba(153,227,231,.8) 100%);
+        opacity: 0.72;
+    }
+    .container {
+        position: relative; z-index: 20;
+    }
+
+    * {
+        color: $white;
+    }
+
+    h2 {
+        font: {
+            family: $fontFamily;
+            size: calculateRem(28);
+            weight: 400;
+        }
+        line-height: 1.2;
+    }
+
+    [data-template='home-page'] & {
+        padding-top: calculateRem(150);
+        @include media-breakpoint-down(sm) {
+            padding-top: 10rem;
+        }
+        &:before,
+        &::before {
+            background-image: url('/bin/images/home/Liwa-img-Home-2880x900.jpg')
+        }
+
+        h1 {
+            font-size: calculateRem(54);
+            @include media-breakpoint-down(sm) {
+                font-size: 2.5rem;
+                line-height: 1.2666666667;
+            }
+        }
+
+        h2 {
+            @include media-breakpoint-down(sm) {
+                font-size: 1.5rem;
+                line-height: 1.2666666667;
+            }
+        }
+
+    }
+
+    [data-template='our-approach'] & {
+        &:before,
+        &::before {
+            background-image: url('/bin/images/approach/Liwa-img-Approach-2880x666.jpg')
+        }
+    }
+
+    [data-template='our-history'] & {
+        &:before,
+        &::before {
+            background-image: url('/bin/images/history/Liwa-img-History-2880x666.jpg')
+        }
+    }
+
+    [data-template='our-team'] & {
+        &:before,
+        &::before {
+            background-image: url('/bin/images/team/Liwa-img-Team-2880x666.jpg')
+        }
+    }
+
+    [data-template='news'] & {
+        &:before,
+        &::before {
+            background-image: url('/bin/images/news/Liwa-img-News-2880x666.jpg')
+        }
+    }
+
+    [data-template='contact'] & {
+        &:before,
+        &::before {
+            background-image: url('/bin/images/contact/Liwa-img-Contact-2880x666.jpg')
+        }
+    }
+
+}
+
+

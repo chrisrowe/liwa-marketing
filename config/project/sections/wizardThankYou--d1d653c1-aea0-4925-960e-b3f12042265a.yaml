@@ -1,0 +1,23 @@
+enableVersioning: true
+handle: wizardThankYou
+name: 'Wizard Thank You'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a0170692-9bc8-4fc5-8c51-66a642669e82:
+    enabledByDefault: true
+    hasUrls: true
+    template: wizard/thankyou
+    uriFormat: wizard-thank-you
+type: single

@@ -1,0 +1,23 @@
+
+.social-toolbar {
+
+    p {
+        // margin-bottom: .5rem;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+
+        a {
+            display: block;
+            margin-right: 1rem;
+
+            svg {
+                font-size: 1.75rem;
+            }
+
+        }
+    }
+
+}

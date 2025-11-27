@@ -1,0 +1,23 @@
+enableVersioning: true
+handle: newContact
+name: 'New Contact'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a0170692-9bc8-4fc5-8c51-66a642669e82:
+    enabledByDefault: true
+    hasUrls: true
+    template: new-contact
+    uriFormat: new-contact
+type: single

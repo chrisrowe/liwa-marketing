@@ -1,0 +1,29 @@
+{#
+
+    List component
+    Types: Icon, Number Vertical, Number Horizontal, Number Horizontal Alt
+
+#}
+
+{% set listItemAOS = "" %}
+
+<ul class="list {{ type }} hasBG">
+    {% for entry in entries %}
+        {% if type == 'number-horizontal-alt' %}
+            <li data-aos="fade-up">
+                <!-- <figure>
+                    <img src="/images/ui/BP-icon_green-arrow.svg" alt="" title="" />
+                </figure> -->
+        {% else %}
+            <li>
+                <p>{{ loop.index <= 9 ? '0' ~ loop.index : loop.index }}</p>
+        {% endif %}
+            {% if entry.title is defined %}
+                <h2>{{ entry.title }}</h2>
+            {% endif %}
+            {% if entry.body is defined %}
+                <p>{{ entry.body }}</p>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

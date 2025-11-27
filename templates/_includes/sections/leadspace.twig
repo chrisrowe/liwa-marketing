@@ -1,0 +1,21 @@
+<section data-section="leadspace" class="leadspace">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <hgroup>
+                    <h1>{{ title|raw }}</h1>
+                    {% if body is defined %}
+                        <h2>{{ body }}</h2>
+                    {% endif %}
+                </hgroup>
+            </div>
+        </div>
+        {% if sectionName == 'home-page-v2' %}
+            <div class="row">
+                <div class="col-12 col-md-9">
+                    <a href="/contact" style="float:right;"><button type="button" class="btn btn-light btn-lg rounded-pill">Contact Us</button></a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</section>

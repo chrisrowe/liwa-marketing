@@ -1,0 +1,59 @@
+dateModified: 1760523897
+email:
+  fromEmail: investorportal@liwacap.com
+  fromName: 'Liwa Capital website'
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    encryptionMethod: tls
+    host: smtp.office365.com
+    password: LiwaAGG@2023
+    port: '587'
+    timeout: '10'
+    useAuthentication: '1'
+    username: investorportal@liwacap.com
+  transportType: craft\mail\transportadapters\Smtp
+plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from Liwa Capital website'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: info@liwacap.com
+  contact-form-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  mailgun:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  simple-sharing:
+    edition: standard
+    enabled: false
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: 'Liwa Capital'
+  retryDuration: null
+  schemaVersion: 3.5.13
+  timeZone: Asia/Dubai
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

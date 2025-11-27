@@ -1,0 +1,33 @@
+contentColumnType: string
+fieldGroup: a7ea0964-404e-4464-8409-1925c5d98cf9
+handle: historyEventType
+instructions: 'Larger or small circle'
+name: 'History event type'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Small
+        -
+          - value
+          - small
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Large
+        -
+          - value
+          - large
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

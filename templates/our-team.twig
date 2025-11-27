@@ -1,0 +1,41 @@
+{% extends "_includes/layouts/index" %}
+
+{% set sectionName = 'our-team' %}
+
+{% set entries = craft.entries().section('team').type('team') %}
+{% set entry = craft.entries().section('team').type('leadspace').one() %}
+
+
+{% block masthead %}
+    {% include "_includes/sections/masthead" with { 'signpost': sectionName } %}
+{% endblock %}
+
+{% block main %}
+    <main class="main" data-template="{{ sectionName }}">
+        {% include '_includes/sections/leadspace' with {
+            'title': entry.pageTitle,
+            'body': entry.subtitle
+        } %}
+        <section data-section="team-members">
+            <div class="container">
+                <div class="row">
+                    {% for entry in entries %}
+                        {% include '_includes/components/team-member.twig' with {
+                            'entry': entry,
+                            'index': loop.index
+                        } %}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        {% include '_includes/sections/contact-us' %}
+    </main>
+    <sections data-section="team-modals">
+        {% for entry in entries %}
+            {% include '_includes/components/modal' with {
+                'entry': entry,
+                'index': loop.index
+            } %}
+        {% endfor %}
+    </section>
+{% endblock %}

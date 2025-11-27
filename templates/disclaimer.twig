@@ -1,0 +1,28 @@
+{% extends "_includes/layouts/2023/index" %}
+
+{% set sectionName = 'copy-page' %}
+
+{% set slug = 'disclaimer' in entry.title|lower ? 'disclaimer' : ''  %}
+
+{% block masthead %}
+	{% include "_includes/sections/2023/masthead" with {
+        'signpost': '',
+        'isNewsEntry': true
+    } %}
+{% endblock %}
+
+{% block main %}
+    <main class="main {{ slug }}" data-template="{{ sectionName }}">
+
+        <section class="copy-page" data-section="copy-page">
+            {% include '_includes/components/section-title' with { 'title': 'Website Disclaimer' } %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-11">
+                        {{ entry.bodyCopy }}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

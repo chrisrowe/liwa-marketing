@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: a7ea0964-404e-4464-8409-1925c5d98cf9
+handle: historyyear
+instructions: ''
+name: 'History year'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

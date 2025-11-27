@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 24ff0072-4ed1-4870-82c2-ff7ea9c68730
+handle: authors
+instructions: ''
+name: Authors
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_authors}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

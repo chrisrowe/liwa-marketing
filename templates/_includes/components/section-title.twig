@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="section-title">
+                {% if eyebrow is defined %}
+                    <h5>{{ eyebrow }}</h5>
+                {% endif %}
+                <div class="rule"></div>
+                <h2>{{ title }}</h2>
+                {% if date is defined %}
+                    <time>{{ date }}</time>
+                {% endif %}
+                {% if body is defined %}
+                    <p>{{ body }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,171 @@
+{% set classList = "header" %}
+
+{% if isNewsEntry is defined %}
+    {% set classList = classList ~ ' news-entry' %}
+{% endif %}
+
+<header class="{{ classList }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-3 col-lg-3">
+                <a href="/" class="flex-link">
+                    <figure class="logo masthead large">
+                        <img src="/bin/images/ui/logo-2023.png" alt="" title="" style="width:100%"/>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-6 col-md-9 col-lg-9 investor-login">
+                <a href="javascript:;" id="hamburger" class="hamburger" role="button">
+                    <span>Mobile navigation</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-full" id="liwaHeader" style="background-color:#0C3458">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 align-self-center justify-content-between">
+                            <div class="d-none d-lg-block">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="desktop-navigation" style="justify-content: flex-start;">
+                                            {# <div class="dn-item flex-center">
+                                                <a href="">What We Do</a>
+                                            </div> #}
+                                            <div class="dn-item flex-middle" style="padding-left:0">
+                                                <a href="https://liwacap.com/meet-the-team">Meet the Team</a>
+                                            </div>
+                                            <div class="dn-item flex-middle">
+                                                <a href="https://liwacap.com#why-liwa" class="why-liwa-link">Why Liwa</a>
+                                            </div>
+                                            <div class="dn-item flex-middle">
+                                                <a href="https://liwacap.com/insights" class="insights-link">Insights</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="desktop-navigation">
+                                            <div class="dn-item flex-middle">
+                                                <a href="https://investor.selbylanedigital.com/liwa-capital/onboarding" class="get-started-link">
+                                                    <button type="button" class="btn-liwa">GET STARTED</button>
+                                                </a>
+                                            </div>
+                                            <div class="dn-item flex-middle" style="padding-right:0">
+                                                <a href="https://calendly.com/liwa-investment-team/book-a-call" target="_blank" class="get-started-link" style="width:100%">
+                                                    <button type="button" class="btn-liwa-alt" style="width:100%">BOOK A MEETING</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-navigation d-lg-none">
+                                {# <a href="https://investor.selbylanedigital.com/liwa-capital/onboarding" class="get-started-link-m">
+                                    <button type="button" class="btn-liwa">GET STARTED</button>
+                                </a> #}
+
+                                {# <a href="javascript:;" id="hamburger" class="hamburger" role="button">
+                                    <span>Mobile navigation</span>
+                                </a> #}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-full sticky d-none shadow" id="liwaStickyHeader" style="background-color:#0C3458; padding:10px 0">
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 align-self-center justify-content-between d-none d-lg-block">
+                            <div class="">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="desktop-navigation" style="justify-content: flex-start;">
+                                            {# <div class="dn-item flex-center">
+                                                <a href="">What We Do</a>
+                                            </div> #}
+                                            <div class="dn-item flex-middle" style="padding-left:0">
+                                                <img src="/bin/images/ui/logo-2023.png" alt="" title="" style="width:100%; max-width:175px"/>
+                                            </div>
+                                            {# <div class="dn-item flex-middle">
+                                                <a href="https://liwacap.com/meet-the-team">Meet the Team</a>
+                                            </div>
+                                            <div class="dn-item flex-middle">
+                                                <a href="https://liwacap.com#why-liwa" class="why-liwa-link">Why Liwa</a>
+                                            </div>
+                                            <div class="dn-item flex-middle">
+                                                <a href="https://liwacap.com/insights" class="insights-link">Insights</a>
+                                            </div> #}
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="desktop-navigation">
+                                            <div class="dn-item flex-middle">
+                                                <a href="https://investor.selbylanedigital.com/liwa-capital/onboarding" class="get-started-link">
+                                                    <button type="button" class="btn-liwa">GET STARTED</button>
+                                                </a>
+                                            </div>
+                                            <div class="dn-item flex-middle" style="padding-right:0">
+                                                <a href="https://calendly.com/liwa-investment-team/book-a-call" target="_blank" class="get-started-link" style="width:100%">
+                                                    <button type="button" class="btn-liwa-alt" style="width:100%">BOOK A MEETING</button>
+                                                </a>
+                                            </div>
+                                            <div class="dn-item flex-middle investor-login">
+                                                <a href="https://investors.liwacap.com/login">Investor Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-lg-none">
+                            <img src="/bin/images/ui/logo-2023.png" alt="" title="" style="width:100%; max-width:175px; float:left;"/>
+                            <div class="mobile-navigation" style="height:100%">
+                                <a href="javascript:;" id="hamburger2" class="hamburger" role="button">
+                                    <span>Mobile navigation</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% set classes = "mobile" %}
+
+    {% set classList = "navigation" %}
+
+    {% if classes is defined %}
+        {% set classList = classList ~ ' ' ~ classes %}
+    {% endif %}
+
+    <nav id="navigation" class="{{ classList }}" role="navigation" aria-label="Main">
+        <section>
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} " href="https://liwacap.com/meet-the-team">
+                <span>Meet the Team</span>
+            </a>
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} why-liwa-link-m" href="https://liwacap.com#why-liwa">
+                <span>Why Liwa</span>
+            </a>
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} insights-link-m" href="https://liwacap.com/insights">
+                <span>Insights</span>
+            </a>
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} investor-login-link-m" href="https://investors.liwacap.com/login">
+                <span>Investor Login <i class="fa-solid fa-right-to-bracket"></i></span>
+            </a>
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} get-started-link-m" href="https://investor.selbylanedigital.com/liwa-capital/onboarding">
+                <span>GET STARTED</span>
+            </a>
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} book-a-meeting-link-m" href="https://calendly.com/liwa-investment-team/book-a-call">
+                <span>BOOK A MEETING</span>
+            </a>
+        </section>
+    </nav>
+</header>

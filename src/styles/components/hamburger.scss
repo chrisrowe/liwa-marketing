@@ -1,0 +1,27 @@
+
+.hamburger{
+    display: none; width: 2rem; height: 2rem;
+    background: {
+        image: url('/bin/images/ui/Liwa-mobile-nav-hamburger.svg');
+        position: center;
+        repeat: no-repeat;
+        size: contain;
+    }
+    span{
+        display: none;
+    }
+}
+
+body{
+    &.no-scroll{
+        .hamburger{
+            background-image: url('/bin/images/ui/Liwa-mobile-nav-close.svg');
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .hamburger{
+        display: inline-block;
+    }
+}

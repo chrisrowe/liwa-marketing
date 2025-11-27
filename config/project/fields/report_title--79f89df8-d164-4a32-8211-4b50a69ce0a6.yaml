@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: b0bdde0d-3b85-4ea4-b950-e830f0c6b16b
+handle: report_title
+instructions: ''
+name: Title
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

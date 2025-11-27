@@ -1,0 +1,68 @@
+
+.contact-us {
+
+    position: relative;
+
+    &:before,
+    &::before,
+    &:after,
+    &::after {
+        @include full-bleed;
+        content: "";
+    }
+
+    &:before,
+    &::before {
+        z-index: 10;
+        background: {
+            image: url('/bin/images/ui/Liwa-pattern-CTA.svg');
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+    }
+
+    &:after,
+    &::after {
+        z-index: 5;
+        background: rgb(47,128,177);
+        background: linear-gradient(45deg, #154979 0%, #2F80B1 100%);
+    }
+
+    .content-block {
+        position: relative; z-index: 20;
+
+        h2{
+            @include media-breakpoint-down(sm) {
+                text-align: center;
+            }
+        }
+
+        p{
+            font-size: 26px;
+            @include media-breakpoint-down(md) {
+                font-size: 18px;
+            }
+            @include media-breakpoint-down(sm) {
+                text-align: center;
+            }
+        }
+
+        .bttn {
+            color: $blue;
+            background: $white;
+        }
+    }
+
+    * {
+        color: $white;
+    }
+
+    .bttn-bank {
+        @include media-breakpoint-down(sm) {
+            justify-content: center;
+        }
+    }
+
+
+}

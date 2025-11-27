@@ -1,0 +1,5 @@
+
+@function calculateRem($size) {
+    $remSize: $size / $baseSpacingSize;
+    @return #{$remSize}rem;
+}

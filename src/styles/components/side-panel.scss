@@ -1,0 +1,82 @@
+
+
+.side-panel {
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 1rem;
+    }
+
+    h5 {
+        font-size: 12px;
+        letter-spacing: 2pt;
+        padding-top: 9px;
+        border-top: 1px solid $black;
+    }
+
+    &.share {
+        h5 {
+            margin: 0
+        }
+    }
+
+}
+
+.authors {
+    padding-bottom: 49px;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 24px;
+    }
+    .author{
+        margin-bottom: 14px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        p{
+            font-size: 16px;
+            padding-bottom: 0;
+            @include media-breakpoint-down(sm) {
+                font-size: .85rem;
+            }
+        }
+    }
+}
+
+
+.social-share {
+    display: flex;
+    justify-content: space-between;
+    a {
+        display: inline-block; width: 48px; height: 48px;
+        background: {
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        };
+
+        span {
+            display: none;
+        }
+
+
+        &.linkein {
+            background-image: url('/bin/images/ui/Liwa-icon-LI-navy.svg');
+        }
+
+        &.instagram {
+            background-image: url('/bin/images/ui/Liwa-icon-IG-navy.svg');
+        }
+
+        &.twitter {
+            background-image: url('/bin/images/ui/Liwa-icon-Twitter-navy.svg');
+        }
+
+        &.facebook {
+            background-image: url('/bin/images/ui/Liwa-icon-FB-navy.svg');
+        }
+
+
+
+    }
+}

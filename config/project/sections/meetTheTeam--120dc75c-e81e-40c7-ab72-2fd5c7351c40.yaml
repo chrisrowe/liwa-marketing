@@ -1,0 +1,26 @@
+enableVersioning: true
+handle: meetTheTeam
+name: 'Meet the Team'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a0170692-9bc8-4fc5-8c51-66a642669e82:
+    enabledByDefault: true
+    hasUrls: true
+    template: meet-the-team
+    uriFormat: 'meet-the-team/{slug}'
+structure:
+  maxLevels: null
+  uid: 1875e4e5-6269-4f89-aff3-b35fc6a1be50
+type: structure

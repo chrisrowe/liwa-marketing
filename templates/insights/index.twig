@@ -1,0 +1,44 @@
+{% extends "_includes/layouts/2023/index" %}
+
+{% set sectionName = 'insights' %}
+{% set posts = craft.entries.section(sectionName).all() %}
+
+{% block masthead %}
+    {% include "_includes/sections/2023/masthead" with { 'signpost': sectionName } %}
+{% endblock %}
+
+{% block main %}
+
+    <main class="main" data-template="{{ sectionName }}">
+
+        <section data-section="leadspace" class="leadspace">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <hgroup>
+                            <h1>The Latest From Liwa</h1>
+                            {# {% if body is defined %}
+                                <h2>{{ body }}</h2>
+                            {% endif %} #}
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-section="news-feed">
+            <div class="container">
+                <div class="row">
+                    {% for post in posts %}
+                        {% include '_includes/components/news-card' with {
+                            'post':  post,
+                            'columns': 'col-12 col-md-6 col-lg-4' }
+                        %}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        {# {% include '_includes/sections/contact-us' %} #}
+    </main>
+{% endblock %}

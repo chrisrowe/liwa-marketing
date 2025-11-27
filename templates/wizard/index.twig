@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B16N7S9560"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-B16N7S9560');
+        </script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+        <meta name="referrer" content="origin-when-cross-origin" />
+        <title>{{ siteName }}</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="facebook-domain-verification" content="ow8idk2qr062xv3lyb18lahtpgcjuy" />
+        <link rel="home" href="" />
+        <link rel="canonical" href="">
+        <script src="https://kit.fontawesome.com/744ed22726.js" crossorigin="anonymous"></script>
+        {% include '_includes/document/styles' %}
+        {% include '_includes/document/analytics' %}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=6Leu__8pAAAAAPtWXvwE8anGulJKDyK3sLaq-F-M"></script>
+        <script>
+            function onClick() {
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6Leu__8pAAAAAPtWXvwE8anGulJKDyK3sLaq-F-M', {action: 'submit'}).then(function(token) {
+                        $('#gRecaptchaResponse').val(token)
+
+                        $('#wizard').submit();
+                    });
+                });
+            }
+        </script>
+    </head>
+    <body>
+    {% include "_includes/sections/masthead" with { 'signpost': sectionName } %}
+    <main class="main">
+        <section data-section="leadspace" class="leadspace">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <hgroup>
+                            <h1>Indication of Interest</h1>
+                        </hgroup>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form id="wizard" class="mt-0" method="post" action="https://liwacap.com/submit.php">
+                        <input id="gRecaptchaResponse" type="hidden" name="g-recaptcha-response" value="" />
+                        <div id="example-basic">
+                            <h3>General Disclaimer</h3>
+                            <section>
+                                <h2 class="fw-bold">General Disclaimer</h2>
+                                <div style="max-height:500px; overflow-y:scroll; padding: 20px 30px; border: 1px solid #ddd; margin-bottom: 40px;">
+                                    <p class="fs-6">The information contained herein does not constitute, and does not form part of, an offering document and must not be construed or relied upon as such. This is not an offer to sell, or a solicitation of an offer to purchase, any shares or interests in any fund (each such fund, a “Fund” and together the “Funds”) advised by Liwa Capital Advisors (“Liwa Capital”). Any such offer or solicitation may be made via, and in accordance with, the terms of the application or subscription documents, prospectus, private placement or offering memorandum or other offering document (each, a “PPM”) and the constitutional documents of each Fund. You have received access to this portal only at the invitation of Liwa Capital.</p>
+                                    <p class="fs-6">The Funds are not guaranteed, the Funds’ interests’ value change frequently and past performance may not be repeated or indicative of future results. Please see “Risk Factors” in the relevant PPM for more details.</p>
+                                    <p class="fs-6">Liwa Capital is not presently registered with the U.S. Securities and Exchange Commission or any other regulatory authority as an investment adviser, the Funds are not U.S. registered investment companies, and the interests in the Funds have not been registered under the Securities Act of 1933, as amended.</p>
+                                    <p class="fs-6">The information contained herein is intended for persons to whom such information can be lawfully communicated without any approval being obtained for any other action being taken to permit such communication where approval or other action for such purpose is required. The information herein is not directed at and is not for use by any other person and it may not be lawful to access the information in certain jurisdictions.  Potential investors should obtain and carefully review the applicable PPM, which contains important information concerning the applicable Fund and the risks and expenses associated with such an investment. Any person subscribing for shares or interests in a Fund must be able to bear the risks involved and must meet that fund’s suitability requirements. Some or all alternative investment programs may not be suitable for certain investors. No assurance can be given that a Fund’s investment objectives will be achieved.</p>
+                                    <p class="fs-6">This is not intended to constitute legal, tax or accounting advice, or investment recommendations. Additional information is available from Liwa Capital upon request. None of Liwa Capital, the Funds, nor any of their affiliates is acting as your adviser or agent. Prior to making any investment decision based on the information contained in the PPM, you should determine, without reliance upon Liwa Capital, the Funds or any of their affiliates, the economic risks and merits, as well as the legal, tax and accounting consequences of such investment decision. Information herein (some of which has been obtained from third parties without verification) is believed by Liwa Capital to be reliable. However, none of Liwa Capital, the Funds or their affiliates, or any of their directors, officers, employees, representatives or agents make any representation of any kind, including as to the accuracy, completeness or correctness of the information herein or accept any liability or loss arising from its use or otherwise arising in connection therewith.</p>
+                                    <p class="fs-6">Any comparative indices are provided for general information purposes only and do not necessarily reflect the investment objective, general composition or risk profile of a Fund. Certain information provided has been obtained from third party sources or compiled based on information provided by third party sources. Liwa Capital does not guarantee their accuracy or completeness. Performance numbers are neither audited nor independently verified. Potential investors should read the applicable PPM and the constitutional documents of such Fund in order to fully understand all of the important terms regarding an investment in a Fund.</p>
+                                </div>
+                                <h6>Have you read and acknowledged the above?</h6>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="accept" value="yes" id="disclaimer" required>
+                                        <label class="form-check-label" for="disclaimer">
+                                            Yes, I have read and acknowledged.
+                                        </label>
+                                    </div>
+                                    <div class="error-placeholder"></div>
+                                </div>
+                            </section>
+                            <h3>General Information</h3>
+                            <section>
+                                <h2>General Information</h2>
+                                <p>The information you submit in the following questionnaire will be recorded and used to evaluate your suitability for the provision of additional information regarding Liwa Capital and its Funds. Upon successful completion of this questionnaire and approval by Liwa Capital, you will be sent a username and password in order to log into the website and view further information.</p>
+                                <p>1. Do you believe that you have the sufficient knowledge and experience in financial and business matters to evaluate the merits and risks of investment in private investment funds?</p>
+                                <p>2. Are you interested in acquiring these interests for investment purposes only, not as a nominee or financial intermediary and not with a view to or for the resale or distribution thereof, in whole or in part?</p>
+                                <p>3. Do you understand that you may lose all or substantially all of your investment in a Fund (or Funds)?</p>
+                                <p>4. If a natural person, are you over the age of 18?</p>
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input general-information" type="radio" name="info" value="yes-to-all" required>
+                                        <label class="form-check-label">
+                                            Yes to all
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input general-information" type="radio" name="info" value="no-to-any" required>
+                                        <label class="form-check-label">
+                                            No to any
+                                        </label>
+                                    </div>
+                                    <div class="error-placeholder"></div>
+                                </div>
+                            </section>
+                            <h3>Investor Type</h3>
+                            <section>
+                                <h2>Investor Type</h2>
+                                <p>What type of investor are you? Please choose one of the following:</p>
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input investor-type" type="radio" name="type" value="EU" required>
+                                        <label class="form-check-label">
+                                            European investor
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input investor-type" type="radio" name="type" value="US" required>
+                                        <label class="form-check-label">
+                                            US investor
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input investor-type" type="radio" name="type" value="Offshore" required>
+                                        <label class="form-check-label">
+                                            Offshore investor (Non-U.S. and non-European investors or U.S. tax-exempt investors only)
+                                        </label>
+                                    </div>
+                                    <div class="error-placeholder"></div>
+                                </div>
+                            </section>
+                            <h3>Offshore Accreditation</h3>
+                            <section>
+                                <h2>Offshore Accreditation</h2>
+                                <p>The services, investments or funds specified on this Website are not available or appropriate for sale or use in any jurisdiction where such activity is prohibited by law. It is the responsibility of any person who accesses this Website to confirm that they are not subject to any local requirements that prohibit or restrict their investment in Liwa Capital Funds.</p>
+                                <h6>Have you read and acknowledged the foregoing?<h6>
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input offshore" type="radio" name="offshore" value="Yes" required>
+                                        <label class="form-check-label">
+                                            Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input offshore" type="radio" name="offshore" value="No" required>
+                                        <label class="form-check-label">
+                                            No
+                                        </label>
+                                    </div>
+                                    <div class="error-placeholder"></div>
+                                </div>
+                            </section>
+                            <h3>European Investors</h3>
+                            <section>
+                                <h2>European Investors</h2>
+                                <h4>Professional Investors</h4>
+                                <p>Are you a “professional investor” as defined in the European Union's Alternative Investment Fund Managers Directive (the “AIFMD”)? Please click <a href="https://covariancecapital.alpha.investorbridge.com/pages/8364" target="_blank">here</a> to view the AIFMD.</p>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input professional-investor" type="radio" name="professional-investor" value="Yes" required>
+                                        <label class="form-check-label">
+                                            Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input professional-investor" type="radio" name="professional-investor" value="No" required>
+                                        <label class="form-check-label">
+                                            No
+                                        </label>
+                                    </div>
+                                    <div class="error-placeholder"></div>
+                                </div>
+                                <h4>Professional Investor Determination</h4>
+                                <p>Which category of investor qualifies you as a “professional investor” as defined in the AIFMD? Check the one which applies to you</p>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input professional-investor-type" type="radio" name="professional-investor-type" value="1" required>
+                                        <label class="form-check-label">
+                                            An entity authorized or regulated by a European member state to operate in the financial markets which is one of the following entities as defined in the Markets in Financial Instruments Directive (“MiFID”) (please click here to view MiFID):
+                                            <div class="ms-4">
+                                                a. Credit institution;<br>b. Investment firm;<br>c. Other authorized or regulated financial institution;<br>d. Insurance company;<br>e. Collective investment scheme or management company of such scheme;<br>f. Pension fund or management company of such fund;<br>g. Commodity or commodity derivatives dealer;<br>h. Local, or;<br>i. Other institutional investor
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input professional-investor-type" type="radio" name="professional-investor-type" value="2" required>
+                                        <label class="form-check-label">
+                                            A large undertaking meeting two of the following size requirements on a company basis:
+                                            <div class="ms-4">
+                                                a. Balance Sheet Total: EUR 20,000,000.00<br>b. Net Turnover: EUR 10,000,000.00<br>c. Own Funds: EUR 2,000,000.00
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input professional-investor-type" type="radio" name="professional-investor-type" value="3" required>
+                                        <label class="form-check-label">
+                                            One of the following entities or organizations:
+                                            <div class="ms-4">
+                                                a. National or regional government,<br>b. Public body that manages public debt,<br>c. Central Bank, and;<br>d. International or supranational organization (e.g. the World Bank, the International Monetary Fund, the European Central Bank, the European Investment Bank and other similar international organizations)
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input professional-investor-type" type="radio" name="professional-investor-type" value="4" required>
+                                        <label class="form-check-label">
+                                            An institutional investor whose main activity is to invest in financial instruments, including an entity which is dedicated to the securitization of assets or other financing transactions
+                                        </label>
+                                    </div>
+
+                                    <div class="error-placeholder"></div>
+                                </div>
+                                <p>Liwa Capital does not intend to actively market the Funds to investors in the European Union or the European Economic Area and, therefore Liwa Capital is outside the scope of the AIFMD and is not subject to the requirements of the AIFMD. Consequently, information contained on this Website may not include information that Liwa Capital would have been required to provide to prospective investors, or to otherwise make public, had Liwa Capital been required to comply with the AIFMD.</p>
+                            </section>
+                            <h3>US Investor Accreditation</h3>
+                            <section>
+                                <h2>US Investor Accreditation</h2>
+                                <p>Are you a US tax exempt entity?</p>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor" type="radio" name="us-investor" value="Yes" required>
+                                        <label class="form-check-label">
+                                            Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor" type="radio" name="us-investor" value="No" required>
+                                        <label class="form-check-label">
+                                            No
+                                        </label>
+                                    </div>
+                                    <div class="error-placeholder"></div>
+                                </div>
+                                <p>Please select the following definitions that apply to the potential investor:</p>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="1" required>
+                                        <label class="form-check-label">
+                                            I am a natural person with net worth (or joint net worth with my spouse or spousal equivalent) in excess of US$1,000,000. As used herein, “net worth” means the excess of total assets at fair market value, including homes (but excluding the value of the investor’s primary residence), home furnishings and automobiles, over total liabilities. The value of the primary residence is calculated by subtracting from the estimated fair market value of the property the amount of debt secured by the property, up to the estimated fair market value of the property.  Indebtedness secured by the residence in excess of the value of the primary residence and indebtedness secured by the primary residence that is incurred less than sixty (60) days prior to the Subscriber’s purchase of an Interest (other than in connection with the acquisition of the primary residence) should be considered a liability and deducted from the investor’s net worth.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="2" required>
+                                        <label class="form-check-label">
+                                            I am a natural person with individual income in excess of US$200,000 in each of the two most recent years or joint income with my spouse or spousal equivalent in excess of US$300,000 in each of those years and have a reasonable expectation of reaching the same income level in the current year.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="3" required>
+                                        <label class="form-check-label">
+                                            I am a natural person who has in good standing, certain professional certifications, designations or other credentials issued by an accredited educational institution (e.g., Series 7, Series 65 or Series 82 license), which the Securities and Exchange Commission may designate from time to time by order.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="4" required>
+                                        <label class="form-check-label">
+                                            I am a “family office (as defined under the Investment Advisers Act of 1940, as amended (the “Advisers Act”) (1) with assets under management in excess of $5,000,000, (2) not formed for the specific purpose of acquiring the Interests offered and (3) whose prospective investment is directed by a person with such knowledge and experience in financial and business matters that the family office is capable of evaluating merits and risks of the prospective investment or (b) a “family client” (as defined under the Advisers Act) of such family office whose investment is directed by such family office.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="5" required>
+                                        <label class="form-check-label">
+                                            I am a large institutional investor or organization with total assets in excess of US$5,000,000 but not formed for the specific purpose of acquiring securities managed by Liwa Capital.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="6" required>
+                                        <label class="form-check-label">
+                                            I am a bank, insurance company, registered investment company, business development company, or small business investment company.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="7" required>
+                                        <label class="form-check-label">
+                                            I am an investment adviser registered pursuant to section 203 of the Advisers Act or registered pursuant to the laws of a state; any investment adviser relying on the exemption from registering with the Commission under section 203(l) or (m) of the Advisers Act.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="8" required>
+                                        <label class="form-check-label">
+                                            I am an employee benefit plan, within the meaning the Employee Retire Income Security Act, and a bank, insurance company, or registered investment adviser makes the investment decisions, and the plan has total assets in excess of $5,000,000.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="9" required>
+                                        <label class="form-check-label">
+                                            I am a charitable organization, corporation, limited liability company or partnership with assets exceeding $5,000,000 that was not formed for the specific purpose of purchasing the securities offered.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="10" required>
+                                        <label class="form-check-label">
+                                            I am a trust with assets in excess of $5,000,000, not formed to acquire the securities offered, whose purchases a sophisticated person makes.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="11" required>
+                                        <label class="form-check-label">
+                                            I am an entity in which all of the owners are accredited investors.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-investor-definition" type="radio" name="us-investor-definition" value="12" required>
+                                        <label class="form-check-label">
+                                            None of the above.
+                                        </label>
+                                    </div>
+                                    <div class="error-placeholder"></div>
+                                </div>
+                                <p>I certify that I am a US qualified purchaser:</p>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input us-purchaser" type="radio" name="us-purchaser" value="1" required>
+                                        <label class="form-check-label">
+                                            I am a natural person that holds (individually or in joint ownership with my spouse) not less than US$5,000,000 in investments.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-purchaser" type="radio" name="us-purchaser" value="2" required>
+                                        <label class="form-check-label">
+                                            I am a company that owns not less than US$5,000,000 in investments that is owned directly or indirectly by or for two natural persons who are not related as siblings or spouse (or former spouse), or direct lineal descendants by birth or adoption, spouses of such persons, the estates of such persons, or foundations, charitable organizations, or trusts established by or for the benefit of such persons.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-purchaser" type="radio" name="us-purchaser" value="3" required>
+                                        <label class="form-check-label">
+                                            I am any trust not covered by the preceding option and was not formed for the specific purpose of acquiring the securities managed by Liwa Capital, as to which the trustee or other person authorized to make decisions with respect to the trust, and each settler or other person who has contributed assets to the trust, is a person described in the two preceding (or the following) option(s).
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-purchaser" type="radio" name="us-purchaser" value="4" required>
+                                        <label class="form-check-label">
+                                            I am a person who, acting for my own account or the accounts of other qualified purchasers, who in the aggregate owns and invests on a discretionary basis, not less than US$25,000,000 in investments.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input us-purchaser" type="radio" name="us-purchaser" value="5" required>
+                                        <label class="form-check-label">
+                                            None of the above.
+                                        </label>
+                                    </div>
+                                    <div class="error-placeholder"></div>
+                                </div>
+                            </section>
+                            <!-- <h3>Fund Interest</h3>
+                            <section>
+                                <p>Indicate which funds you are interested in (select all that apply):</p>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input fund-interest" type="checkbox" name="fund-interest[]" value="Liwa Core" required>
+                                        <label class="form-check-label">
+                                            Liwa Core
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input fund-interest" type="checkbox" name="fund-interest[]" value="Liwa Future Generation" required>
+                                        <label class="form-check-label">
+                                            Liwa Future Generation
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input fund-interest" type="checkbox" name="fund-interest[]" value="Liwa Ventures" required>
+                                        <label class="form-check-label">
+                                            Liwa Ventures
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input fund-interest" type="checkbox" name="fund-interest[]" value="Liwa Private Equity" required>
+                                        <label class="form-check-label">
+                                            Liwa Private Equity
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input fund-interest" type="checkbox" name="fund-interest[]" value="Liwa Core Global" required>
+                                        <label class="form-check-label">
+                                            Liwa Core Global
+                                        </label>
+                                    </div>
+                                    <div class="error-placeholder"></div>
+                                </div>
+                            </section> -->
+                            <h3>User Identification Form</h3>
+                            <section>
+                                <h2>User Identification Form</h2>
+                                <p>Check which of the following applies to the Subscriber:</p>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input subscriber-type" type="radio" name="subscriber-type" value="Natural person" required>
+                                        <label class="form-check-label">
+                                            Natural Person
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input subscriber-type" type="radio" name="subscriber-type" value="Entity" required>
+                                        <label class="form-check-label">
+                                            Entity
+                                        </label>
+                                    </div>
+                                    <div class="error-placeholder"></div>
+                                </div>
+                                <p>Please fill out the following user identification form: <small class="fs-6">(<span class="text-danger">*</span> Denotes Required Field)</small></p>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div>
+                                            <label class="form-label"><span class="text-danger">*</span> First name</label>
+                                            <input type="text" class="form-control" name="firstname" id="firstname" required>
+                                        </div>
+                                        <div class="error-placeholder"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div>
+                                            <label class="form-label"><span class="text-danger">*</span> Last name</label>
+                                            <input type="text" class="form-control" name="lastname" id="lastname" required>
+                                        </div>
+                                        <div class="error-placeholder"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="form-label">Legal entity name (for non-individual)</label>
+                                        <input type="text" class="form-control" name="legalentityname" id="legalentityname">
+                                        <div class="error-placeholder"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6"></div>
+                                    <div class="col-12 mb-3">
+                                        <div>
+                                            <label class="form-label"><span class="text-danger">*</span> Street address</label>
+                                            <input type="text" class="form-control" name="address" id="address" required>
+                                        </div>
+                                        <div class="error-placeholder"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div>
+                                            <label class="form-label"><span class="text-danger">*</span> City</label>
+                                            <input type="text" class="form-control" name="city" id="city" required>
+                                        </div>
+                                        <div class="error-placeholder"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div>
+                                            <label class="form-label"><span class="text-danger">*</span> State/province</label>
+                                            <input type="text" class="form-control" name="state" id="state" required>
+                                        </div>
+                                        <div class="error-placeholder"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div>
+                                            <label class="form-label"><span class="text-danger">*</span> Country</label>
+                                            <input type="text" class="form-control" name="country" id="country" required>
+                                        </div>
+                                        <div class="error-placeholder"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div>
+                                            <label class="form-label"><span class="text-danger">*</span> Zip/postal code</label>
+                                            <input type="text" class="form-control" name="zip" id="zip" required>
+                                        </div>
+                                        <div class="error-placeholder"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div>
+                                            <label class="form-label"><span class="text-danger">*</span> Email address</label>
+                                            <input type="email" class="form-control" name="email" id="email" required email>
+                                        </div>
+                                        <div class="error-placeholder"></div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="form-label">Telephone</label>
+                                        <input type="text" class="form-control" name="telephone" id="telephone">
+                                        <div class="error-placeholder"></div>
+                                    </div>
+                                </div>
+                            </section>
+                            <h3>Thank You Page</h3>
+                            <section>
+                                <p>Thank you for your interest! Your submission has been sent. We will be in touch soon.</p>
+                                <p>Follow us on social media</p>
+                            </section>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    {% include '_includes/sections/footer' %}
+
+        {% include '_includes/document/scripts' %}
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js" integrity="sha512-bE0ncA3DKWmKaF3w5hQjCq7ErHFiPdH2IGjXRyXXZSOokbimtUuufhgeDPeQPs51AI4XsqDZUK7qvrPZ5xboZg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var wizard = $('#wizard').validate({
+                    errorPlacement: function(error, element) {
+                        error.appendTo( element.parent("div").parent("div").children(".error-placeholder") );
+                    }
+                });
+
+                $("#example-basic").steps({
+                    headerTag: "h3",
+                    bodyTag: "section",
+                    transitionEffect: "fade",
+                    enableKeyNavigation: false,
+                    forceMoveForward: true,
+                    autoFocus: true,
+                    onStepChanging: function (event, currentIndex, newIndex) {
+                        switch(currentIndex) {
+                            case 0:
+                                if (wizard.element('#disclaimer')) {
+                                    return true;
+                                }
+                                return false;
+                            break;
+                            case 1:
+                                if (wizard.element('.general-information')) {
+                                    if ('no-to-any' === $('input[name="info"]:checked').val()) {
+                                        $("#example-basic").steps("remove", 2);
+                                        $("#example-basic").steps("remove", 2);
+                                        $("#example-basic").steps("remove", 2);
+                                        $("#example-basic").steps("remove", 2);
+                                        //$("#example-basic").steps("remove", 2);
+                                    }
+
+                                    return true;
+                                }
+                                return false;
+                            break;
+                            case 2:
+                                if ('no-to-any' === $('input[name="info"]:checked').val()) {
+                                    wizard.element('.subscriber-type');
+                                    wizard.element('#firstname');
+                                    wizard.element('#lastname');
+                                    wizard.element('#address');
+                                    wizard.element('#city');
+                                    wizard.element('#state');
+                                    wizard.element('#zip');
+                                    wizard.element('#country');
+                                    wizard.element('#email');
+
+                                    if (wizard.element('.subscriber-type') && wizard.element('#firstname') && wizard.element('#lastname') && wizard.element('#address') && wizard.element('#city') && wizard.element('#state') && wizard.element('#zip') && wizard.element('#country') && wizard.element('#email')) {
+                                        //$('#wizard').submit();
+                                        onClick()
+                                        //return true;
+                                    }
+                                } else {
+                                    if (wizard.element('.investor-type')) {
+                                        var investorType = $('input[name="type"]:checked').val();
+
+                                        switch(investorType) {
+                                            case "EU":
+                                                $("#example-basic").steps("remove", 3);
+                                                $("#example-basic").steps("remove", 4);
+                                            break;
+                                            case "US":
+                                                $("#example-basic").steps("remove", 3);
+                                                $("#example-basic").steps("remove", 3);
+                                            break;
+                                            case "Offshore":
+                                                $("#example-basic").steps("remove", 4);
+                                                $("#example-basic").steps("remove", 4);
+                                            break;
+                                        }
+
+                                        return true;
+                                    }
+                                }
+
+                                return false;
+                            break;
+                            case 3:
+                                var investorType = $('input[name="type"]:checked').val();
+
+                                switch(investorType) {
+                                    case "EU":
+                                        wizard.element('.professional-investor');
+                                        wizard.element('.professional-investor-type');
+
+                                        if (wizard.element('.professional-investor') && wizard.element('.professional-investor-type')) {
+                                            return true;
+                                        }
+                                        alert("Please make a selection on the required fields.");
+                                        return false;
+                                    break;
+                                    case "US":
+                                        wizard.element('.us-investor');
+                                        wizard.element('.us-investor-definition');
+                                        wizard.element('.us-purchaser');
+
+                                        if (wizard.element('.us-investor') && wizard.element('.us-investor-definition') && wizard.element('.us-purchaser')) {
+                                            return true;
+                                        }
+                                        alert("Please make a selection on the required fields.");
+                                        return false;
+                                    break;
+                                    case "Offshore":
+                                        if (wizard.element('.offshore')) {
+                                            /* if ('No' === $('input[name="offshore"]:checked').val()) {
+                                                $("#example-basic").steps("remove", 4);
+                                            } */
+
+                                            return true;
+                                        }
+
+                                        return false;
+                                    break;
+                                }
+                            break;
+                            case 4:
+                                wizard.element('.subscriber-type');
+                                wizard.element('#firstname');
+                                wizard.element('#lastname');
+                                wizard.element('#address');
+                                wizard.element('#city');
+                                wizard.element('#state');
+                                wizard.element('#zip');
+                                wizard.element('#country');
+                                wizard.element('#email');
+
+                                if (wizard.element('.subscriber-type') && wizard.element('#firstname') && wizard.element('#lastname') && wizard.element('#address') && wizard.element('#city') && wizard.element('#state') && wizard.element('#zip') && wizard.element('#country') && wizard.element('#email')) {
+                                    //send email
+
+                                    //$('#wizard').submit();
+                                    onClick()
+                                }
+
+                                return false;
+                            break;
+                            /* case 5:
+                                wizard.element('.subscriber-type');
+                                wizard.element('#firstname');
+                                wizard.element('#lastname');
+                                wizard.element('#address');
+                                wizard.element('#city');
+                                wizard.element('#state');
+                                wizard.element('#zip');
+                                wizard.element('#country');
+                                wizard.element('#email');
+
+                                if (wizard.element('.subscriber-type') && wizard.element('#firstname') && wizard.element('#lastname') && wizard.element('#address') && wizard.element('#city') && wizard.element('#state') && wizard.element('#zip') && wizard.element('#country') && wizard.element('#email')) {
+                                    //send email
+                                    return true;
+                                }
+                                return false;
+                            break; */
+                        }
+                    },
+                });
+            });
+        </script>
+    </body>
+</html>
+

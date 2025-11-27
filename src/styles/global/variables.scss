@@ -1,0 +1,17 @@
+
+// Variables
+
+$baseSpacingSize: 16;
+$baseFontSize: 16px;
+
+$fontFamily: 'Foundry Context', Arial, Verdana, Helvetica, sans-serif;
+$fontFamilyAlt: 'urw-antiqua', Georgia, 'Times New Roman', Times, serif;
+
+$fontWeightRegular: 300;
+$fontWeightMedium: 500;
+$fontWeightDemi: 600; // This value can also be used for URW Antiqua Bold
+$fontWeightBold: 700;
+
+$transitionDuration: 256ms;
+$transitionTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+$transitionDelay: 1s;

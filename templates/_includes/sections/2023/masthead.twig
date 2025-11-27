@@ -1,0 +1,78 @@
+{% set classList = "header" %}
+
+{% if isNewsEntry is defined %}
+    {% set classList = classList ~ ' news-entry' %}
+{% endif %}
+
+<header class="{{ classList }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-5 col-md-3 col-lg-4">
+                <a href="/" class="flex-link">
+                    <figure class="logo masthead large">
+                        <img src="/bin/images/ui/logo-2023.png" alt="" title="" />
+                    </figure>
+                </a>
+            </div>
+            <div class="col-7 col-md-9 col-lg-8 align-self-center justify-content-between">
+                <div class="row d-none d-lg-block">
+                    <div class="col-12 investor-login">
+                        <a href="https://investors.liwacap.com/login" style="margin-bottom:35px">Investor Login <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <div class="col-12">
+                        <div class="desktop-navigation">
+                            {# <div class="dn-item flex-center">
+                                <a href="">What We Do</a>
+                            </div> #}
+                            <div class="dn-item flex-center">
+                                <a href="https://liwacap.com/meet-the-team">Meet the Team</a>
+                            </div>
+                            <div class="dn-item flex-center">
+                                <a href="https://liwacap.com#why-liwa" class="why-liwa-link">Why Liwa</a>
+                            </div>
+                            <div class="dn-item flex-center">
+                                <a href="https://liwacap.com/insights" class="insights-link">Insights</a>
+                            </div>
+                            <div class="dn-item" style="padding-right:0">
+                                <a href="https://investor.selbylanedigital.com/liwa-capital/onboarding" class="get-started-link">
+                                    <button type="button" class="btn-liwa">GET STARTED</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-navigation d-lg-none">
+                    <a href="https://investor.selbylanedigital.com/liwa-capital/onboarding" class="get-started-link-m">
+                        <button type="button" class="btn-liwa">GET STARTED</button>
+                     </a>
+
+                    <a href="javascript:;" id="hamburger" class="hamburger" role="button">
+                        <span>Mobile navigation</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% set classes = "mobile" %}
+
+    {% set classList = "navigation" %}
+
+    {% if classes is defined %}
+        {% set classList = classList ~ ' ' ~ classes %}
+    {% endif %}
+
+    <nav id="navigation" class="{{ classList }}" role="navigation" aria-label="Main">
+        <section>
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} " href="https://liwacap.com/meet-the-team">
+                <span>Meet the Team</span>
+            </a>
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} why-liwa-link-m" href="https://liwacap.com#why-liwa">
+                <span>Why Liwa</span>
+            </a>
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} insights-link-m" href="https://liwacap.com/insights">
+                <span>Insights</span>
+            </a>
+        </section>
+    </nav>
+</header>

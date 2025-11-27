@@ -1,0 +1,83 @@
+{% extends "_includes/layouts/index" %}
+
+{% set sectionName = 'our-approach' %}
+
+{% set pageData = craft.entries().section('approach').one() %}
+{% set sideInformation = pageData.sideInformation.type('information').all() %}
+{% set iconContentBlock = pageData.iconContentBlock.type('contentBlock').all() %}
+
+{% block masthead %}
+    {% include "_includes/sections/masthead" with { 'signpost': sectionName } %}
+{% endblock %}
+
+{% block main %}
+    <main class="main" data-template="{{ sectionName }}">
+
+        {% include '_includes/sections/leadspace' with {
+            'title': pageData.pageTitle,
+            'body': pageData.subtitle
+        } %}
+
+        <section data-section="our-approach">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-8">
+                        <h2>{{ pageData.blockTitle }}</h2>
+                        {{ pageData.blockCopy|raw }}
+                         <h2>{{ pageData.cb2_blockTitle }}</h2>
+                        {{ pageData.cb2_blockCopy|raw }}
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <figure class="stat-image">
+                            <img src="/bin/images/home/Liwa-img-NYC-1020x800.jpg" alt="" title="" class="responsive" />
+                        </figure>
+                        <div class="stats-card">
+                             {% for entry in sideInformation %}
+                                <div class="stats">
+                                    <h4>{{ entry.informationTitle }}</h4>
+                                    <p>{{ entry.informationCopy }}</p>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="background-gray" data-section="liwa-funds">
+            {% include '_includes/components/section-title' with {
+                'title': 'Our Investment Principles'
+            } %}
+            <div class="container">
+                <div class="row">
+                    {% for entry in iconContentBlock %}
+                        <div class="col-12 col-lg-4">
+                            {% include '_includes/components/icon-card' with entry %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        {% set blockImage = pageData.cb3_blockImage.one() %}
+        {% set buttonMatrix = pageData.cb3_blockButtons.type('button').all() %}
+        {% set buttonArray = [] %}
+        {% for button in buttonMatrix %}
+            {% set buttonArray = buttonArray|merge([{
+                cta: button.buttonCTA,
+                url: button.buttonURL,
+            }]) %}
+        {% endfor %}
+        <section data-section="history-of-excellence">
+            {% include "_includes/components/content-block" with {
+                'title': pageData.cb3_blockTitle,
+                'body': pageData.cb3_blockCopy,
+                'image': blockImage.url,
+                'buttons': buttonArray,
+                'reverse': true,
+                'imgColumns': 'col-12 col-md-6'
+            } %}
+        </section>
+
+        {% include '_includes/sections/contact-us' %}
+    </main>
+{% endblock %}

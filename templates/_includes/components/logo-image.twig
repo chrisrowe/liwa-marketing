@@ -1,0 +1,11 @@
+{% set classList = "logo-card" %}
+
+{% if classes is defined %}
+    {% set classList = classList ~ ' ' ~ classes %}
+{% endif %}
+
+<div class="{{ classList }}">
+    <figure class="logo-image">
+        <img src="{{ image }}" alt="{{ name }} Logo" title="{{ name }} Logo" />
+    </figure>
+</div>

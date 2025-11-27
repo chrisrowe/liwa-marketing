@@ -1,0 +1,162 @@
+{% extends "_includes/layouts/index" %}
+
+{% set sectionName = 'home-page-v2' %}
+
+{% set posts = craft.entries.section('insights').limit(3) %}
+{% set pageData = craft.entries().section('homeV2').one() %}
+
+{% block masthead %}
+    {% include "_includes/sections/masthead" with {
+        'signpost': '',
+        'logoSize': 'large'
+    } %}
+{% endblock %}
+
+{% block main %}
+
+    <main class="main" data-template="{{ sectionName }}">
+
+        {% include '_includes/sections/leadspace' with {
+            'title': pageData.pageTitle,
+            'body': pageData.subtitle
+        } %}
+
+        {% set blockImage = pageData.blockImage.one() %}
+        {% set buttonMatrix = pageData.blockButtons.type('button').all() %}
+        {% set buttonArray = [] %}
+        {% for button in buttonMatrix %}
+            {% set buttonArray = buttonArray|merge([{
+                cta: button.buttonCTA,
+                url: button.buttonURL,
+            }]) %}
+        {% endfor %}
+
+        <section class="background-gray" data-section="who-we-are">
+            {% include "_includes/components/video-block" with {
+                'eyebrow': pageData.blockEyebrow,
+                'title': pageData.blockTitle,
+                'body': pageData.blockCopy,
+                'image': blockImage.url,
+                'buttons': buttonArray,
+                'reverse': true,
+                'imgColumns': 'col-12 col-md-6'
+            } %}
+        </section>
+
+
+
+
+        {% set blockImage = pageData.cb2_blockImage.one() %}
+        {% set buttonMatrix = pageData.cb2_blockButtons.type('button').all() %}
+        {% set buttonArray = [] %}
+        {% for button in buttonMatrix %}
+            {% set buttonArray = buttonArray|merge([{
+                cta: button.buttonCTA,
+                url: button.buttonURL,
+            }]) %}
+        {% endfor %}
+
+
+        <section class="background-gray">
+            {% include "_includes/components/content-block" with {
+                'eyebrow': pageData.cb2_blockEyebrow,
+                'title': pageData.cb2_blockTitle,
+                'body': pageData.cb2_blockCopy,
+                'image': blockImage.url,
+                'buttons': buttonArray,
+                'imgColumns': 'col-12 col-md-6'
+            } %}
+        </section>
+
+        {% set blockImage = pageData.cb3_blockImage.one() %}
+        {% set buttonMatrix = pageData.cb3_blockButtons.type('button').all() %}
+        {% set buttonArray = [] %}
+        {% for button in buttonMatrix %}
+            {% set buttonArray = buttonArray|merge([{
+                cta: button.buttonCTA,
+                url: button.buttonURL,
+            }]) %}
+        {% endfor %}
+
+
+        <section class="background-gray">
+            {% include "_includes/components/content-block" with {
+                'eyebrow': pageData.cb3_blockEyebrow,
+                'title': pageData.cb3_blockTitle,
+                'body': pageData.cb3_blockCopy,
+                'image': blockImage.url,
+                'buttons': buttonArray,
+                'reverse': true,
+                'imgColumns': 'col-12 col-md-6'
+            } %}
+        </section>
+
+        <div class="container-fluid mb-5" style="background:url('https://liwacap.com/bin/images/Tech-banner.jpg') no-repeat center bottom; background-size:cover;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-4 px-4 text-center py-5">
+                                <p class="h1 text-light mb-2" style="font-size:3rem">30+</p>
+                                <p class="h3 text-light mb-0" style="font-size:2.5rem">Years</p>
+                            </div>
+                            <div class="col-12 col-md-4 px-4 text-center py-5">
+                                <p class="h1 text-light mb-2" style="font-size:3rem">100+</p>
+                                <p class="h3 text-light mb-0" style="font-size:2.5rem">World Class Managers</p>
+                            </div>
+                            <div class="col-12 col-md-4 px-4 text-center py-5">
+                                <p class="h1 text-light mb-2" style="font-size:3rem">400+</p>
+                                <p class="h3 text-light mb-0" style="font-size:2.5rem">Funds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section data-section="recent-news">
+            {% include '_includes/components/section-title' with {
+                'eyebrow': 'Insights',
+                'title': 'The latest from Liwa'
+            } %}
+
+            <div class="container">
+                <div class="row mobile-carousel">
+                    {% for post in posts %}
+                        {% include '_includes/components/news-card' with {
+                            'post':  post,
+                            'columns': 'col-10 col-md-6 col-lg-4' }
+                        %}
+                    {% endfor %}
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="bttn-bank">
+                            {% include '_includes/components/button' with {
+                                'cta': 'Insights',
+                                'url': '/insights'
+                            } %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid mb-5" style="background:url('https://liwacap.com/bin/images/shutterstock_2137359367-min.jpg') no-repeat center bottom; background-size:cover;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 px-4 text-center py-5">
+                                <h3 class="h1 text-light mb-5">Receive Monthly Market Updates</h3>
+                                <a href="https://liwacap.com/market-updates-sign-up"><button type="button" class="btn btn-liwa btn-light btn-lg">SIGN UP FOR MARKET UPDATES</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+{% endblock %}

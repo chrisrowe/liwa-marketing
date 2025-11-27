@@ -1,0 +1,11 @@
+<div class="social-share">
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ entry.url|url_encode }}&title={{ entry.title|url_encode }}&summary={{ entry.title|url_encode|striptags }}" target="_blank" class="social-link linkein">
+        <span>LinkedIn</span>
+    </a>
+    <a href="https://twitter.com/intent/tweet/?text={{ entry.title|url_encode }}&amp;url={{ entry.url|url_encode }}" class="social-link twitter">
+        <span>Twitter</span>
+    </a>
+    <a href="https://facebook.com/sharer/sharer.php?u={{ entry.title|url_encode }}" class="social-link facebook">
+        <span>Facebook</span>
+    </a>
+</div>

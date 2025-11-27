@@ -1,0 +1,36 @@
+<div class="{{ columns }}">
+    <a href="{{ post.url }}" class="card-link">
+        <div class="news-card">
+            <div class="details">
+                {% if post.youtubeVideoId != "" %}
+                    <img src="https://img.youtube.com/vi/{{ post.youtubeVideoId }}/hqdefault.jpg" title="{{ post.title }}" class="responsive" />
+                {% else %}
+                    {% set featureImage = post.featureImage.one() %}
+                    {% if featureImage %}
+                        <figure>
+                            <img src="{{ image.getUrl() }}" title="{{ post.title }}" class="responsive" />
+                        </figure>
+                    {% else %}
+                        <figure>
+                            <img src="/bin/images/news/Liwa-img-News-card-960x720.jpg" title="{{ post.title }}" class="responsive" />
+                        </figure>
+                    {% endif %}
+                {% endif %}
+                <div class="content-padding">
+                    <time>{{ post.postDate | date("F Y") }}</time>
+                    <h2>{{ post.newsTitle }}</h2>
+                </div>
+                <div class="content-padding">
+                    <p>{{ post.excerpt }}</p>
+                </div>
+            </div>
+            <div class="nav">
+                {% if post.youtubeVideoId != "" %}
+                    <p class="read-more">Watch now</p>
+                {% else %}
+                    <p class="read-more">Read more</p>
+                {% endif %}
+            </div>
+        </div>
+    </a>
+</div>

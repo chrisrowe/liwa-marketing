@@ -1,0 +1,160 @@
+
+.timeline {
+    display: flex; width: 75%;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(sm) {
+        width: unset;
+        margin: unset;
+        align-items: flex-start;
+    }
+
+    .entry {
+        position: relative; z-index: 10;
+        margin: 24px 0;
+
+        @include media-breakpoint-down(sm) {
+            display: flex;
+            align-items: center;
+        }
+
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        time {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font: {
+                family: $fontFamily;
+                style: normal;
+            }
+        }
+
+        .description {
+            display: block;
+            position: absolute; top: 50%; left: 100%;
+            transform: translateY(-50%);
+            border-top: 4px solid $blue;
+            @include media-breakpoint-up(lg) {
+                width: 420px;
+            }
+            @include media-breakpoint-only(md) {
+                width: 300px;
+            }
+            @include media-breakpoint-down(sm) {
+                flex: 1;
+                position: relative; top: unset; left: unset;
+                transform: unset;
+                border: none;
+            }
+
+
+            p{
+                position: absolute;
+                padding: 15px 31px;
+                font: {
+                    size: 1rem;
+                    weight: 500;
+                }
+                line-height: 1.5;
+                @include media-breakpoint-down(sm) {
+                    position: relative;
+                    padding: 0;
+                    padding-right: 32px;
+                    padding-left: 1rem;
+                }
+            }
+
+            &.left {
+                left: unset;
+                right: 100%;
+                p{
+                    padding-left: 0;
+                    @include media-breakpoint-down(sm) {
+                        padding-left: 1rem;
+                    }
+                }
+                @include media-breakpoint-down(sm) {
+                    top: unset; left: unset; right: unset;
+                }
+            }
+        }
+
+        &.large {
+            width: 86px; height: 86px;
+            @include media-breakpoint-down(sm) {
+                width: unset; height: unset;
+            }
+            time {
+                width: 86px; height: 86px;
+                font: {
+                    size: 22px;
+                    weight: $fontWeightBold;
+                }
+                color: $white;
+                background: rgb(47,128,177);
+                background: linear-gradient(45deg, #154979 0%, #2F80B1 100%);
+                border-radius: 43px;
+                box-sizing: border-box;
+            }
+
+        }
+
+        &.small {
+            width: 60px; height: 60px;
+            @include media-breakpoint-down(sm) {
+                width: unset; height: unset;
+            }
+            time {
+                width: 60px; height: 60px;
+                font: {
+                    size: 14px;
+                    weight: $fontWeightDemi;
+                }
+                background: $white;
+                border: 1px solid $black;
+                border-radius: 30px;
+                box-sizing: border-box;
+                @include media-breakpoint-down(sm) {
+                    margin: 0 12px 0 13px;
+                }
+            }
+
+            .description {
+                border-top-width: 1px;
+            }
+        }
+
+    }
+
+    &:after,
+    &::after {
+        display: block; width: 1px; height: 100%;
+        position: absolute; top: 0; left: 50%; z-index: 5;
+        transform: translateX(-50%);
+        background: $black;
+        content: "";
+        @include media-breakpoint-down(sm) {
+            left: 44px;
+            transform: unset;
+        }
+    }
+
+}
+
+[data-section="liwa-timeline"] {
+    padding: 4rem 0;
+    @include media-breakpoint-down(sm) {
+        padding: 4rem 0;
+    }
+}

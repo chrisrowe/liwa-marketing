@@ -1,0 +1,646 @@
+{% extends "_includes/layouts/2023/index" %}
+
+{% set sectionName = 'home-page' %}
+
+{# set posts = craft.entries.section('insights').id([407, 871, 874]).fixedOrder().all() #}
+{% set posts = craft.entries.section('insights').limit(3) %}
+{% set pageData = craft.entries().section('home2023').one() %}
+
+{% block masthead %}
+    {% if craft.app.request.getParam('test') %}
+        {% include "_includes/sections/2023/mastheadTest" with {
+            'signpost': '',
+            'logoSize': 'large'
+        } %}
+    {% else %}
+        {% include "_includes/sections/2023/masthead" with {
+            'signpost': '',
+            'logoSize': 'large'
+        } %}
+    {% endif %}
+{% endblock %}
+
+{% block main %}
+
+    <main class="main" data-template="{{ sectionName }}">
+        <section data-section="leadspace" class="leadspace" style="margin-bottom:40px">
+            <div class="container">
+                <div class="row">
+                    {% if craft.app.request.getParam('test') %}
+                        <div class="col-12">
+                            <div class="container">
+                                <div class="row" style="border:3px solid #BF8247; padding:20px 40px">
+                                    <div class="col-12 col-lg-8 col-xl-7 flex-center">
+                                        <h1 class="my-2">{{ pageData.pageTitle }}</h1>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-xl-5 flex-center">
+                                        <h2>{{ pageData.subtitle }}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="col-12 col-lg-8 col-xl-7 flex-center">
+                            <h1 class="my-2">{{ pageData.pageTitle }}</h1>
+                        </div>
+                        <div class="col-12 col-lg-4 col-xl-5 flex-center">
+                            <h2>{{ pageData.subtitle }}</h2>
+                        </div>
+                    {% endif %}
+
+                    <div class="col-12" style="margin:50px 0 50px">
+                        <iframe style="width:100%; max-width:1440px; height:56vw; max-height:810px" height="1440" src="https://www.youtube.com/embed/cO9LaYyzpD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        {# <video style="width:100%; max-width:1440px; height:56vw; max-height:810px" height="1440" controls>
+                        <source src="videoweb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video> #}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-section="content" class="home-content">
+            <div class="container about" id="why-liwa">
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                        <hgroup>
+                            <h2>{{ pageData.blockTitle }}</h1>
+                            <p>{{ pageData.blockCopy }}</h2>
+                        </hgroup>
+                    </div>
+                </div>
+                <div class="facts" style="padding:0 20px;">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 flex-center mt-large">
+                            <div>
+                            <div class="row py-4 border-bottom">
+                                <div class="col-6">
+                                    <div class="facts-container">
+                                        <h3 class="align-middle">$50B</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="facts-container">
+                                        <p class="p-0">Invested Across Our Team Members' Careers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-4 border-bottom">
+                                <div class="col-6">
+                                    <div class="facts-container">
+                                        <h3>8,000+</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="facts-container">
+                                        <p class="p-0">Funds Reviewed</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-4 border-bottom">
+                                <div class="col-6">
+                                    <div class="facts-container">
+                                        <h3>800+</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="facts-container">
+                                        <p class="p-0">Fund Investments</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-4 border-bottom">
+                                <div class="col-6">
+                                    <div class="facts-container">
+                                        <h3>300+</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="facts-container">
+                                        <p class="p-0">Fund Managers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-4">
+                                <div class="col-6">
+                                    <div class="facts-container">
+                                        <h3>35</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="facts-container">
+                                        <p class="p-0">Consecutive Years of Investing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 mt-large">
+                            <img src="{{ pageData.blockImage.one().url }}" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container global-investing">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{{ pageData.cb2_blockTitle }}</h2>
+                    </div>
+                </div>
+                {% if craft.app.request.getParam('test') %}
+                    <div class="row">
+                        <div class="col-12 col-lg-4 py-4" style="border-right:1px solid #BF8247">
+                            {# <img src="/bin/images/ui/adia.png" alt="" title="" class="mx-auto"> #}
+                            <h3>Abu Dhabi Investment Authority</h3>
+                        </div>
+                        <div class="col-12 col-lg-4 py-4" style="border-right:1px solid #BF8247">
+                            {# <img src="/bin/images/ui/adic.png" alt="" title="" class="mx-auto"> #}
+                            <h3>Abu Dhabi Investment Council</h3>
+                        </div>
+                        <div class="col-12 col-lg-4 py-4">
+                            {# <img src="/bin/images/ui/stanford.png" alt="" title="" class="mx-auto"> #}
+                            <h3>Stanford University Investment Office</h3>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="row">
+                        <div class="col-12 col-lg-4 py-4">
+                            {# <img src="/bin/images/ui/adia.png" alt="" title="" class="mx-auto"> #}
+                            <h3>Abu Dhabi Investment Authority</h3>
+                        </div>
+                        <div class="col-12 col-lg-4 py-4">
+                            {# <img src="/bin/images/ui/adic.png" alt="" title="" class="mx-auto"> #}
+                            <h3>Abu Dhabi Investment Council</h3>
+                        </div>
+                        <div class="col-12 col-lg-4 py-4">
+                            {# <img src="/bin/images/ui/stanford.png" alt="" title="" class="mx-auto"> #}
+                            <h3>Stanford University Investment Office</h3>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+
+            {# {% set entries = craft.entries().section('team').type('team') %}
+            {% set entry = craft.entries().section('team').type('leadspace').one() %} #}
+
+            <div class="container team">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{{ pageData.cb3_blockTitle }}</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <p>{{ pageData.cb3_blockCopy }}</p>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-12 scroll-button">
+                        <i class="fa-solid fa-chevron-left" id="member-left"></i>
+                        <i class="fa-solid fa-chevron-right" id="member-right"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="member" id="scroll-member">
+                            <div class="flex-container">
+                                <div class="flex-item">
+                                    <a href="https://liwacap.com/meet-the-team?open=team-member-1" class="team-member" data-modal="team-member-1">
+                                        <figure>
+                                            <div class="img-holder" style="background-image:url('/bin/images/team/Liwa-img-K-Al-Kindi-656x656.jpg')">
+                                                {# <img src="/bin/images/team/Liwa-img-K-Al-Kindi-656x656.jpg" alt="Khalifa Al Kindi Headshot" title="Khalifa Al Kindi Headshot" class="responsive" /> #}
+                                            </div>
+                                        </figure>
+                                        <div style="height:100px">
+                                            <h3 class="px-3">Khalifa Al Kindi</h3>
+                                            <p class="px-3 mb-3">Co-Founder and Managing Partner</p>
+                                        </div>
+                                        <div class="mx-3 div-link">
+                                            <span style="float:left">ABOUT</span>
+                                            <span style="float:right"><i class="fa-solid fa-chevron-right"></i></span>
+                                            <div style="clear:both"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-item">
+                                    <a href="https://liwacap.com/meet-the-team?open=team-member-2" class="team-member" data-modal="team-member-2">
+                                        <figure>
+                                            <div class="img-holder" style="background-image:url('/bin/images/team/HK-copy.jpg')">
+                                                {# <img src="/bin/images/team/HK-copy.jpg" alt="Hashim Kudsi Headshot" title="Hashim Kudsi Headshot" class="responsive" /> #}
+                                            </div>
+                                        </figure>
+                                        <div style="height:100px">
+                                            <h3 class="px-3">Hashim Kudsi</h3>
+                                            <p class="px-3 mb-3">Co-Founder and Managing Partner</p>
+                                        </div>
+                                        <div class="mx-3 div-link">
+                                            <span style="float:left">ABOUT</span>
+                                            <span style="float:right"><i class="fa-solid fa-chevron-right"></i></span>
+                                            <div style="clear:both"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-item">
+                                    <a href="https://liwacap.com/meet-the-team?open=team-member-sb-1" class="team-member" data-modal="team-member-3">
+                                        <figure>
+                                            <div class="img-holder" style="background-image:url('/bin/images/Dave-Burke.jpg')">
+                                                {# <img src="/bin/images/Dave-Burke.jpg" alt="David C. Burke Headshot" title="David C. Burke Headshot" class="responsive" /> #}
+                                            </div>
+                                        </figure>
+                                        <div style="height:100px">
+                                            <h3 class="px-3">David C. Burke</h3>
+                                            <p class="px-3 mb-3">CEO and CIO of Selby Lane Capital LLC</p>
+                                        </div>
+                                        <div class="mx-3 div-link">
+                                            <span style="float:left">ABOUT</span>
+                                            <span style="float:right"><i class="fa-solid fa-chevron-right"></i></span>
+                                            <div style="clear:both"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-item">
+                                    <a href="https://liwacap.com/meet-the-team?open=team-member-sb-2" class="team-member" data-modal="team-member-4">
+                                        <figure>
+                                            <div class="img-holder" style="background-image:url('/bin/images/Caitlin.jpg')">
+                                                {# <img src="/bin/images/Caitlin.jpg" alt="Caitlin Fitzmaurice Headshot" title="Caitlin Fitzmaurice Headshot" class="responsive" /> #}
+                                            </div>
+                                        </figure>
+                                        <div style="height:100px">
+                                            <h3 class="px-3">Caitlin Mavraganis</h3>
+                                            <p class="px-3 mb-3">Managing Director</p>
+                                        </div>
+                                        <div class="mx-3 div-link">
+                                            <span style="float:left">ABOUT</span>
+                                            <span style="float:right"><i class="fa-solid fa-chevron-right"></i></span>
+                                            <div style="clear:both"></div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+
+
+                                {# {% for entry in entries %}
+                                    {% set headshot = entry.teamMemberHeadshot.one() %}
+                                    <div class="flex-item">
+                                        <a href="javascript:;" class="team-member" data-modal="team-member-{{ loop.index }}">
+                                            <figure>
+                                                <img src="/bin/images/team/{{ headshot.filename }}" alt="{{ entry.title }} Headshot" title="{{ entry.title }} Headshot" class="responsive" />
+                                            </figure>
+                                            <div style="height:160px">
+                                                <h3 class="px-3">{{ entry.title }}</h3>
+                                                <p class="px-3 mb-3">{{ entry.teamMemberTitle }}</p>
+                                            </div>
+                                            <div class="mx-3 div-link">
+                                                <span style="float:left">ABOUT</span>
+                                                <span style="float:right"><i class="fa-solid fa-chevron-right"></i></span>
+                                                <div style="clear:both"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %} #}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container report">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{{ pageData.report_title }}</h2>
+                    </div>
+                    <div class="col-12">
+                        {# <div class="image-holder">
+                            <img src="{{ pageData.report_image.one().url }}">
+                        </div> #}
+                        {% if craft.session.isLoggedIn %}
+
+                        {% endif %}
+                        <h2 style="text-align:center; font-size:24px !important; color:#000; font-weight:bold; margin:0">Private Equity and Venture Capital Outperformed Public Equities</h2>
+                        <!-- Tab links -->
+                        <div class="tab">
+                            <div class="row">
+                                <div class="col-4 col-md-2">
+                                    <button class="tablinks active" onclick="openCity(event, '5-years', 5)">5 Years</button>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <button class="tablinks" onclick="openCity(event, '10-years', 10)">10 Years</button>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <button class="tablinks" onclick="openCity(event, '15-years', 15)">15 Years</button>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <button class="tablinks" onclick="openCity(event, '20-years', 20)">20 Years</button>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <button class="tablinks" onclick="openCity(event, '25-years', 25)">25 Years</button>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <button class="tablinks" onclick="openCity(event, '30-years', 30)">30 Years</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab content -->
+                        <div id="5-years" class="tabcontent-test" style="display:block">
+                            <canvas id="5-years-chart"></canvas>
+                        </div>
+                        <div id="10-years" class="tabcontent-test">
+                            <canvas id="10-years-chart"></canvas>
+                        </div>
+                        <div id="15-years" class="tabcontent-test">
+                            <canvas id="15-years-chart"></canvas>
+                        </div>
+                        <div id="20-years" class="tabcontent-test">
+                            <canvas id="20-years-chart"></canvas>
+                        </div>
+                        <div id="25-years" class="tabcontent-test">
+                            <canvas id="25-years-chart"></canvas>
+                        </div>
+                        <div id="30-years" class="tabcontent-test">
+                            <canvas id="30-years-chart"></canvas>
+                        </div>
+                        <p style="text-align:center; margin-top:20px; color:#666"><i>Cambridge Associates as of March 31, 2023. Public Equities represent MSCI ACWI calculated as a public market equivalent.</i></p>
+                    </div>
+                </div>
+            </div>
+
+            {% set entries = craft.entries().section('history').type('history') %}
+
+            <div class="container history">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{{ pageData.history_title }}</h2>
+                    </div>
+                </div>
+                <div class="d-lg-none">
+                    {% set counter = 0 %}
+                    {% for entry in entries %}
+                        <div class="col-12">
+                            {% if counter % 2 == 0 %}
+                                <div class="entry-holder entry-holder-small">
+                            {% else %}
+                                <div class="entry-holder">
+                            {% endif %}
+                                <div class="entry  {{ entry.historyEventType }}">
+                                    <time> {{ entry.historyyear }}</time>
+                                    <div class="description {{ entry.historyTimelineDirection }}">
+                                        <p> {{ entry.excerpt }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% set counter = counter + 1 %}
+                    {% endfor %}
+                </div>
+                <div class="d-none d-lg-block">
+                    <div class="row mb-4 ">
+                        <div class="col-12 scroll-button">
+                            <i class="fa-solid fa-chevron-left" id="history-left"></i>
+                            <i class="fa-solid fa-chevron-right" id="history-right"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="scroll-history" style="overflow-x:hidden; padding-bottom:20px">
+                                <div class="flex-container-top" style="margin-left:20px; margin-right:20px">
+                                    {% for entry in entries %}
+                                        {% if entry.historyEventType == "large" %}
+                                            <div class="entry-holder">
+                                                <div class="entry  {{ entry.historyEventType }}">
+                                                    <time> {{ entry.historyyear }}</time>
+                                                    <div class="description {{ entry.historyTimelineDirection }}">
+                                                        <p> {{ entry.excerpt }}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-line-top"></div>
+                                            </div>
+
+                                            {% if entry.historyyear == "1989" %}
+                                                <div class="entry-holder" style="background-color:#fff">
+                                                    <div class="entry  {{ entry.historyEventType }}">
+
+                                                    </div>
+                                                </div>
+                                                <div class="entry-holder" style="background-color:#fff">
+                                                    <div class="entry  {{ entry.historyEventType }}">
+
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="flex-container-bottom" style="margin-left:145px; margin-right:20px">
+                                    {% for entry in entries %}
+                                        {% if entry.historyEventType == "small" %}
+                                            <div class="entry-holder entry-holder-small">
+                                                <div class="entry  {{ entry.historyEventType }}">
+                                                    <time> {{ entry.historyyear }}</time>
+                                                    <div class="description {{ entry.historyTimelineDirection }}">
+                                                        <p> {{ entry.excerpt }}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-line-bottom"></div>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container insight" id="insights">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{{ pageData.insight_title }}</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" style="text-align:right; margin-bottom:20px">
+                        <a href="https://liwacap.com/insights">SEE ALL INSIGHTS <i class="fa-solid fa-chevron-right"></i></span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            {% for post in posts %}
+                                <div class="col-12 col-lg-4">
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            {% if post.youtubeVideoId != "" %}
+                                                <img src="https://img.youtube.com/vi/{{ post.youtubeVideoId }}/hqdefault.jpg" title="{{ post.title }}" class="responsive" />
+                                            {% else %}
+                                                {% set featureImage = post.featureImage.one() %}
+                                                {% if featureImage %}
+                                                    <figure>
+                                                        <img src="{{ image.getUrl() }}" title="{{ post.title }}" class="responsive" />
+                                                    </figure>
+                                                {% else %}
+                                                    <figure>
+                                                        <img src="/bin/images/news/Liwa-img-News-card-960x720.jpg" title="{{ post.title }}" class="responsive" />
+                                                    </figure>
+                                                {% endif %}
+                                            {% endif %}
+                                        </div>
+                                        <div class="col-12">
+                                            <time><i>{{ post.postDate | date("F Y") }}</i></time>
+                                            <div style="height:160px">
+                                                <h3 class="mt-2"><b>{{ post.newsTitle }}</b></h3>
+                                            </div>
+                                            <a href="{{ post.url }}">
+                                                <div class="div-link">
+                                                    {% if post.youtubeVideoId != "" %}
+                                                        <span style="float:left">WATCH NOW</span>
+                                                    {% else %}
+                                                        <span style="float:left">READ MORE</span>
+                                                    {% endif %}
+                                                    <span style="float:right"><i class="fa-solid fa-chevron-right"></i></span>
+                                                    <div style="clear:both"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container subscribe d-none">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="subscribe-container">
+                            <h2>Insights to help you succeed</h2>
+                            <div class="row">
+                                <div class="col-12 col-lg-8 offset-lg-2">
+                                    <p class="mb-4 p-0">Get email updates featuring perspectives on industry trends and profiles with market experts.</p>
+                                </div>
+                                <div class="col-12 col-lg-8 offset-lg-2">
+                                    <span>Email Address</span>
+                                </div>
+                                <div class="col-12 col-lg-6 offset-lg-2">
+                                    <input type="email">
+                                </div>
+                                <div class="col-12 col-lg-2">
+                                    <button type="button" class="btn-liwa">SUBSCRIBE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% if craft.app.request.getParam('test') %}
+                <div class="container-full" style="background-color:#0C3458">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container get-started" id="get-started" style="background-color:#0C3458; margin-bottom:0">
+                                <div class="row office-new-style" style="padding:100px 0">
+                                    {# <div class="col-12" style="text-align:center; padding:40px">
+                                        <h2 style="color:#fff">{{ pageData.office_title }}</h2>
+                                    </div> #}
+                                    <div class="col-12 col-lg-4">
+                                        <h2 style="color:#fff">{{ pageData.office_title }}</h2>
+                                        {{ pageData.office_body }}
+                                    </div>
+                                    <div class="col-12 col-lg-8 flex-middle">
+                                        <div style="width: 100%"><iframe width="100%" height="325" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Suite%203502,%20Sky%20Tower,%20Al%20Reem%20Island,%20abu%20dhabi+(Liwa%20Capital%20Advisors%20C)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="container get-started" id="get-started">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Two Ways to Get Started</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-8 get-started-first">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="ways">
+                                        <h3>Set up a meeting to discuss your goals.</h3>
+                                        <a href="https://calendly.com/liwa-investment-team/book-a-call" target="_blank">
+                                            <button type="button" class="btn-liwa">BOOK A MEETING</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="ways ways-end">
+                                        <h3> Learn more through our digital experience.</h3>
+                                        <a href="https://investor.selbylanedigital.com/liwa-capital/onboarding">
+                                            <button type="button" class="btn-liwa-alt">START NOW</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="row office">
+                                <div class="col-12">
+                                    <h2>{{ pageData.office_title }}</h2>
+                                </div>
+                                <div class="col-12">
+                                    {{ pageData.office_body }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            <div class="container socials" style="margin-top:100px">
+                <div class="row">
+                    <div class="col-12" style="text-align:center">
+                        <h2>More Ways To Keep Up</h2>
+                    </div>
+                    <div class="col-12 col-lg-8 offset-lg-2">
+                        <div class="social-links">
+                            <div>
+                                <a href="https://twitter.com/liwacap" taget="_blank">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/company/liwa-capital-advisors/" taget="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.instagram.com/liwacapital/" taget="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.youtube.com/channel/UCFMQwkUXzMp5D2dks_YLFIg" taget="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://open.spotify.com/show/4hRghCjeXJObVvkhRBHimF?si=MYQ6B2-GRvuvfSN7hZUyUA&amp;dl_branch=1" taget="_blank">
+                                    <i class="fa-brands fa-spotify"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://podcasts.apple.com/us/podcast/liwa-capital-advisors-fireside-chats/id1579770233" taget="_blank">
+                                    <i class="fa-solid fa-podcast"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {# {% include '_includes/sections/2023/contact-us' %} #}
+    </main>
+{% endblock %}

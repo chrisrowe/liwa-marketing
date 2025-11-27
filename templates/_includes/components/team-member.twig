@@ -1,0 +1,14 @@
+{% set headshot = entry.teamMemberHeadshot.one() %}
+
+{# <pre class="dump">{{ dump(headshot) }}</pre> #}
+
+<div class="col-6 col-md-6 col-lg-4">
+    <a href="javascript:;" class="team-member" data-modal="team-member-{{ index }}">
+        <figure>
+            <img src="/bin/images/team/{{ headshot.filename }}" alt="{{ entry.title }} Headshot" title="{{ entry.title }} Headshot" class="responsive" />
+        </figure>
+        <h3>{{ entry.title }}</h3>
+        <p>{{ entry.teamMemberTitle }}</p>
+    </a>
+</div>
+

@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: f849eb7e-5082-4b5e-9b3b-e43053e27f3e
+handle: history_title
+instructions: ''
+name: Title
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

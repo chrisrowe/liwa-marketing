@@ -1,0 +1,8 @@
+
+{% set classList = "bttn" %}
+
+{% if classes is defined %}
+    {% set classList = classList ~ ' ' ~ classes %}
+{% endif %}
+
+<a href="{{ url }}" class="{{ classList }}">{{ cta }}</a>

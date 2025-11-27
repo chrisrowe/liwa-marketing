@@ -1,0 +1,120 @@
+{% extends "_includes/layouts/index" %}
+
+{% set sectionName = 'contact' %}
+
+{% set entry = craft.entries().section('contact').type('contact').one() %}
+
+{% block masthead %}
+    {% include "_includes/sections/masthead" with { 'signpost': sectionName } %}
+{% endblock %}
+
+{% block main %}
+    <style>
+        #text-info {
+            position: absolute;
+            left: -99999em;
+        }
+    </style>
+    <main class="main" data-template="{{ sectionName }}">
+
+        {% include '_includes/sections/leadspace' with {
+            'title': entry.title,
+            'body': entry.subtitle
+        } %}
+
+        <section data-section="our-offices">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Our offices</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        {{ companyInformation.uaeAddress }}
+                        <a href="tel:{{ companyInformation.uaePhone }}" class="border-link">{{ companyInformation.uaePhone }}</a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {{ companyInformation.unitedStatesAddress }}
+                        <a href="tel:{{ companyInformation.usaPhone }}" class="border-link">{{ companyInformation.usaPhone }}</a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailTo:{{ companyInformation.informationEmail }}" class="border-link">{{ companyInformation.informationEmail }}</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background-gray" data-section="contact-form">
+            {% include '_includes/components/section-title' with {
+                'title': 'Get in touch.'
+            } %}
+
+            {% if craft.app.session.hasFlash('notice') %}
+            <div class="container">
+                <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
+            </div>
+            {% elseif craft.app.session.hasFlash('error') %}
+            <div class="container">
+                <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
+            </div>
+            {% endif %}
+
+            {% macro errorList(errors) %}
+                {% if errors %}
+                    <ul class="errors">
+                        {% for error in errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endmacro %}
+
+            {% from _self import errorList %}
+
+            <form class="mt-0" id="form" method="post" action="contact-submit.php" accept-charset="UTF-8">
+                {{ csrfInput() }}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-container">
+                                <label for="firstName">First name *</label>
+                                <input class="form-control" type="text" name="first_name" placeholder="First name *" required>
+                            </div>
+                            <div class="form-container">
+                                <label for="lastName">Last name *</label>
+                                <input class="form-control" type="text" name="last_name" placeholder="Last name *" required>
+                            </div>
+                            <div class="form-container">
+                                <label for="email">Email *</label>
+                                <input class="form-control" type="text" name="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-container">
+                                <label for="phoneNumber">Phone number *</label>
+                                <input class="form-control" type="text" name="phone_number" placeholder="Phone number *" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-container">
+                                <label for="company">Company *</label>
+                                <input class="form-control" type="text" name="company" placeholder="Company *" required>
+                            </div>
+                            <div class="form-container">
+                                <label for="message">Message *</label>
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message *" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col align-items-center">
+                            <div class="bttn-bank center">
+                                <button type="submit" class="bttn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+{% endblock %}

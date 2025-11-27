@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: df9cf76e-33e7-44af-a04f-5e33add0400d
+handle: teamMemberHeadshot
+instructions: ''
+name: 'Team member headshot'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:8f179eeb-233d-42c2-82af-ffff018d0f53'
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:8f179eeb-233d-42c2-82af-ffff018d0f53'
+  singleUploadLocationSubpath: /team
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

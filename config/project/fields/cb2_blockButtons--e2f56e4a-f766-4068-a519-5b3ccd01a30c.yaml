@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 3098be97-8925-4ee2-8878-d45da5d66168
+handle: cb2_blockButtons
+instructions: ''
+name: 'Block buttons'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_cb2_blockbuttons}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

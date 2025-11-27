@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 6f465601-2c0e-4ee3-9147-ec47519d34e1
+handle: cb3_blockTitle
+instructions: ''
+name: 'Block title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

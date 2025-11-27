@@ -1,0 +1,17 @@
+{% set classList = "navigation" %}
+
+{% if classes is defined %}
+    {% set classList = classList ~ ' ' ~ classes %}
+{% endif %}
+
+<nav id="navigation" class="{{ classList }}" role="navigation" aria-label="Main">
+    <section>
+        {% for navItem in navigation %}
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }}" href="/{{ navItem.href }}">
+                <span>
+                    {{ navItem.name }}
+                </span>
+            </a>
+        {% endfor %}
+    </section>
+</nav>

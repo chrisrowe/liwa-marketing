@@ -1,0 +1,26 @@
+enableVersioning: true
+handle: history
+name: History
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a0170692-9bc8-4fc5-8c51-66a642669e82:
+    enabledByDefault: true
+    hasUrls: true
+    template: our-history
+    uriFormat: 'our-history/{slug}'
+structure:
+  maxLevels: null
+  uid: ec57c65b-68f5-4447-a0fd-a85916f0473a
+type: structure

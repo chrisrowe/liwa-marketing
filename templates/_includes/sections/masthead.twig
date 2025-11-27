@@ -1,0 +1,102 @@
+{% set classList = "header" %}
+
+{% if isNewsEntry is defined %}
+    {% set classList = classList ~ ' news-entry' %}
+{% endif %}
+
+<header class="{{ classList }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-5 col-md-3 col-lg-2">
+                <a href="/" class="flex-link">
+                    {% if logoSize is defined %}
+                        <figure class="logo masthead large">
+                            <img src="/bin/images/ui/Liwa-logo-RGB.svg" alt="" title="" />
+                        </figure>
+                    {% else %}
+                        <figure class="logo masthead small">
+                            <img src="/bin/images/ui/Liwa-logo-small-RGB.svg" alt="" title="" />
+                        </figure>
+                    {% endif %}
+                </a>
+            </div>
+            <div class="col-7 col-md-9 col-lg-10 align-self-center justify-content-between">
+                <div class="mobile-navigation">
+                    {% include '_includes/components/button' with {
+                        'cta': 'INVESTOR LOGIN',
+                        'url': 'https://investors.liwacap.com/login',
+                        'classes': 'investor-bttn d-lg-none'
+                    } %}
+
+                    <a href="javascript:;" id="hamburger" class="hamburger" role="button">
+                        <span>Mobile navigation</span>
+                    </a>
+                </div>
+                {% include "_includes/components/navigation" with {
+                    'signpost': signpost,
+                    'navigation': [
+                        {
+                            'name': 'What We Offer',
+                            'href': 'what-we-offer'
+                        },
+                        {
+                            'name': 'Our Partners',
+                            'href': 'our-partners'
+                        },
+                        {
+                            'name': 'Our approach',
+                            'href': 'our-approach'
+                        },
+                        {
+                            'name': 'Our history',
+                            'href': 'our-history'
+                        },
+                        {
+                            'name': 'Our team',
+                            'href': 'our-team'
+                        },
+                        {
+                            'name': 'Insights',
+                            'href': 'insights'
+                        }
+                    ]
+                } %}
+            </div>
+        </div>
+    </div>
+
+    {% include "_includes/components/navigation" with {
+        'signpost': signpost,
+        'navigation': [
+            {
+                'name': 'What We Offer',
+                'href': 'what-we-offer'
+            },
+            {
+                'name': 'Our Partners',
+                'href': 'our-partners'
+            },
+            {
+                'name': 'Our approach',
+                'href': 'our-approach'
+            },
+            {
+                'name': 'Our history',
+                'href': 'our-history'
+            },
+            {
+                'name': 'Our team',
+                'href': 'our-team'
+            },
+            {
+                'name': 'Insights',
+                'href': 'insights'
+            },
+            {
+                'name': 'Contact',
+                'href': 'contact'
+            }
+        ],
+        'classes': 'mobile'
+    } %}
+</header>

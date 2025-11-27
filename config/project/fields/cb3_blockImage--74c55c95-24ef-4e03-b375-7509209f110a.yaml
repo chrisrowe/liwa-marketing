@@ -1,0 +1,31 @@
+contentColumnType: string
+fieldGroup: 6f465601-2c0e-4ee3-9147-ec47519d34e1
+handle: cb3_blockImage
+instructions: ''
+name: 'Block image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:8f179eeb-233d-42c2-82af-ffff018d0f53'
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:8f179eeb-233d-42c2-82af-ffff018d0f53'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

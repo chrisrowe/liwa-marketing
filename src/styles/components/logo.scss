@@ -1,0 +1,41 @@
+
+.logo {
+
+    &.masthead {
+        display: block;
+        background: $white;
+        box-sizing: border-box;
+
+        &.large {
+            width: 100%;
+            position: absolute; top: 0; left: 0;
+            padding: 1.5rem;
+            img {
+                display: block; min-width: unset;
+            }
+            @include media-breakpoint-down(sm) {
+                left: 1rem;
+            }
+        }
+
+        &.small {
+            img {
+                display: block; width: 35px;
+                margin: 0 auto;
+            }
+        }
+
+
+    }
+
+}
+
+body{
+    &.no-scroll{
+        .logo{
+            &.large {
+                visibility: hidden;
+            }
+        }
+    }
+}

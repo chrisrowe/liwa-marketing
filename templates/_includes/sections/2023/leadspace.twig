@@ -1,0 +1,14 @@
+<section data-section="leadspace" class="leadspace">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <hgroup>
+                    <h1 class="my-2">{{ title|raw }}</h1>
+                    {% if body is defined %}
+                        <h2 class="mb-4">{{ body }}</h2>
+                    {% endif %}
+                </hgroup>
+            </div>
+        </div>
+    </div>
+</section>

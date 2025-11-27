@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 228716bf-07b8-4631-909b-479939dc7763
+handle: blockEyebrow
+instructions: ''
+name: 'Block eyebrow'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

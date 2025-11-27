@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 98b6a9a0-8457-49a4-8835-eb68ec8fd5cb
+handle: office_title
+instructions: ''
+name: Title
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
