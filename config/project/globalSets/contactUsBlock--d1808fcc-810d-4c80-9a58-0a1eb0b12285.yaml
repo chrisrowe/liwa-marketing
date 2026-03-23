@@ -43,3 +43,4 @@ fieldLayouts:
         sortOrder: 1
 handle: contactUsBlock
 name: 'Contact us block'
+sortOrder: 2

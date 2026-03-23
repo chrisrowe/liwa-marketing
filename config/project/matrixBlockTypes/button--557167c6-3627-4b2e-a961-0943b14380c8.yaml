@@ -25,6 +25,19 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
+  606d22fe-94c1-4920-ba75-0bf93568a454:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: buttonURL
+    instructions: ''
+    name: 'Button URL'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   1857e614-dd5c-4fb3-a292-4c28e6d2c469:
     contentColumnType: text
     fieldGroup: null
@@ -44,19 +57,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  606d22fe-94c1-4920-ba75-0bf93568a454:
-    contentColumnType: string(255)
-    fieldGroup: null
-    handle: buttonURL
-    instructions: ''
-    name: 'Button URL'
-    searchable: false
-    settings:
-      maxLength: '255'
-      placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Url
 handle: button
 name: Button
 sortOrder: 1

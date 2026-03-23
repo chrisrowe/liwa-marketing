@@ -1,4 +1,4 @@
-dateModified: 1760523897
+dateModified: 1774283354
 email:
   fromEmail: investorportal@liwacap.com
   fromName: 'Liwa Capital website'
@@ -13,6 +13,11 @@ email:
     useAuthentication: '1'
     username: investorportal@liwacap.com
   transportType: craft\mail\transportadapters\Smtp
+meta:
+  __names__:
+    8f179eeb-233d-42c2-82af-ffff018d0f53: Images # Images
+    c6db17d0-6f0e-4883-8685-a42d1ab5c7dd: 'Company information' # Company information
+    d1808fcc-810d-4c80-9a58-0a1eb0b12285: 'Contact us block' # Contact us block
 plugins:
   contact-form:
     edition: standard
@@ -49,7 +54,7 @@ system:
   live: true
   name: 'Liwa Capital'
   retryDuration: null
-  schemaVersion: 3.5.13
+  schemaVersion: 3.8.0.1
   timeZone: Asia/Dubai
 users:
   allowPublicRegistration: false
