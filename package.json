@@ -24,16 +24,16 @@
     "sass": "^1.32.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
-    "webpack": "^5.11.1",
-    "webpack-cli": "^4.3.1",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^3.11.1",
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.1",
-    "jquery.appear": "^1.0.1",
     "jquery-hoverintent": "^1.10.1",
+    "jquery.appear": "^1.0.1",
     "popper.js": "^1.16.1"
   },
   "browserslist": [
