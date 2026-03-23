@@ -1,5 +1,4 @@
 const path = require('path');
-const globImporter = require('node-sass-glob-importer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
@@ -37,10 +36,7 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            implementation: require('node-sass'),
-                            sassOptions: {
-                                importer: globImporter()
-                            },
+                            implementation: require('sass'),
                             sourceMap: true
                         }
                     }
