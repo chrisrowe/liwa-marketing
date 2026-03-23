@@ -64,13 +64,18 @@
 
     <nav id="navigation" class="{{ classList }}" role="navigation" aria-label="Main">
         <section>
+            {# TODO: restore navItem.href active state checks once navItem variable is available
             <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} " href="https://liwacap.com/meet-the-team">
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} why-liwa-link-m" href="https://liwacap.com#why-liwa">
+            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} insights-link-m" href="https://liwacap.com/insights">
+            #}
+            <a class="nav" href="https://liwacap.com/meet-the-team">
                 <span>Meet the Team</span>
             </a>
-            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} why-liwa-link-m" href="https://liwacap.com#why-liwa">
+            <a class="nav why-liwa-link-m" href="https://liwacap.com#why-liwa">
                 <span>Why Liwa</span>
             </a>
-            <a class="{{ signpost == navItem.href ? 'nav active' : 'nav' }} insights-link-m" href="https://liwacap.com/insights">
+            <a class="nav insights-link-m" href="https://liwacap.com/insights">
                 <span>Insights</span>
             </a>
         </section>
