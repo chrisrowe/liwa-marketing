@@ -499,8 +499,8 @@
 
                 document.getElementById("5-years").style.display = "block";
 
-                {% if craft.request.getParam('open') %}
-                    var open = '{{ craft.request.getParam('open') }}'
+                {% if craft.app.request.getParam('open') %}
+                    var open = '{{ craft.app.request.getParam('open') }}'
                     $('#' + open).addClass("active no-scroll")
                 {% endif %}
 

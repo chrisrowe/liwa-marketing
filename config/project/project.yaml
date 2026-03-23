@@ -1,4 +1,4 @@
-dateModified: 1774283354
+dateModified: 1774284258
 email:
   fromEmail: investorportal@liwacap.com
   fromName: 'Liwa Capital website'
@@ -13,6 +13,14 @@ email:
     useAuthentication: '1'
     username: investorportal@liwacap.com
   transportType: craft\mail\transportadapters\Smtp
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/bin/images'
+    type: craft\fs\Local
+    url: '@web/bin/images'
 meta:
   __names__:
     8f179eeb-233d-42c2-82af-ffff018d0f53: Images # Images
@@ -54,10 +62,11 @@ system:
   live: true
   name: 'Liwa Capital'
   retryDuration: null
-  schemaVersion: 3.8.0.1
+  schemaVersion: 4.17.0.3
   timeZone: Asia/Dubai
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null

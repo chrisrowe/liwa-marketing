@@ -23,16 +23,14 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
+fs: images
 handle: images
 hasUrls: true
 name: Images
-settings:
-  path: '@webroot/bin/images'
 sortOrder: 4
-type: craft\volumes\Local
 url: '@web/bin/images'

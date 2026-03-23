@@ -1,17 +1,17 @@
 {
   "require": {
-    "craftcms/cms": "^3.9",
-    "craftcms/contact-form": "^2.2",
-    "craftcms/contact-form-honeypot": "^1.0",
-    "craftcms/feed-me": "^4.3",
-    "craftcms/mailgun": "^1.4",
-    "craftcms/redactor": "^2.8",
-    "guzzlehttp/guzzle": "^6.3",
+    "craftcms/ckeditor": "^3.0",
+    "craftcms/cms": "^4.0",
+    "craftcms/contact-form": "^3.0",
+    "craftcms/contact-form-honeypot": "^2.0",
+    "craftcms/feed-me": "^5.0",
+    "craftcms/mailgun": "^3.0",
+    "craftcms/redactor": "^3.1.0",
+    "guzzlehttp/guzzle": "^7.0",
     "phpmailer/phpmailer": "^6.6",
     "twbs/bootstrap": "^4.5",
-    "verbb/field-manager": "^2.2",
-    "vlucas/phpdotenv": "^3.4.0",
-    "wrav/simplesharing": "^1.0"
+    "verbb/field-manager": "^3.0",
+    "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
@@ -25,12 +25,11 @@
     "sort-packages": true,
     "optimize-autoloader": true,
     "platform": {
-      "php": "7.4"
+      "php": "8.0.2"
     },
     "allow-plugins": {
       "yiisoft/yii2-composer": true,
-      "craftcms/plugin-installer": true,
-      "kylekatarnls/update-helper": true
+      "craftcms/plugin-installer": true
     },
     "audit": {
       "block-insecure": false
