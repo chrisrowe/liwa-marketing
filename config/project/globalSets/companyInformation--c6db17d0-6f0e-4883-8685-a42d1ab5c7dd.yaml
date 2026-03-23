@@ -1,12 +1,17 @@
 fieldLayouts:
   4ef7f101-35db-4330-85ce-5779abb327e6:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 3f49d3bb-32cf-4724-b563-bc299c94cfae # UAE address
+            handle: null
             instructions: null
             label: null
             required: false
@@ -17,8 +22,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 9590c46d-e48f-40d1-a97f-cab4bb412d89 # UAE phone
+            handle: null
             instructions: null
             label: null
             required: false
@@ -29,8 +38,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 7d8438b7-5fe7-49c9-a480-997da75bedd5 # USA address
+            handle: null
             instructions: null
             label: null
             required: false
@@ -41,8 +54,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f58587e8-196e-4976-a525-d7586beea5ac # USA phone
+            handle: null
             instructions: null
             label: null
             required: false
@@ -53,8 +70,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 80280ad6-a833-4e00-bf9c-daba7ea8c304 # Information email
+            handle: null
             instructions: null
             label: null
             required: false
@@ -67,6 +88,7 @@ fieldLayouts:
         name: 'Tab 1'
         uid: fe2ef33b-f7ef-4237-89e9-f843ada1de96
         userCondition: null
+    thumbFieldKey: null
 handle: companyInformation
 name: 'Company information'
 sortOrder: 1

@@ -17,7 +17,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 65e36fb8-4421-4856-bd00-9e2203e673dc
+            fieldUid: 65e36fb8-4421-4856-bd00-9e2203e673dc # Authors - Author Matrix - Author name
             handle: null
             instructions: null
             label: 'Author name'
@@ -33,7 +33,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 0c6c684b-a6ca-4c21-852b-c7aa7d5b5dee
+            fieldUid: 0c6c684b-a6ca-4c21-852b-c7aa7d5b5dee # Authors - Author Matrix - Author title
             handle: null
             instructions: null
             label: 'Author title'
@@ -49,7 +49,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: ed339bfc-c0e4-43b3-ba8f-be1b7175751f
+            fieldUid: ed339bfc-c0e4-43b3-ba8f-be1b7175751f # Authors - Author Matrix - Author company
             handle: null
             instructions: null
             label: 'Author company'

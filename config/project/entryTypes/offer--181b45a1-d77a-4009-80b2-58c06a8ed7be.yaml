@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   18b2dd56-07bb-4a9d-8157-d442b73c59de:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -34,13 +39,16 @@ fieldLayouts:
         name: Content
         uid: c129c9af-0886-4586-9c57-7ace0539a0fb
         userCondition: null
+    thumbFieldKey: null
 handle: offer
 hasTitleField: false
+icon: null
 name: 'What We Offer'
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

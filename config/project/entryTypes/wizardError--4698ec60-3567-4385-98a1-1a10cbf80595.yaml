@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   78a73b2f-42b9-425e-b981-ac74039f18fb:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -34,13 +39,16 @@ fieldLayouts:
         name: Content
         uid: fcd38684-250c-4fdb-bcf5-05f754057bcd
         userCondition: null
+    thumbFieldKey: null
 handle: wizardError
 hasTitleField: false
+icon: null
 name: 'Wizard Error'
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

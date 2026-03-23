@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   0f4d44bc-5eb7-44c5-aae7-8fc7d921fc8c:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -32,8 +37,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 6e178e10-ee4d-469c-bf4e-c4dba044ab4c # News title
+            handle: null
             instructions: null
             label: null
             required: false
@@ -44,8 +53,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: df3aea1a-ed46-4bbd-945e-7088526543b3 # Feature image
+            handle: null
             instructions: null
             label: null
             required: false
@@ -56,8 +69,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245 # Body copy
+            handle: null
             instructions: null
             label: null
             required: false
@@ -68,8 +85,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 36a7e232-473a-48dc-a371-c800f007e1e7 # Excerpt
+            handle: null
             instructions: null
             label: null
             required: false
@@ -80,8 +101,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 9d58ebe8-5d5b-4fbe-9a01-bfe7226600e8 # YouTube video ID
+            handle: null
             instructions: null
             label: null
             required: false
@@ -92,8 +117,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 1f9ee18e-e211-4106-90a4-9b7f02372d28 # Authors
+            handle: null
             instructions: null
             label: null
             required: false
@@ -106,13 +135,16 @@ fieldLayouts:
         name: Content
         uid: 3090e7a0-cabf-4d64-8631-162fdf9fde87
         userCondition: null
+    thumbFieldKey: null
 handle: insightsNew
 hasTitleField: false
+icon: null
 name: Insights-new
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{newsTitle|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

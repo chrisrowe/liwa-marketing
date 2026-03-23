@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: text
 handle: youtubeVideoId
 instructions: 'Example: 0FmAy9Rl__s'
 name: 'YouTube video ID'
@@ -8,7 +7,6 @@ settings:
   byteLimit: null
   charLimit: null
   code: false
-  columnType: null
   initialRows: 4
   multiline: false
   placeholder: null

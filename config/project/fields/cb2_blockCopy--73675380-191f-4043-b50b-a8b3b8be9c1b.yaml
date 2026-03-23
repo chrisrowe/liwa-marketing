@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: text
 handle: cb2_blockCopy
 instructions: null
 name: 'Block copy'
@@ -7,11 +6,12 @@ searchable: false
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  columnType: text
+  characterLimit: null
   css: null
   cssFile: null
-  defaultTransform: ''
-  enableSourceEditingForNonAdmins: false
+  defaultTransform: null
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
   fullGraphqlData: false
   headingLevels:
     - 1
@@ -20,13 +20,20 @@ settings:
     - 4
     - 5
     - 6
+  imageEntryTypeUid: null
+  imageFieldUid: null
+  imageMode: img
   js: null
   jsFile: Default.json
   options: null
+  parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
   toolbar:
     - sourceEditing
     - '|'
@@ -42,6 +49,7 @@ settings:
     - link
     - insertImage
     - mediaEmbed
+  wordLimit: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field

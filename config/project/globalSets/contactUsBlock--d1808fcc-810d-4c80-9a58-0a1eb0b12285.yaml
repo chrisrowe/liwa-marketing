@@ -1,12 +1,17 @@
 fieldLayouts:
   d5fc8f32-257e-4b26-bba2-aca317f511d8:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: aa3d6ba9-2729-4ad5-9c2e-8cca1a481f04 # Block image
+            handle: null
             instructions: null
             label: null
             required: false
@@ -17,8 +22,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 79db30b0-00dd-44b4-9574-71c25930c2bf # Block title
+            handle: null
             instructions: null
             label: null
             required: false
@@ -29,8 +38,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 77a3cc7a-b365-4e81-9c2c-4df42b68d05f # Block copy
+            handle: null
             instructions: null
             label: null
             required: false
@@ -41,8 +54,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: ff7424d6-2f4c-44cf-b9cd-a9c40c99c203 # Block buttons
+            handle: null
             instructions: null
             label: null
             required: false
@@ -55,6 +72,7 @@ fieldLayouts:
         name: 'Tab 1'
         uid: 63e16c01-52a4-43fc-aa96-dcf181676ea0
         userCondition: null
+    thumbFieldKey: null
 handle: contactUsBlock
 name: 'Contact us block'
 sortOrder: 2

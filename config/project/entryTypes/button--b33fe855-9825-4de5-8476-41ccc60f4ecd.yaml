@@ -16,7 +16,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: f92347c8-e537-4448-ac8d-03221d24cc4c
+            fieldUid: f92347c8-e537-4448-ac8d-03221d24cc4c # Block buttons - Button - Button CTA
             handle: null
             instructions: null
             label: 'Button CTA'
@@ -32,7 +32,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 20b4ade7-77d7-4359-a928-0d606f423eca
+            fieldUid: 20b4ade7-77d7-4359-a928-0d606f423eca # Block buttons - Button - Button URL
             handle: null
             instructions: null
             label: 'Button URL'

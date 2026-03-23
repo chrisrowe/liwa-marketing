@@ -2,9 +2,9 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 5284dd70-cfe7-4452-abf9-e0fc45b2db6e # Leadspace
-  -
     uid: 9010f513-cd24-4c5a-9af9-d08782e0e10a # History
+  -
+    uid: 5284dd70-cfe7-4452-abf9-e0fc45b2db6e # Leadspace
 handle: history
 maxAuthors: 1
 name: History

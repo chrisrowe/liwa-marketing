@@ -1,5 +1,8 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   78e15437-0ca7-4d15-93c8-519d0e94ea5f:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -34,10 +38,12 @@ fieldLayouts:
         name: Content
         uid: ce630fac-d985-4378-a6f4-21f748e84ffe
         userCondition: null
+    thumbFieldKey: null
 fs: images
 handle: images
 name: Images
 sortOrder: 4
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: null

@@ -1,17 +1,25 @@
 columnSuffix: null
-contentColumnType: string
 handle: sideInformation
 instructions: null
 name: 'Side information'
 searchable: false
 settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
   entryTypes:
     -
-      uid: 633fc42c-791f-4578-a6bf-d1784977571a
+      __assoc__:
+        -
+          - uid
+          - 633fc42c-791f-4578-a6bf-d1784977571a # Information
+  includeTableView: false
   maxEntries: 2
   minEntries: 2
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
   viewMode: blocks
 translationKeyFormat: null
 translationMethod: site

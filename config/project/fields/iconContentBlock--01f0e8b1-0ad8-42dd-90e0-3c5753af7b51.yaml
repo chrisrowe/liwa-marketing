@@ -1,17 +1,25 @@
 columnSuffix: null
-contentColumnType: string
 handle: iconContentBlock
 instructions: null
 name: 'Icon content block'
 searchable: false
 settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
   entryTypes:
     -
-      uid: a768c059-82a6-4fd6-8f1f-07be0fa51789
+      __assoc__:
+        -
+          - uid
+          - a768c059-82a6-4fd6-8f1f-07be0fa51789 # contentBlock
+  includeTableView: false
   maxEntries: null
   minEntries: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
   viewMode: blocks
 translationKeyFormat: null
 translationMethod: site

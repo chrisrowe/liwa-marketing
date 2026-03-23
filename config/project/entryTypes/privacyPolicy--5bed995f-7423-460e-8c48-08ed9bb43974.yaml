@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   f56809e9-c54f-46df-8ae3-3f931c2a3db1:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -32,8 +37,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245 # Body copy
+            handle: null
             instructions: null
             label: null
             required: false
@@ -46,13 +55,16 @@ fieldLayouts:
         name: Content
         uid: 83d68eea-ff8f-48fd-9f5d-5d7282d9fc27
         userCondition: null
+    thumbFieldKey: null
 handle: privacyPolicy
 hasTitleField: true
+icon: null
 name: 'Privacy policy'
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   a88c5881-f8ca-493d-9e58-5cd0121fa250:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -32,8 +37,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 859cf2be-c7d6-49a2-8d64-43fe6a61c35f # LeaderHeadshot
+            handle: null
             instructions: null
             label: null
             required: false
@@ -44,8 +53,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: e335b8b3-2d0c-4734-9f5f-773e938627e0 # LeaderTitle
+            handle: null
             instructions: null
             label: null
             required: false
@@ -56,8 +69,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245 # Body copy
+            handle: null
             instructions: null
             label: null
             required: false
@@ -70,13 +87,16 @@ fieldLayouts:
         name: Content
         uid: f539edc1-f47e-4d8e-b058-4a67d038c5c9
         userCondition: null
+    thumbFieldKey: null
 handle: leadership
 hasTitleField: true
+icon: null
 name: Leadership
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

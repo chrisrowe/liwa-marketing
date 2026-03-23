@@ -16,7 +16,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: acf20996-8724-4ba2-9896-1457b5ced4fe
+            fieldUid: acf20996-8724-4ba2-9896-1457b5ced4fe # Icon content block - contentBlock - Block icon
             handle: null
             instructions: null
             label: 'Block icon'
@@ -32,7 +32,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 0a0b532a-015f-4eea-b519-d0cdc8c0093e
+            fieldUid: 0a0b532a-015f-4eea-b519-d0cdc8c0093e # Icon content block - contentBlock - Block title
             handle: blockTitle
             instructions: null
             label: 'Block title'

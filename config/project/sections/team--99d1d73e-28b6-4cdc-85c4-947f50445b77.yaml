@@ -2,12 +2,12 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 1b653cbd-d86d-4bc0-8406-899568a08e64 # Shelbylane
-  -
     uid: 47a9ee7a-6326-44cb-813e-0b7549fc61fb # Team
   -
     handle: leadspace
     uid: e597662f-a7a0-4cf4-8617-2a5f674cc527 # Leadspace
+  -
+    uid: 1b653cbd-d86d-4bc0-8406-899568a08e64 # Shelbylane
 handle: team
 maxAuthors: 1
 name: Team

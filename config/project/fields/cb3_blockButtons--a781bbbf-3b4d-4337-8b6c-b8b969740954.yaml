@@ -1,17 +1,25 @@
 columnSuffix: null
-contentColumnType: string
 handle: cb3_blockButtons
 instructions: null
 name: 'Block buttons'
 searchable: false
 settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
   entryTypes:
     -
-      uid: b33fe855-9825-4de5-8476-41ccc60f4ecd
+      __assoc__:
+        -
+          - uid
+          - b33fe855-9825-4de5-8476-41ccc60f4ecd # Button
+  includeTableView: false
   maxEntries: null
   minEntries: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
   viewMode: blocks
 translationKeyFormat: null
 translationMethod: site

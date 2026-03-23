@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   13121129-d041-4338-bc32-9cead7766425:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -32,8 +37,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 0ad26c4a-0a51-446f-8a32-8636c09ab27c # Page title
+            handle: null
             instructions: null
             label: null
             required: false
@@ -44,8 +53,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: e9439491-9dea-4ad1-9a6d-03556df453c1 # subtitle
+            handle: null
             instructions: null
             label: null
             required: false
@@ -56,8 +69,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: df3aea1a-ed46-4bbd-945e-7088526543b3 # Feature image
+            handle: null
             instructions: null
             label: null
             required: false
@@ -68,13 +85,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: d744af28-1066-46fd-9d66-dbd5d0846453
             userCondition: null
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 79db30b0-00dd-44b4-9574-71c25930c2bf # Block title
+            handle: null
             instructions: null
             label: null
             required: false
@@ -85,8 +107,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 77a3cc7a-b365-4e81-9c2c-4df42b68d05f # Block copy
+            handle: null
             instructions: null
             label: null
             required: false
@@ -97,13 +123,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: 679e8afc-6059-4c9e-8a78-b723acad2f46
             userCondition: null
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 412aca6a-33da-4a96-84a9-ef86ce41d1d7 # Block title
+            handle: null
             instructions: null
             label: null
             required: false
@@ -114,8 +145,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 73675380-191f-4043-b50b-a8b3b8be9c1b # Block copy
+            handle: null
             instructions: null
             label: null
             required: false
@@ -126,13 +161,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: e857f675-9e95-44ea-9fd6-dd63a2c07629
             userCondition: null
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 0160ea70-0eea-4ca4-ac1c-0d2cd36f2d03 # Side information
+            handle: null
             instructions: null
             label: null
             required: false
@@ -143,13 +183,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: 732947c6-5c01-4cf4-80ca-879ab0380b19
             userCondition: null
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 01f0e8b1-0ad8-42dd-90e0-3c5753af7b51 # Icon content block
+            handle: null
             instructions: null
             label: null
             required: false
@@ -160,13 +205,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
             uid: 5bc70070-e4b5-4d7f-a598-67a0ff0012b7
             userCondition: null
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a718e0e5-ced8-4bfc-9558-814cc0ef618c # Block eyebrow
+            handle: null
             instructions: null
             label: null
             required: false
@@ -177,8 +227,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 4fe92e6f-ea33-473d-aeba-b280071320bc # Block title
+            handle: null
             instructions: null
             label: null
             required: false
@@ -189,8 +243,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c1ca6812-6064-47b1-8ef6-505183ba3475 # Block copy
+            handle: null
             instructions: null
             label: null
             required: false
@@ -201,8 +259,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 74c55c95-24ef-4e03-b375-7509209f110a # Block image
+            handle: null
             instructions: null
             label: null
             required: false
@@ -213,8 +275,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a781bbbf-3b4d-4337-8b6c-b8b969740954 # Block buttons
+            handle: null
             instructions: null
             label: null
             required: false
@@ -227,13 +293,16 @@ fieldLayouts:
         name: Content
         uid: 3cc4dc19-ae9f-41e1-962e-84344ec5d8d0
         userCondition: null
+    thumbFieldKey: null
 handle: approach
 hasTitleField: false
+icon: null
 name: Approach
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

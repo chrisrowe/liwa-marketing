@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   9bc7ff0d-e941-4c31-8048-b5c3fc63d44f:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -32,8 +37,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f117dbf8-9e5c-4211-81c6-e64bb234875f # History year
+            handle: null
             instructions: null
             label: null
             required: false
@@ -44,8 +53,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 36a7e232-473a-48dc-a371-c800f007e1e7 # Excerpt
+            handle: null
             instructions: null
             label: null
             required: false
@@ -56,8 +69,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 2f7af630-5080-4de4-86a8-fd5f0f292236 # History timeline direction
+            handle: null
             instructions: null
             label: null
             required: false
@@ -68,8 +85,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 8454412f-8f82-47a8-bfb4-b5166153dc67 # History event type
+            handle: null
             instructions: null
             label: null
             required: false
@@ -82,13 +103,16 @@ fieldLayouts:
         name: Content
         uid: b873afd8-2e11-429f-9266-c620e48b2176
         userCondition: null
+    thumbFieldKey: null
 handle: history
 hasTitleField: false
+icon: null
 name: History
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{historyyear}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   07ad2f01-af15-44c9-8736-0c000f34adbc:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -32,8 +37,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 2561f0d0-6ec8-4a80-b535-5163d869847d # Team member title
+            handle: null
             instructions: null
             label: null
             required: false
@@ -44,8 +53,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 4f87d506-cb1f-4659-aac4-cc64aa7e23d7 # Team member headshot
+            handle: null
             instructions: null
             label: null
             required: false
@@ -56,8 +69,12 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245 # Body copy
+            handle: null
             instructions: null
             label: null
             required: false
@@ -70,13 +87,16 @@ fieldLayouts:
         name: Content
         uid: 2ed321e8-572d-4ec4-90b3-8ea690affd2f
         userCondition: null
+    thumbFieldKey: null
 handle: meetTheTeam_team
 hasTitleField: true
+icon: null
 name: Team
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 2
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

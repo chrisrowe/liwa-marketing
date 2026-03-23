@@ -2,11 +2,11 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    handle: shelbylane
-    uid: c99d1654-57d4-4622-8c58-6c3d317d0790 # Shelbylane
-  -
     handle: team
     uid: e1ea9598-0bc4-4813-b820-55a568fa69b0 # Team
+  -
+    handle: shelbylane
+    uid: c99d1654-57d4-4622-8c58-6c3d317d0790 # Shelbylane
 handle: meetTheTeam
 maxAuthors: 1
 name: 'Meet the Team'
