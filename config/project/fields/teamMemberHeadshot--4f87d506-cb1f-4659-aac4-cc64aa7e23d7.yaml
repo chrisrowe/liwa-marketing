@@ -1,30 +1,34 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: df9cf76e-33e7-44af-a04f-5e33add0400d
 handle: teamMemberHeadshot
-instructions: ''
+instructions: null
 name: 'Team member headshot'
 searchable: false
 settings:
   allowSelfRelations: false
+  allowSubfolders: false
   allowUploads: true
   allowedKinds:
     - image
+  branchLimit: null
   defaultUploadLocationSource: 'volume:8f179eeb-233d-42c2-82af-ffff018d0f53' # Images
-  defaultUploadLocationSubpath: ''
-  limit: ''
+  defaultUploadLocationSubpath: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
   previewMode: full
-  restrictFiles: '1'
-  selectionLabel: ''
+  restrictFiles: true
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:8f179eeb-233d-42c2-82af-ffff018d0f53' # Images
+  restrictedLocationSubpath: /team
+  selectionLabel: null
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:8f179eeb-233d-42c2-82af-ffff018d0f53' # Images
-  singleUploadLocationSubpath: /team
-  source: null
   sources: '*'
   targetSiteId: null
-  useSingleFolder: true
   validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null

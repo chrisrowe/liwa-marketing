@@ -1,21 +1,24 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 1b653cbd-d86d-4bc0-8406-899568a08e64 # Shelbylane
+  -
+    uid: 47a9ee7a-6326-44cb-813e-0b7549fc61fb # Team
+  -
+    handle: leadspace
+    uid: e597662f-a7a0-4cf4-8617-2a5f674cc527 # Leadspace
 handle: team
+maxAuthors: 1
 name: Team
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
-  a0170692-9bc8-4fc5-8c51-66a642669e82:
+  a0170692-9bc8-4fc5-8c51-66a642669e82: # Liwa Capital
     enabledByDefault: true
     hasUrls: true
     template: our-team

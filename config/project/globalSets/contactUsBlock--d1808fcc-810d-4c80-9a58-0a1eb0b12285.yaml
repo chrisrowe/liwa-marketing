@@ -2,45 +2,59 @@ fieldLayouts:
   d5fc8f32-257e-4b26-bba2-aca317f511d8:
     tabs:
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: aa3d6ba9-2729-4ad5-9c2e-8cca1a481f04
+            elementCondition: null
+            fieldUid: aa3d6ba9-2729-4ad5-9c2e-8cca1a481f04 # Block image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 83fb9411-fce5-4b04-aa83-a4460e7d0dfd
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 79db30b0-00dd-44b4-9574-71c25930c2bf
+            elementCondition: null
+            fieldUid: 79db30b0-00dd-44b4-9574-71c25930c2bf # Block title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6cb5cec1-8031-4a06-8c28-7e0037e4d38f
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 77a3cc7a-b365-4e81-9c2c-4df42b68d05f
+            elementCondition: null
+            fieldUid: 77a3cc7a-b365-4e81-9c2c-4df42b68d05f # Block copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7cad6c09-549d-42d5-990c-3344127998f4
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: ff7424d6-2f4c-44cf-b9cd-a9c40c99c203
+            elementCondition: null
+            fieldUid: ff7424d6-2f4c-44cf-b9cd-a9c40c99c203 # Block buttons
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3cf868cc-2376-4c81-9cd0-d5ae03baa240
+            userCondition: null
             warning: null
             width: 100
         name: 'Tab 1'
-        sortOrder: 1
+        uid: 63e16c01-52a4-43fc-aa96-dcf181676ea0
+        userCondition: null
 handle: contactUsBlock
 name: 'Contact us block'
 sortOrder: 2

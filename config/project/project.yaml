@@ -1,4 +1,4 @@
-dateModified: 1774284258
+dateModified: 1774288151
 email:
   fromEmail: investorportal@liwacap.com
   fromName: 'Liwa Capital website'
@@ -23,10 +23,107 @@ fs:
     url: '@web/bin/images'
 meta:
   __names__:
+    0ad26c4a-0a51-446f-8a32-8636c09ab27c: 'Page title' # Page title
+    0b2fbfcf-97ca-4c58-8535-841e9046bf90: Disclaimer # Disclaimer
+    0c52f779-9635-4c0c-835b-618352485612: 'Home 2023' # Home 2023
+    0deb07ea-7e00-49d5-baa5-760b9ddbc677: Home # Home
+    1b653cbd-d86d-4bc0-8406-899568a08e64: Shelbylane # Shelbylane
+    01f0e8b1-0ad8-42dd-90e0-3c5753af7b51: 'Icon content block' # Icon content block
+    1f9ee18e-e211-4106-90a4-9b7f02372d28: Authors # Authors
+    2ab4d0f8-3ab4-407b-8584-3f191a4aecf9: 'Our Partners' # Our Partners
+    2c86c7ff-e1e4-4b9e-b151-a66ea2a511e3: 'Wizard Thank You' # Wizard Thank You
+    2f7af630-5080-4de4-86a8-fd5f0f292236: 'History timeline direction' # History timeline direction
+    3f49d3bb-32cf-4724-b563-bc299c94cfae: 'UAE address' # UAE address
+    4bd54345-a98a-4d0f-a3cf-cabdc4578f27: 'Market Updates Sign Up' # Market Updates Sign Up
+    4f87d506-cb1f-4659-aac4-cc64aa7e23d7: 'Team member headshot' # Team member headshot
+    4fe92e6f-ea33-473d-aeba-b280071320bc: 'Block title' # Block title
+    5bed995f-7423-460e-8c48-08ed9bb43974: 'Privacy policy' # Privacy policy
+    5c214858-9e0d-4a8e-be7b-5d54eee7025c: 'Home V2' # Home V2
+    6ae90fb3-6f99-47f1-9774-2be07bf55498: 'Block image' # Block image
+    6e178e10-ee4d-469c-bf4e-c4dba044ab4c: 'News title' # News title
+    6fba645e-71a4-449a-899b-d8a85ec79fbe: Title # Title
+    7abe2930-3140-43df-aac0-8999a16ab374: 'Home V2' # Home V2
+    7d8438b7-5fe7-49c9-a480-997da75bedd5: 'USA address' # USA address
+    7daa622b-c08a-43ef-a9ae-0b7595cf014d: 'Our Partners' # Our Partners
     8f179eeb-233d-42c2-82af-ffff018d0f53: Images # Images
+    9c8902aa-f4ea-4ce3-a338-27d6f51877fc: Contact # Contact
+    9d58ebe8-5d5b-4fbe-9a01-bfe7226600e8: 'YouTube video ID' # YouTube video ID
+    12cea5a5-f206-41ae-9579-a9bf56c7aa37: 'New Contact' # New Contact
+    36a7e232-473a-48dc-a371-c800f007e1e7: Excerpt # Excerpt
+    44fdefa6-52c4-4ab1-89a1-dd71dada8c12: Wizard # Wizard
+    45c1a7a2-254b-45cb-94a3-5405bf417a5e: Approach # Approach
+    47a9ee7a-6326-44cb-813e-0b7549fc61fb: Team # Team
+    62edc756-6938-49e0-819f-f2ec25e1164d: 'Home 2023' # Home 2023
+    067ed0aa-8154-4cec-9b9d-227c6e4e9639: Leadership # Leadership
+    74c55c95-24ef-4e03-b375-7509209f110a: 'Block image' # Block image
+    77a3cc7a-b365-4e81-9c2c-4df42b68d05f: 'Block copy' # Block copy
+    79db30b0-00dd-44b4-9574-71c25930c2bf: 'Block title' # Block title
+    79f89df8-d164-4a32-8211-4b50a69ce0a6: Title # Title
+    99d1d73e-28b6-4cdc-85c4-947f50445b77: Team # Team
+    111bd820-8405-491f-905c-a2a42272a340: History # History
+    120dc75c-e81e-40c7-ab72-2fd5c7351c40: 'Meet the Team' # Meet the Team
+    0160ea70-0eea-4ca4-ac1c-0d2cd36f2d03: 'Side information' # Side information
+    181b45a1-d77a-4009-80b2-58c06a8ed7be: 'What We Offer' # What We Offer
+    412aca6a-33da-4a96-84a9-ef86ce41d1d7: 'Block title' # Block title
+    859cf2be-c7d6-49a2-8d64-43fe6a61c35f: LeaderHeadshot # LeaderHeadshot
+    2561f0d0-6ec8-4a80-b535-5163d869847d: 'Team member title' # Team member title
+    4698ec60-3567-4385-98a1-1a10cbf80595: 'Wizard Error' # Wizard Error
+    5206b1ed-3576-4a61-b5c4-35824797bec4: Approach # Approach
+    5284dd70-cfe7-4452-abf9-e0fc45b2db6e: Leadspace # Leadspace
+    6154a876-d73e-499a-a3f0-9a66bc24ad34: 'Liwa Capital' # Liwa Capital
+    06494feb-ca36-44b7-8b53-7195d6cb1c5b: 'New Disclaimer' # New Disclaimer
+    7135a950-ad11-43fa-95d5-9d72162a7ae4: 'Block eyebrow' # Block eyebrow
+    9010f513-cd24-4c5a-9af9-d08782e0e10a: History # History
+    9590c46d-e48f-40d1-a97f-cab4bb412d89: 'UAE phone' # UAE phone
+    9955d81c-5121-439d-9593-3b717a045f53: Title # Title
+    12482cdb-ef1f-4c12-b095-4616c71fb144: 'Market Updates Sign Up' # Market Updates Sign Up
+    62099baa-6261-494f-b592-1afe29c8b6fc: Leadership # Leadership
+    80280ad6-a833-4e00-bf9c-daba7ea8c304: 'Information email' # Information email
+    95631d4d-dc85-4a82-b2dd-96b60bda043e: Insights # Insights
+    8454412f-8f82-47a8-bfb4-b5166153dc67: 'History event type' # History event type
+    15130161-8da9-4e04-a4a2-bea8967117da: TItle # TItle
+    73675380-191f-4043-b50b-a8b3b8be9c1b: 'Block copy' # Block copy
+    a0170692-9bc8-4fc5-8c51-66a642669e82: 'Liwa Capital' # Liwa Capital
+    a718e0e5-ced8-4bfc-9558-814cc0ef618c: 'Block eyebrow' # Block eyebrow
+    a781bbbf-3b4d-4337-8b6c-b8b969740954: 'Block buttons' # Block buttons
+    a790e024-7bb9-4ec9-aea9-e75a709c2fa9: 'Block eyebrow' # Block eyebrow
+    aa3d6ba9-2729-4ad5-9c2e-8cca1a481f04: 'Block image' # Block image
+    b1a5e2d7-0cef-4150-9890-d14e8ec8ac61: Insights-new # Insights-new
+    b2be240c-7f50-40f8-bbe9-ec5ac5850a02: 'New Contact' # New Contact
+    c1ca6812-6064-47b1-8ef6-505183ba3475: 'Block copy' # Block copy
     c6db17d0-6f0e-4883-8685-a42d1ab5c7dd: 'Company information' # Company information
+    c6f370cb-e8a9-45cd-a828-055d1453af01: 'Privacy policy' # Privacy policy
+    c99d1654-57d4-4622-8c58-6c3d317d0790: Shelbylane # Shelbylane
+    ca9327e2-e1b3-464b-a57d-d6a939189245: 'Body copy' # Body copy
+    d1d653c1-aea0-4925-960e-b3f12042265a: 'Wizard Thank You' # Wizard Thank You
+    d5c97bf7-e24c-4b81-84c9-98551e1135dd: Contact # Contact
     d1808fcc-810d-4c80-9a58-0a1eb0b12285: 'Contact us block' # Contact us block
+    db5edab7-f51e-4d72-852f-177c4ad9c919: 'New Disclaimer' # New Disclaimer
+    dccef8cd-3be6-4d7b-a2a6-c43f2b35eab5: 'What We Offer' # What We Offer
+    df3aea1a-ed46-4bbd-945e-7088526543b3: 'Feature image' # Feature image
+    e1b90ab5-468d-4fde-8898-81088ec61969: 'Public Schema' # Public Schema
+    e1ea9598-0bc4-4813-b820-55a568fa69b0: Team # Team
+    e2f56e4a-f766-4068-a519-5b3ccd01a30c: 'Block buttons' # Block buttons
+    e47a1d47-4279-43e8-875f-d911fb150ab7: News # News
+    e335b8b3-2d0c-4734-9f5f-773e938627e0: LeaderTitle # LeaderTitle
+    e597662f-a7a0-4cf4-8617-2a5f674cc527: Leadspace # Leadspace
+    e9439491-9dea-4ad1-9a6d-03556df453c1: subtitle # subtitle
+    eaa27fe1-1996-490f-a2e2-8ecad00d718f: Home # Home
+    ece26ece-7792-46e2-b088-1117323d6002: Disclaimer # Disclaimer
+    f0dbf14e-d41e-43a8-81b4-5c9e2398266f: 'Wizard Error' # Wizard Error
+    f3f40419-2a08-48e7-a459-69b431d9c132: Insights-new # Insights-new
+    f7fef231-5075-4347-96c4-e34ef1525faf: body # body
+    f8e0b9a5-f7d9-4444-a24d-64fb95403a00: Wizard # Wizard
+    f117dbf8-9e5c-4211-81c6-e64bb234875f: 'History year' # History year
+    f987fb97-204c-48d1-a33b-eac09d26bf78: Image # Image
+    f58587e8-196e-4976-a525-d7586beea5ac: 'USA phone' # USA phone
+    fdccf06c-5f0e-4932-bd89-1c06d94fb66b: 'Icon content block - contentBlock - Block copy' # Icon content block - contentBlock - Block copy
+    ff7424d6-2f4c-44cf-b9cd-a9c40c99c203: 'Block buttons' # Block buttons
 plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.0.0.1
   contact-form:
     edition: standard
     enabled: true
@@ -41,6 +138,9 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  feed-me:
+    enabled: true
+    schemaVersion: 5.14.0
   field-manager:
     edition: standard
     enabled: true
@@ -49,10 +149,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
   simple-sharing:
     edition: standard
     enabled: false
@@ -62,7 +158,7 @@ system:
   live: true
   name: 'Liwa Capital'
   retryDuration: null
-  schemaVersion: 4.17.0.3
+  schemaVersion: 5.9.0.8
   timeZone: Asia/Dubai
 users:
   allowPublicRegistration: false

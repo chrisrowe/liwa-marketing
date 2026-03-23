@@ -2,6 +2,7 @@ fieldLayouts:
   0f4d44bc-5eb7-44c5-aae7-8fc7d921fc8c:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,68 +27,91 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d64bd1f3-c20b-4bd0-89ae-5958aea28155
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 6e178e10-ee4d-469c-bf4e-c4dba044ab4c
+            elementCondition: null
+            fieldUid: 6e178e10-ee4d-469c-bf4e-c4dba044ab4c # News title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2af7cb5b-85fd-401d-b8a1-3e547e4c8e19
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: df3aea1a-ed46-4bbd-945e-7088526543b3
+            elementCondition: null
+            fieldUid: df3aea1a-ed46-4bbd-945e-7088526543b3 # Feature image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7c3a4a0f-8b17-4f47-8103-e5d2c2ca00a2
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245
+            elementCondition: null
+            fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245 # Body copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 251f7f2a-57af-444d-966e-9e1dd3bca39d
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 36a7e232-473a-48dc-a371-c800f007e1e7
+            elementCondition: null
+            fieldUid: 36a7e232-473a-48dc-a371-c800f007e1e7 # Excerpt
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ddb3bae2-59c8-448a-9684-494142d44601
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 9d58ebe8-5d5b-4fbe-9a01-bfe7226600e8
+            elementCondition: null
+            fieldUid: 9d58ebe8-5d5b-4fbe-9a01-bfe7226600e8 # YouTube video ID
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 977d52f8-f798-4b64-bf41-72becc789451
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 1f9ee18e-e211-4106-90a4-9b7f02372d28
+            elementCondition: null
+            fieldUid: 1f9ee18e-e211-4106-90a4-9b7f02372d28 # Authors
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9e0f60be-af36-443d-a7b2-a7da34869b82
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 3090e7a0-cabf-4d64-8631-162fdf9fde87
+        userCondition: null
 handle: insightsNew
 hasTitleField: false
 name: Insights-new
-section: b1a5e2d7-0cef-4150-9890-d14e8ec8ac61
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{newsTitle|raw}'
 titleTranslationKeyFormat: null

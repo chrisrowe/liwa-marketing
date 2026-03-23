@@ -1,10 +1,11 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: a7ea0964-404e-4464-8409-1925c5d98cf9
 handle: historyEventType
 instructions: 'Larger or small circle'
 name: 'History event type'
 searchable: false
 settings:
+  columnType: string
   options:
     -
       __assoc__:

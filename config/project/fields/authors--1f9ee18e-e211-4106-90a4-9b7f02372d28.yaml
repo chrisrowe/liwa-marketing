@@ -1,14 +1,18 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 24ff0072-4ed1-4870-82c2-ff7ea9c68730
 handle: authors
-instructions: ''
+instructions: null
 name: Authors
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_authors}}'
-  maxBlocks: ''
-  minBlocks: ''
+  entryTypes:
+    -
+      uid: cf8deda4-e468-4725-8360-4b1f350a3eb9
+  maxEntries: null
+  minEntries: null
+  propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

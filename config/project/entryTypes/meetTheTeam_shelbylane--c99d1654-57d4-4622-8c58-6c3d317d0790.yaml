@@ -2,6 +2,7 @@ fieldLayouts:
   e9a01ba1-257d-4c37-9a4d-086efd2382b3:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,41 +27,55 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 523f2b3f-c9f2-465e-b0ff-c7d3820313f4
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 2561f0d0-6ec8-4a80-b535-5163d869847d
+            elementCondition: null
+            fieldUid: 2561f0d0-6ec8-4a80-b535-5163d869847d # Team member title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 54db18ca-f25b-4cdd-a69f-17f8df152da9
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 4f87d506-cb1f-4659-aac4-cc64aa7e23d7
+            elementCondition: null
+            fieldUid: 4f87d506-cb1f-4659-aac4-cc64aa7e23d7 # Team member headshot
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 91a0c4e6-8e39-4c4e-9962-4fdc1587e355
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245
+            elementCondition: null
+            fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245 # Body copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8f2010d6-6973-4d95-80e5-781fc3fa7c26
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
-handle: shelbylane
+        uid: 63824339-5271-4176-a879-89ca7764d198
+        userCondition: null
+handle: meetTheTeam_shelbylane
 hasTitleField: true
 name: Shelbylane
-section: 120dc75c-e81e-40c7-ab72-2fd5c7351c40
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 3
 titleFormat: null
 titleTranslationKeyFormat: null

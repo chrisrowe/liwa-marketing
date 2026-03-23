@@ -2,6 +2,7 @@ fieldLayouts:
   c8cd71b4-d0dc-4985-a216-da42fc3d1318:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,14 +27,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4d02dcff-f6d6-4bc6-a7b5-4808df898c75
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: c4d62240-877b-4335-872e-8c92b2d704a6
+        userCondition: null
 handle: marketUpdatesSignUp
 hasTitleField: false
 name: 'Market Updates Sign Up'
-section: 12482cdb-ef1f-4c12-b095-4616c71fb144
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

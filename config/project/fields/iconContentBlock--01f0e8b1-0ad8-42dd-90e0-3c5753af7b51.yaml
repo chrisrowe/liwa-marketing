@@ -1,14 +1,18 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 24ff0072-4ed1-4870-82c2-ff7ea9c68730
 handle: iconContentBlock
-instructions: ''
+instructions: null
 name: 'Icon content block'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_iconcontentblock}}'
-  maxBlocks: ''
-  minBlocks: ''
+  entryTypes:
+    -
+      uid: a768c059-82a6-4fd6-8f1f-07be0fa51789
+  maxEntries: null
+  minEntries: null
+  propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

@@ -1,0 +1,78 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  0c9f1da7-62b4-444a-8576-965d7dfcf766:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:a404d87c-f31d-4d2b-aeea-ea8b82d1834f'
+      - 'layoutElement:aef42a2b-c5f1-4179-bbe9-99ee4e6cee44'
+      - 'layoutElement:a962a487-f430-4d3f-ab26-316e5d5e8081'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 65e36fb8-4421-4856-bd00-9e2203e673dc
+            handle: null
+            instructions: null
+            label: 'Author name'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a404d87c-f31d-4d2b-aeea-ea8b82d1834f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0c6c684b-a6ca-4c21-852b-c7aa7d5b5dee
+            handle: null
+            instructions: null
+            label: 'Author title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aef42a2b-c5f1-4179-bbe9-99ee4e6cee44
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: ed339bfc-c0e4-43b3-ba8f-be1b7175751f
+            handle: null
+            instructions: null
+            label: 'Author company'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a962a487-f430-4d3f-ab26-316e5d5e8081
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a05873da-93fb-43d7-bcec-88559a4165f6
+        userCondition: null
+    thumbFieldKey: null
+handle: authorMatrix
+hasTitleField: false
+icon: null
+name: 'Author Matrix'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

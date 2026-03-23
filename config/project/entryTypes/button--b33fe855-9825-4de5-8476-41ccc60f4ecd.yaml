@@ -1,0 +1,61 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  54dab43c-9ab5-47ff-8c39-5ebb73ac1fce:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:03059e7d-46ed-4f87-87f1-aa975bc40d52'
+      - 'layoutElement:7018fa99-a836-4249-9a2c-b967a847434f'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f92347c8-e537-4448-ac8d-03221d24cc4c
+            handle: null
+            instructions: null
+            label: 'Button CTA'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03059e7d-46ed-4f87-87f1-aa975bc40d52
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 20b4ade7-77d7-4359-a928-0d606f423eca
+            handle: null
+            instructions: null
+            label: 'Button URL'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7018fa99-a836-4249-9a2c-b967a847434f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 65470ad7-e71c-49d5-a346-40ba4b96ba3a
+        userCondition: null
+    thumbFieldKey: null
+handle: button
+hasTitleField: false
+icon: null
+name: Button
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

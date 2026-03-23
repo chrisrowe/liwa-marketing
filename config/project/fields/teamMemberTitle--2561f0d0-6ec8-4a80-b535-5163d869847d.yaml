@@ -1,17 +1,17 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: df9cf76e-33e7-44af-a04f-5e33add0400d
 handle: teamMemberTitle
-instructions: ''
+instructions: null
 name: 'Team member title'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: ''
+  initialRows: 4
+  multiline: false
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

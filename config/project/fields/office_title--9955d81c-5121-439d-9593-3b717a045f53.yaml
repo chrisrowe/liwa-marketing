@@ -1,17 +1,17 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: 98b6a9a0-8457-49a4-8835-eb68ec8fd5cb
 handle: office_title
-instructions: ''
+instructions: null
 name: Title
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: ''
+  initialRows: 4
+  multiline: false
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

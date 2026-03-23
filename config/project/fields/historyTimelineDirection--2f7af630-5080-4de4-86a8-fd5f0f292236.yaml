@@ -1,10 +1,11 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: a7ea0964-404e-4464-8409-1925c5d98cf9
 handle: historyTimelineDirection
 instructions: 'Which side of the timeline do you want this to display?'
 name: 'History timeline direction'
 searchable: false
 settings:
+  columnType: string
   options:
     -
       __assoc__:

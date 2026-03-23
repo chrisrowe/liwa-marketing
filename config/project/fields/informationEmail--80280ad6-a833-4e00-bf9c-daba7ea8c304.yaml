@@ -1,11 +1,11 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 24ff0072-4ed1-4870-82c2-ff7ea9c68730
 handle: informationEmail
-instructions: ''
+instructions: null
 name: 'Information email'
 searchable: false
 settings:
-  placeholder: ''
+  placeholder: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Email

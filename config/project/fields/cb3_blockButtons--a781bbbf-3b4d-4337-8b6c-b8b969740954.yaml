@@ -1,14 +1,18 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 6f465601-2c0e-4ee3-9147-ec47519d34e1
 handle: cb3_blockButtons
-instructions: ''
+instructions: null
 name: 'Block buttons'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_cb3_blockbuttons}}'
-  maxBlocks: ''
-  minBlocks: ''
+  entryTypes:
+    -
+      uid: b33fe855-9825-4de5-8476-41ccc60f4ecd
+  maxEntries: null
+  minEntries: null
+  propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

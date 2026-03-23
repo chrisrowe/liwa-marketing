@@ -1,21 +1,19 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 7daa622b-c08a-43ef-a9ae-0b7595cf014d # Our Partners
 handle: ourPartners
+maxAuthors: 1
 name: 'Our Partners'
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
-  a0170692-9bc8-4fc5-8c51-66a642669e82:
+  a0170692-9bc8-4fc5-8c51-66a642669e82: # Liwa Capital
     enabledByDefault: true
     hasUrls: true
     template: partners/index

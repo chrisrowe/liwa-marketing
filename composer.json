@@ -1,16 +1,15 @@
 {
   "require": {
-    "craftcms/ckeditor": "^3.0",
-    "craftcms/cms": "^4.0",
+    "craftcms/ckeditor": "^5.3.1",
+    "craftcms/cms": "^5.0.0",
     "craftcms/contact-form": "^3.0",
     "craftcms/contact-form-honeypot": "^2.0",
-    "craftcms/feed-me": "^5.0",
+    "craftcms/feed-me": "^6.0",
     "craftcms/mailgun": "^3.0",
-    "craftcms/redactor": "^3.1.0",
     "guzzlehttp/guzzle": "^7.0",
     "phpmailer/phpmailer": "^6.6",
     "twbs/bootstrap": "^4.5",
-    "verbb/field-manager": "^3.0",
+    "verbb/field-manager": "^4.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -25,7 +24,7 @@
     "sort-packages": true,
     "optimize-autoloader": true,
     "platform": {
-      "php": "8.0.2"
+      "php": "8.2"
     },
     "allow-plugins": {
       "yiisoft/yii2-composer": true,

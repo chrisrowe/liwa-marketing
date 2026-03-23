@@ -2,6 +2,7 @@ fieldLayouts:
   dd6d3504-f9a2-482e-b9f7-b6b5e6a9ae41:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,14 +27,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7b556f08-4ada-46a7-b03b-70eda77de618
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 30d0cc05-02d7-4797-9d80-b30b2d62f72a
+        userCondition: null
 handle: wizardThankYou
 hasTitleField: false
 name: 'Wizard Thank You'
-section: d1d653c1-aea0-4925-960e-b3f12042265a
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

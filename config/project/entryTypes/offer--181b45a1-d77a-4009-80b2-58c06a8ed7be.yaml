@@ -2,6 +2,7 @@ fieldLayouts:
   18b2dd56-07bb-4a9d-8157-d442b73c59de:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,14 +27,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ef441e6d-d2b5-4112-8425-da763a68bfa4
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: c129c9af-0886-4586-9c57-7ace0539a0fb
+        userCondition: null
 handle: offer
 hasTitleField: false
 name: 'What We Offer'
-section: dccef8cd-3be6-4d7b-a2a6-c43f2b35eab5
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

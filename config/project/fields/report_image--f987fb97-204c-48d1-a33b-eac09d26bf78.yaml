@@ -1,29 +1,33 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: b0bdde0d-3b85-4ea4-b950-e830f0c6b16b
 handle: report_image
-instructions: ''
+instructions: null
 name: Image
 searchable: false
 settings:
   allowSelfRelations: false
+  allowSubfolders: false
   allowUploads: true
   allowedKinds: null
+  branchLimit: null
   defaultUploadLocationSource: 'volume:8f179eeb-233d-42c2-82af-ffff018d0f53' # Images
-  defaultUploadLocationSubpath: ''
-  limit: ''
+  defaultUploadLocationSubpath: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
   previewMode: full
-  restrictFiles: ''
-  selectionLabel: ''
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:8f179eeb-233d-42c2-82af-ffff018d0f53' # Images
+  restrictedLocationSubpath: null
+  selectionLabel: null
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:8f179eeb-233d-42c2-82af-ffff018d0f53' # Images
-  singleUploadLocationSubpath: ''
-  source: null
   sources: '*'
   targetSiteId: null
-  useSingleFolder: false
   validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null

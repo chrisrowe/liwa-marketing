@@ -1,5 +1,5 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: 24ff0072-4ed1-4870-82c2-ff7ea9c68730
 handle: youtubeVideoId
 instructions: 'Example: 0FmAy9Rl__s'
 name: 'YouTube video ID'
@@ -7,11 +7,11 @@ searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: ''
+  initialRows: 4
+  multiline: false
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

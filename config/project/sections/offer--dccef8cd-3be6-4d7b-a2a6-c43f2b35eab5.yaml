@@ -1,21 +1,19 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 181b45a1-d77a-4009-80b2-58c06a8ed7be # What We Offer
 handle: offer
+maxAuthors: 1
 name: 'What We Offer'
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
-  a0170692-9bc8-4fc5-8c51-66a642669e82:
+  a0170692-9bc8-4fc5-8c51-66a642669e82: # Liwa Capital
     enabledByDefault: true
     hasUrls: true
     template: offer/index

@@ -1,21 +1,19 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 5c214858-9e0d-4a8e-be7b-5d54eee7025c # Home V2
 handle: homeV2
+maxAuthors: 1
 name: 'Home V2'
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
-  a0170692-9bc8-4fc5-8c51-66a642669e82:
+  a0170692-9bc8-4fc5-8c51-66a642669e82: # Liwa Capital
     enabledByDefault: true
     hasUrls: true
     template: index-v2

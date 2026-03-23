@@ -2,54 +2,71 @@ fieldLayouts:
   4ef7f101-35db-4330-85ce-5779abb327e6:
     tabs:
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 3f49d3bb-32cf-4724-b563-bc299c94cfae
+            elementCondition: null
+            fieldUid: 3f49d3bb-32cf-4724-b563-bc299c94cfae # UAE address
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f7b1aef6-a334-4fb6-8814-0a8d29f5f131
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 9590c46d-e48f-40d1-a97f-cab4bb412d89
+            elementCondition: null
+            fieldUid: 9590c46d-e48f-40d1-a97f-cab4bb412d89 # UAE phone
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1c5e9f18-9c9b-43b9-aa67-975a86dc89ba
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 7d8438b7-5fe7-49c9-a480-997da75bedd5
+            elementCondition: null
+            fieldUid: 7d8438b7-5fe7-49c9-a480-997da75bedd5 # USA address
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9348a4da-d504-4b58-9739-53335d514f52
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: f58587e8-196e-4976-a525-d7586beea5ac
+            elementCondition: null
+            fieldUid: f58587e8-196e-4976-a525-d7586beea5ac # USA phone
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f2ae6176-4c11-4e43-9bb4-54c2a5963dc4
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 80280ad6-a833-4e00-bf9c-daba7ea8c304
+            elementCondition: null
+            fieldUid: 80280ad6-a833-4e00-bf9c-daba7ea8c304 # Information email
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c81e0016-4822-415f-8e7b-d70c15c94f95
+            userCondition: null
             warning: null
             width: 100
         name: 'Tab 1'
-        sortOrder: 1
+        uid: fe2ef33b-f7ef-4237-89e9-f843ada1de96
+        userCondition: null
 handle: companyInformation
 name: 'Company information'
 sortOrder: 1

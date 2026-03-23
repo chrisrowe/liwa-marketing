@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: blockCopy2
+instructions: null
+name: 'Icon content block - contentBlock - Block copy'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  css: null
+  cssFile: null
+  defaultTransform: ''
+  enableSourceEditingForNonAdmins: false
+  fullGraphqlData: false
+  headingLevels:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+  js: null
+  jsFile: Default.json
+  options: null
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  toolbar:
+    - sourceEditing
+    - '|'
+    - heading
+    - '|'
+    - blockQuote
+    - codeBlock
+    - bold
+    - italic
+    - bulletedList
+    - numberedList
+    - insertTable
+    - link
+    - insertImage
+    - mediaEmbed
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

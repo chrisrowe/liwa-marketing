@@ -1,0 +1,14 @@
+{
+  "code": {
+    "indentSequence": "  "
+  },
+  "htmlSupport": {
+    "allow": [
+      {
+        "attributes": true,
+        "classes": true,
+        "styles": true
+      }
+    ]
+  }
+}

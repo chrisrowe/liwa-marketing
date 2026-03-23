@@ -2,6 +2,7 @@ fieldLayouts:
   31ea23b5-8589-4369-ae68-0e1740d07281:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,182 +27,250 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f6362b76-1722-4214-8524-dd7489cc6235
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 0ad26c4a-0a51-446f-8a32-8636c09ab27c
+            elementCondition: null
+            fieldUid: 0ad26c4a-0a51-446f-8a32-8636c09ab27c # Page title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 212ba7c4-c2a9-4d69-b340-b33c10472ef1
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: e9439491-9dea-4ad1-9a6d-03556df453c1
+            elementCondition: null
+            fieldUid: e9439491-9dea-4ad1-9a6d-03556df453c1 # subtitle
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9c72aea0-3f32-4a5c-a3e1-34d35a5214df
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: df3aea1a-ed46-4bbd-945e-7088526543b3
+            elementCondition: null
+            fieldUid: df3aea1a-ed46-4bbd-945e-7088526543b3 # Feature image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f7c35203-e1fe-45a3-98b5-7c259d214c07
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
+            uid: 15823905-87a1-4cfc-a4ca-3c608cb47e4a
+            userCondition: null
           -
-            fieldUid: a790e024-7bb9-4ec9-aea9-e75a709c2fa9
+            elementCondition: null
+            fieldUid: a790e024-7bb9-4ec9-aea9-e75a709c2fa9 # Block eyebrow
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cec422d4-30c1-4d04-a28d-9658ba593975
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 79db30b0-00dd-44b4-9574-71c25930c2bf
+            elementCondition: null
+            fieldUid: 79db30b0-00dd-44b4-9574-71c25930c2bf # Block title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 52c293fa-42bd-40e4-9638-c4bee6bea833
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 77a3cc7a-b365-4e81-9c2c-4df42b68d05f
+            elementCondition: null
+            fieldUid: 77a3cc7a-b365-4e81-9c2c-4df42b68d05f # Block copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d768eb25-48cf-4400-9789-4befb0596c56
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: aa3d6ba9-2729-4ad5-9c2e-8cca1a481f04
+            elementCondition: null
+            fieldUid: aa3d6ba9-2729-4ad5-9c2e-8cca1a481f04 # Block image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: bf6e1ac6-d9fb-4443-8976-94f830902e3b
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: ff7424d6-2f4c-44cf-b9cd-a9c40c99c203
+            elementCondition: null
+            fieldUid: ff7424d6-2f4c-44cf-b9cd-a9c40c99c203 # Block buttons
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c6677f7b-e6dd-4044-8540-9fa0c52f7894
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
+            uid: 2bbf47bb-f269-4364-9e15-81c51648dc67
+            userCondition: null
           -
-            fieldUid: 7135a950-ad11-43fa-95d5-9d72162a7ae4
+            elementCondition: null
+            fieldUid: 7135a950-ad11-43fa-95d5-9d72162a7ae4 # Block eyebrow
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 11920807-aa31-474d-8b16-27b2311b3906
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 412aca6a-33da-4a96-84a9-ef86ce41d1d7
+            elementCondition: null
+            fieldUid: 412aca6a-33da-4a96-84a9-ef86ce41d1d7 # Block title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0a7626eb-0402-4e80-95d7-29a3d29f6c12
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 73675380-191f-4043-b50b-a8b3b8be9c1b
+            elementCondition: null
+            fieldUid: 73675380-191f-4043-b50b-a8b3b8be9c1b # Block copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3532d658-c915-4016-b81f-353e9a36a0d1
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 6ae90fb3-6f99-47f1-9774-2be07bf55498
+            elementCondition: null
+            fieldUid: 6ae90fb3-6f99-47f1-9774-2be07bf55498 # Block image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: dce42578-e54c-4674-a2dc-d166f54f1e39
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: e2f56e4a-f766-4068-a519-5b3ccd01a30c
+            elementCondition: null
+            fieldUid: e2f56e4a-f766-4068-a519-5b3ccd01a30c # Block buttons
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 06a62860-4d13-4dd1-acf5-e48b6dae7afa
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
+            uid: 4116bd01-fe9c-404b-81f1-c7373b6dc593
+            userCondition: null
           -
-            fieldUid: a718e0e5-ced8-4bfc-9558-814cc0ef618c
+            elementCondition: null
+            fieldUid: a718e0e5-ced8-4bfc-9558-814cc0ef618c # Block eyebrow
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 474a04d6-e369-4dfe-a5a8-1dd7ea106fd1
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 4fe92e6f-ea33-473d-aeba-b280071320bc
+            elementCondition: null
+            fieldUid: 4fe92e6f-ea33-473d-aeba-b280071320bc # Block title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 27e730e2-9090-4a7c-88dc-d2c9a6803ba8
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: c1ca6812-6064-47b1-8ef6-505183ba3475
+            elementCondition: null
+            fieldUid: c1ca6812-6064-47b1-8ef6-505183ba3475 # Block copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e5accdd5-637b-440f-838f-2bd6b3bca0e4
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 74c55c95-24ef-4e03-b375-7509209f110a
+            elementCondition: null
+            fieldUid: 74c55c95-24ef-4e03-b375-7509209f110a # Block image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7b1ec5bc-1865-47ed-b8fc-ea4c0a69c9fc
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: a781bbbf-3b4d-4337-8b6c-b8b969740954
+            elementCondition: null
+            fieldUid: a781bbbf-3b4d-4337-8b6c-b8b969740954 # Block buttons
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 367d7ba7-4cc3-44f2-82c0-41e194ed2ecd
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 3b08db7a-0b69-40de-85ee-e11a185d610a
+        userCondition: null
 handle: home
 hasTitleField: false
 name: Home
-section: eaa27fe1-1996-490f-a2e2-8ecad00d718f
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

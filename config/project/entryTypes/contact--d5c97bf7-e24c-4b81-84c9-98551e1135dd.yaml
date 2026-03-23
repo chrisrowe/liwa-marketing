@@ -2,6 +2,7 @@ fieldLayouts:
   aaa0c42e-156d-41ba-92a5-328e2f00cf6b:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,32 +27,43 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8283692c-1418-4dba-9e54-4cbf25ca1eca
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: e9439491-9dea-4ad1-9a6d-03556df453c1
+            elementCondition: null
+            fieldUid: e9439491-9dea-4ad1-9a6d-03556df453c1 # subtitle
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4f5f304a-f85e-4dcf-9bfc-3a80e8912eeb
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: df3aea1a-ed46-4bbd-945e-7088526543b3
+            elementCondition: null
+            fieldUid: df3aea1a-ed46-4bbd-945e-7088526543b3 # Feature image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3ad606dc-5b36-4505-94c9-845de8df8572
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: b631c5e9-e0aa-4992-ad62-57b199265e11
+        userCondition: null
 handle: contact
 hasTitleField: true
 name: Contact
-section: 9c8902aa-f4ea-4ce3-a338-27d6f51877fc
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

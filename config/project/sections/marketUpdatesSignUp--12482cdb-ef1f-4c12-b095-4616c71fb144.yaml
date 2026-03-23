@@ -1,21 +1,19 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 4bd54345-a98a-4d0f-a3cf-cabdc4578f27 # Market Updates Sign Up
 handle: marketUpdatesSignUp
+maxAuthors: 1
 name: 'Market Updates Sign Up'
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
-  a0170692-9bc8-4fc5-8c51-66a642669e82:
+  a0170692-9bc8-4fc5-8c51-66a642669e82: # Liwa Capital
     enabledByDefault: true
     hasUrls: true
     template: market_updates/index

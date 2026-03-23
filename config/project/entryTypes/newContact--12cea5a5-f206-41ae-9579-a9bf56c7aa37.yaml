@@ -2,6 +2,7 @@ fieldLayouts:
   9bbeecee-94d6-4161-af0d-23da7e00f105:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,14 +27,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4d03acdc-3297-460f-ae07-bde6e54add00
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: f17c26fd-7e6b-4e81-9802-443737d8fa84
+        userCondition: null
 handle: newContact
 hasTitleField: false
 name: 'New Contact'
-section: b2be240c-7f50-40f8-bbe9-ec5ac5850a02
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

@@ -1,17 +1,17 @@
+columnSuffix: null
 contentColumnType: string(200)
-fieldGroup: 24ff0072-4ed1-4870-82c2-ff7ea9c68730
 handle: newsTitle
-instructions: ''
+instructions: null
 name: 'News title'
 searchable: false
 settings:
   byteLimit: null
   charLimit: 50
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: ''
+  initialRows: 4
+  multiline: false
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

@@ -2,6 +2,7 @@ fieldLayouts:
   9bc7ff0d-e941-4c31-8048-b5c3fc63d44f:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,50 +27,67 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d85903e5-d8d2-4b6e-9745-a68ad7743052
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: f117dbf8-9e5c-4211-81c6-e64bb234875f
+            elementCondition: null
+            fieldUid: f117dbf8-9e5c-4211-81c6-e64bb234875f # History year
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e9bb0486-ba1f-4c22-a714-b3a361ba5872
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 36a7e232-473a-48dc-a371-c800f007e1e7
+            elementCondition: null
+            fieldUid: 36a7e232-473a-48dc-a371-c800f007e1e7 # Excerpt
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ce20ac60-8bc9-434e-b810-941d369aa8b0
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 2f7af630-5080-4de4-86a8-fd5f0f292236
+            elementCondition: null
+            fieldUid: 2f7af630-5080-4de4-86a8-fd5f0f292236 # History timeline direction
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 131c1089-34b8-431d-9c9c-dbbfc59819f9
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 8454412f-8f82-47a8-bfb4-b5166153dc67
+            elementCondition: null
+            fieldUid: 8454412f-8f82-47a8-bfb4-b5166153dc67 # History event type
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4b216e24-943a-44fb-a066-d1e11c9791cc
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: b873afd8-2e11-429f-9266-c620e48b2176
+        userCondition: null
 handle: history
 hasTitleField: false
 name: History
-section: 111bd820-8405-491f-905c-a2a42272a340
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{historyyear}'
 titleTranslationKeyFormat: null

@@ -1,0 +1,15 @@
+columnSuffix: null
+handle: buttonURL3
+instructions: null
+name: 'Block buttons - Button - Button URL'
+searchable: false
+settings:
+  fullGraphqlData: false
+  maxLength: 255
+  showLabelField: false
+  types:
+    - entry
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

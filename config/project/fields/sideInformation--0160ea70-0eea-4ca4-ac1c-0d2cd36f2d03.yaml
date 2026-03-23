@@ -1,14 +1,18 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 24ff0072-4ed1-4870-82c2-ff7ea9c68730
 handle: sideInformation
-instructions: ''
+instructions: null
 name: 'Side information'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_sideinformation}}'
-  maxBlocks: '2'
-  minBlocks: '2'
+  entryTypes:
+    -
+      uid: 633fc42c-791f-4578-a6bf-d1784977571a
+  maxEntries: 2
+  minEntries: 2
+  propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

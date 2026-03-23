@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
+enabled: true
 handle: default
 hasUrls: true
 language: en-US
 name: 'Liwa Capital'
 primary: true
-siteGroup: 6154a876-d73e-499a-a3f0-9a66bc24ad34
+siteGroup: 6154a876-d73e-499a-a3f0-9a66bc24ad34 # Liwa Capital
 sortOrder: 1

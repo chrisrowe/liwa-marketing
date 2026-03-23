@@ -2,6 +2,7 @@ fieldLayouts:
   3cafabb9-d7b1-4ddc-bee9-42f3d4196edf:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,14 +27,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c157c9b8-b24f-4fde-9987-82fca4d62550
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 1c5996ba-d068-49b5-bfde-892ebfdb554f
+        userCondition: null
 handle: ourPartners
 hasTitleField: false
 name: 'Our Partners'
-section: 2ab4d0f8-3ab4-407b-8584-3f191a4aecf9
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

@@ -1,0 +1,77 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  8569b7d6-7aa7-4eae-885f-5621ffc36e3f:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:4acaac7b-c82c-4e82-8988-45380bda649e'
+      - 'layoutElement:31d1c531-ddd2-4204-8ad0-b33eeda5d137'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: acf20996-8724-4ba2-9896-1457b5ced4fe
+            handle: null
+            instructions: null
+            label: 'Block icon'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9e38cade-852d-4e48-a7c7-5875ce303507
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0a0b532a-015f-4eea-b519-d0cdc8c0093e
+            handle: blockTitle
+            instructions: null
+            label: 'Block title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4acaac7b-c82c-4e82-8988-45380bda649e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: fdccf06c-5f0e-4932-bd89-1c06d94fb66b # Icon content block - contentBlock - Block copy
+            handle: blockCopy
+            instructions: null
+            label: 'Block copy'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31d1c531-ddd2-4204-8ad0-b33eeda5d137
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d894f181-0360-4105-bae0-b47ce21f715a
+        userCondition: null
+    thumbFieldKey: 'layoutElement:9e38cade-852d-4e48-a7c7-5875ce303507'
+handle: contentblock
+hasTitleField: false
+icon: null
+name: contentBlock
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

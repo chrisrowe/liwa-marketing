@@ -2,6 +2,7 @@ fieldLayouts:
   a88c5881-f8ca-493d-9e58-5cd0121fa250:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,41 +27,55 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 77f8f204-0c22-4fe9-91e2-39250eb51421
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 859cf2be-c7d6-49a2-8d64-43fe6a61c35f
+            elementCondition: null
+            fieldUid: 859cf2be-c7d6-49a2-8d64-43fe6a61c35f # LeaderHeadshot
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f673f0f1-f144-4049-bfa9-0555c3e9bb71
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: e335b8b3-2d0c-4734-9f5f-773e938627e0
+            elementCondition: null
+            fieldUid: e335b8b3-2d0c-4734-9f5f-773e938627e0 # LeaderTitle
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 312020ae-7d7a-4fed-a045-0e68017ee8c5
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245
+            elementCondition: null
+            fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245 # Body copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ab79c17f-f705-455d-888a-27302d00e620
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: f539edc1-f47e-4d8e-b058-4a67d038c5c9
+        userCondition: null
 handle: leadership
 hasTitleField: true
 name: Leadership
-section: 62099baa-6261-494f-b592-1afe29c8b6fc
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

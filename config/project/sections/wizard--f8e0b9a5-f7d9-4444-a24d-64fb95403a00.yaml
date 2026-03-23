@@ -1,21 +1,19 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 44fdefa6-52c4-4ab1-89a1-dd71dada8c12 # Wizard
 handle: wizard
+maxAuthors: 1
 name: Wizard
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
-  a0170692-9bc8-4fc5-8c51-66a642669e82:
+  a0170692-9bc8-4fc5-8c51-66a642669e82: # Liwa Capital
     enabledByDefault: true
     hasUrls: true
     template: wizard/index

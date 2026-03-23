@@ -1,27 +1,47 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: 24ff0072-4ed1-4870-82c2-ff7ea9c68730
 handle: bodyCopy
-instructions: ''
+instructions: null
 name: 'Body copy'
 searchable: false
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  cleanupHtml: true
   columnType: text
-  configSelectionMode: choose
+  css: null
+  cssFile: null
   defaultTransform: ''
-  manualConfig: ''
-  purifierConfig: ''
-  purifyHtml: '1'
-  redactorConfig: ''
-  removeEmptyTags: '1'
-  removeInlineStyles: '1'
-  removeNbsp: '1'
-  showHtmlButtonForNonAdmins: ''
+  enableSourceEditingForNonAdmins: false
+  fullGraphqlData: false
+  headingLevels:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+  js: null
+  jsFile: Default.json
+  options: null
+  purifierConfig: null
+  purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  uiMode: enlarged
+  toolbar:
+    - sourceEditing
+    - '|'
+    - heading
+    - '|'
+    - blockQuote
+    - codeBlock
+    - bold
+    - italic
+    - bulletedList
+    - numberedList
+    - insertTable
+    - link
+    - insertImage
+    - mediaEmbed
 translationKeyFormat: null
 translationMethod: none
-type: craft\redactor\Field
+type: craft\ckeditor\Field

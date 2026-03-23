@@ -1,7 +1,8 @@
 fieldLayouts:
-  8f716dae-801b-48ea-9bce-bf2bd15f502d:
+  07ad2f01-af15-44c9-8736-0c000f34adbc:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,42 +27,56 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d3f3b7b9-0290-4c80-ad7b-42f10c3cf032
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 0ad26c4a-0a51-446f-8a32-8636c09ab27c
+            elementCondition: null
+            fieldUid: 2561f0d0-6ec8-4a80-b535-5163d869847d # Team member title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 22ecc921-f85e-4e48-8ec6-255c53e94c92
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: e9439491-9dea-4ad1-9a6d-03556df453c1
+            elementCondition: null
+            fieldUid: 4f87d506-cb1f-4659-aac4-cc64aa7e23d7 # Team member headshot
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0e7a2287-c571-4a11-a0d6-1cc463d7ca3f
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: df3aea1a-ed46-4bbd-945e-7088526543b3
+            elementCondition: null
+            fieldUid: ca9327e2-e1b3-464b-a57d-d6a939189245 # Body copy
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 552e29c1-9df7-496a-9d33-b443dfd88d70
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
-handle: leadspace
-hasTitleField: false
-name: Leadspace
-section: 99d1d73e-28b6-4cdc-85c4-947f50445b77
+        uid: 2ed321e8-572d-4ec4-90b3-8ea690affd2f
+        userCondition: null
+handle: meetTheTeam_team
+hasTitleField: true
+name: Team
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 2
-titleFormat: '{pageTitle}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

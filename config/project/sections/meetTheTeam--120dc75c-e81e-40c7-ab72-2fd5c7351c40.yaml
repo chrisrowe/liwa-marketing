@@ -1,21 +1,23 @@
+defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: shelbylane
+    uid: c99d1654-57d4-4622-8c58-6c3d317d0790 # Shelbylane
+  -
+    handle: team
+    uid: e1ea9598-0bc4-4813-b820-55a568fa69b0 # Team
 handle: meetTheTeam
+maxAuthors: 1
 name: 'Meet the Team'
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
-  a0170692-9bc8-4fc5-8c51-66a642669e82:
+  a0170692-9bc8-4fc5-8c51-66a642669e82: # Liwa Capital
     enabledByDefault: true
     hasUrls: true
     template: meet-the-team

@@ -1,27 +1,47 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: 228716bf-07b8-4631-909b-479939dc7763
 handle: blockCopy
-instructions: ''
+instructions: null
 name: 'Block copy'
 searchable: false
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  cleanupHtml: true
   columnType: text
-  configSelectionMode: choose
+  css: null
+  cssFile: null
   defaultTransform: ''
-  manualConfig: ''
-  purifierConfig: ''
-  purifyHtml: '1'
-  redactorConfig: ''
-  removeEmptyTags: '1'
-  removeInlineStyles: '1'
-  removeNbsp: '1'
-  showHtmlButtonForNonAdmins: ''
+  enableSourceEditingForNonAdmins: false
+  fullGraphqlData: false
+  headingLevels:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+  js: null
+  jsFile: Default.json
+  options: null
+  purifierConfig: null
+  purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  uiMode: enlarged
+  toolbar:
+    - sourceEditing
+    - '|'
+    - heading
+    - '|'
+    - blockQuote
+    - codeBlock
+    - bold
+    - italic
+    - bulletedList
+    - numberedList
+    - insertTable
+    - link
+    - insertImage
+    - mediaEmbed
 translationKeyFormat: null
 translationMethod: none
-type: craft\redactor\Field
+type: craft\ckeditor\Field

@@ -2,6 +2,7 @@ fieldLayouts:
   78a73b2f-42b9-425e-b981-ac74039f18fb:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -24,14 +27,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3e9d304d-f0bf-4ef8-b91a-13fb163706f0
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: fcd38684-250c-4fdb-bcf5-05f754057bcd
+        userCondition: null
 handle: wizardError
 hasTitleField: false
 name: 'Wizard Error'
-section: f0dbf14e-d41e-43a8-81b4-5c9e2398266f
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
